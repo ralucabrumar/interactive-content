@@ -5,7 +5,7 @@
 
 In programming, each **variable** stores a certain value of a particular type. 
 
-For example, data types can be: number, letter, text (string), date, color, image, list and others. Here are some examples of data types:
+Different data types can holds: numbers, letters, text (strings), dates, colors, images, lists and others. Here are some examples:
 * Integer: 1, 2, 3, 4, -5, 20, …
 * Float: 0.5, 3.14, -1.5, …
 * Character (symbol): 'a', 'b', 'c', '@', 'X', …
@@ -13,27 +13,27 @@ For example, data types can be: number, letter, text (string), date, color, imag
 * Day of week: Monday, Tuesday, …, Sunday
 * Date and time: 14-June-1980 6:30:00, 25-Dec-2017 23:17:22
 
-You can also imagine that **variables** are containers for data or named areas in the memory and the data that they are storing can be read and changed at any time. 
+**Variables** can be viewed as containers for data (or named areas in the memory). The data that they are storing can be read and changed at any time. 
 
-Basically **variables** provide means for:
+**Variables** provide means for:
   * **Storing** data
   * **Retrieving** stored data
   * **Modifying** stored data
   
 They are characterized by:
   * Name (identifier)
-  * Type (of the information preserved)
+  * Type (type of data that the variable stores)
   * Value (stored information)
 
 Each of the variables in Java has a name, a type and a value. 
 
-Here is how we would declare a variable and assign it with a value at the same time:
+Here is how we declare a variable and assign a value to it at the same time:
 ```java
 String name = "Bob";
 boolean employed = true;
 int age = 35;
 ```
-If you think of the variables as boxes that hold information, this is how they would look like:
+We could view variables as boxes that hold information:
 [image assetsSrc="expressions-and-statements-boxes.png" /]
 
 Variables can be stored in the program's:
