@@ -9,7 +9,7 @@
 
 **1. Variables**
 
-- How to declare, Read or Modify variable
+- How to declare, Read or Modify a variable
 
 **2. Data Types**
 
@@ -23,7 +23,7 @@
 
 **5. Simple Operators**
 
-- How to use a simple math operators ( +, -, *, / )
+- How to use simple math operators ( +, -, *, / )
 
 **6. Expressions** 
 
