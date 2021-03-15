@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-34-35-boolean-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The boolean data type is declared with the **boolean** keyword. It can hold only two possible values: **true** or **false**.
+The boolean data type is declared using the **boolean** keyword. It can hold only two possible values: **true** or **false**.
 
 ```java live
  int firstNumber = 5;
@@ -46,7 +46,7 @@ A **number** is **special** when the **sum of its digits is 5, 7, or 11**.
 
 Create a program to read an integer **n**. 
 
-For all numbers in range **1…n**, print the number. If it is special or not - **(True / False)** in the format below.
+For all numbers in range **1…n**, print the number followed by a word representing whther it is "special" or "not" - **(True / False)**
 
 ## Example
 | **Input** | **Output** |
@@ -69,7 +69,7 @@ For all numbers in range **1…n**, print the number. If it is special or not - 
  
 ### Hints
 
-To calculate the sum of digits of a given number **num**, you might repeat the following: sum the last digit **(num % 10)** and remove it **(sum = sum / 10)** until **num** reaches **0**.
+To calculate the sum of the digits of a given number, you might do the following: sum the last digit **(num % 10)** and remove it **(sum = sum / 10)** until all digits are removed.
 
 [/task-description]
 [code-io /]
