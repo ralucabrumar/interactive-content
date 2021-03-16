@@ -16,7 +16,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program în limbajul Java care să execute următoarele:
+Scrieți un program în limbajul Java care să execute următoarele:asdfsadfasdfasd
 
 Tipărește "**Hello Java**" pe consolă
 [/task-description]
