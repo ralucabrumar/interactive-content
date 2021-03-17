@@ -7,9 +7,9 @@
 
 Always use verbs when naming methods.
 
-A method represents an action and its name should clearly state what action they perform.
+A method represents an action and its name should clearly state what it is.
 
-Method names can be a single word or 2-3 words as needed to represent the action.
+Method names can be a single word or a mixture of words.
 
 ## Examples of Good Names
 
@@ -20,19 +20,19 @@ Good method names are **findStudent**, **getReportByName**, **getBrowserId**.
 
 ## Examples of Bad Method Names
 
-If you cannot find a good name for a method, think about whether it has a **clear intent**.
+If you cannot find a good name for a method, think about what its purpose is first.
 
 Bad method names: **Method1**, **DoSomething**, **HandleStuff**, **SampleMethod**.
 
 Perhaps your method does too many things making it difficult to decide on a name.
 
-This should be a pretty good indicator that you should split it into two or more methods.
+This should be an indicator that you should split its functions into two or more methods.
 
 ## Naming Method Parameters
 
-Method parameter names should be \[Noun\] or \[Adjective\] + \[Noun\]. 
+Method parameter names should be composed of a \[Noun\] or an \[Adjective\] + \[Noun\]. 
 
-Always write method names in **camelCase**:
+Always use **camelCase**:
 
 - **firstName**, **report**, **speedKmH**, **getListOfUsers**, **calculateFontSizeInPixels**
 
@@ -48,7 +48,7 @@ Each method should perform a **single**, well-defined task.
 
 A method's name should **describe that task** in a precise and non-ambiguous way.
 
-**Avoid** methods **longer than one screen**, split them into several shorter methods.
+**Avoid** creating methods **that cannot fit on your screen**, split them into several shorter ones.
 
 Here are some self-documenting method names:
 
@@ -71,7 +71,7 @@ You can understand what each of the above methods does by reading their names, e
 
 Make sure to use correct **indentation**.
 
-Leave a **blank line** between **methods**, after **loops** and after **if** statements.
+Leave a **blank line** in **method mbodies** - after **loops** and after **if** statements.
 
 **Avoid long lines** and **complex expressions**.
 
