@@ -3,17 +3,17 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-16-17-18-Methods-with-parameters-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Information can be **passed** to methods as **parameters**. 
+Information can be **passed** in to methods in the form of **parameters**. 
 
 Parameters act as **variables** inside the method.
 
 They are specified after the method name **inside the parentheses**.
 
-You can add as **many** parameters as you want **separated** with a comma.
+You can add as **many** parameters as you want **separated** by a comma.
 
 The following example has a method that takes a **String** called **firstName** as a parameter.
 
-When the method is called, we pass the parameter **firstName** to it, which is used inside the method to print the full name:
+When the method is called, we pass in the parameter **firstName** to it, which is used inside the method to print a full name:
 
 ```java live no-template
 public class MyClass {
@@ -29,11 +29,11 @@ public class MyClass {
 }
 ```
 
-You can pass zero or several parameters.
+You can pass in any amount of parameters.
 
-You can pass parameters of different types as well.
+You can pass in parameters of different types as well.
 
-Each parameter should be given a type followed by a name.
+Each parameter should hold a specific data type followed by its name.
 
 ```Java
 public static void printStudent(String name, int age, double grade) {
@@ -64,7 +64,7 @@ public class Main {
 [task-description]
 ## Description
 
-Create a method that checks whether a number is positive, negative or zero and prints the result to the console.
+Create a method that checks whether a number is positive, negative or zero and prints out the result.
 
 ## Examples
 | **Input** | **Output** |
@@ -230,7 +230,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method for printing triangles as shown below:
+Create a method that prints triangles as shown below:
 
 ## Examples
 | **Input** | **Output** |
@@ -419,7 +419,7 @@ Create a program that receives a **string** on the first line \(add, multiply, s
 
 Create four **methods** \(for each calculation\) and invoke the corresponding method depending on the command.
 
-The method should also print the result \(needs to be void\)
+The method should print out the result \(needs to be void\)
 
 ## Examples
 | **Input** | **Output** |
