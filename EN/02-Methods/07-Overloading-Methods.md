@@ -6,9 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-44-45-46-47-Method-Overlading-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In Java, a method signature is a part of the method declaration.
-
-It is the combination of the **method name** and the **method parameters**.
+In Java, a method signature is the combination of the **method name** and the **parameters** that it accepts.
 
 ```Java
 public static void print(String text) {
@@ -20,9 +18,9 @@ In this example, the signature elements are **print** (method name) and **String
 
 ## Overloading Methods
 
-Overloading a method is done by using the same name for multiple methods with different **signatures** \(method **name** and **parameters**\).
+Overloading a method is done by using the same name for multiple methods with different **signatures** \(combinations of the method **name** and its **parameters**\).
 
-Instead of defining two methods that should do the same thing, it is better to create additional method overloads.
+Instead of defining additional methods that should do the same thing but with different data types, it is better to create additional method overloads.
 
 In the example below, we overload the **addTwoNumbers** method to work with both **int** and **double**:
 
@@ -89,11 +87,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given an input of two values of the same type.
+This task provides inputs always holding two values of the same type.
 
 The values can be of type **int**, **char**, or **String**.
 
-Create a method called **getMax()** that returns the **parameter with the biggest value**.
+Create a method called **getMax()** that returns the **parameter with the greater value**.
 
 ## Examples
 |**Input**|**Output**|
@@ -245,7 +243,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that reads an **integer number** and **multiplies the sum of all its even digits** by **the sum of all its odd digits**:
+Create a program that accepts an **integer** and **multiplies the sum of all its even digits** by **the sum of all its odd digits**:
 
 ## Examples
 |**Input**|**Output**|**Comments**|
