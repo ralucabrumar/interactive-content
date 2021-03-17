@@ -37,7 +37,7 @@ for (int i = 0; i < n; i++) {
 
 You can read a list as a single line from the console.
 
-Imagine we have an input that consists of several **Integer** values, separated by spaces. (10 20 30 40 50)
+Let us see an example of input, consisting of **Integer** values, separated by spaces. (10 20 30 40 50)
 
 ``` java
 // input: 10 20 30 40 50
@@ -75,7 +75,7 @@ for (String number : numbers) {
    System.out.print(number + " ");
 }
 ```
-**Printing a list using a "String.join(…)"**:
+**Printing a list using "String.join(…)"**:
 
 ```java live
 List<String> list = new ArrayList<>(
@@ -109,9 +109,9 @@ public class Main {
 
 Create a program to **sum all of the adjacent equal numbers** in a list of decimal numbers, starting from **left to right**.
 
-- After two numbers are summed, the result could be equal to some of its neighbors and should be summed as well (see the examples below)
+- After two numbers are summed, the result could be equal to the number following to the right, these should be summed as well (see the examples below)
 
-- Always sum the leftmost two equal neighbors (if several couples of equal neighbors are available)
+- Always sum the two leftmost equal neighbors (even if several couples of equal neighbors are available)
 
 ## Examples
 | **Input** | **Output** | **Comments** |
@@ -324,13 +324,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are going to receive **two lists** of **numbers**.
+The input of this task consists of **two lists** of **numbers**.
 
-Create a list that **contains** the **numbers** from **both of the lists**.
+Create a list that **contains** all **numbers** from **both lists**.
 
-The **first element** should be from the **first list**, **the second** from the **second list**, and so on.
+The **first element** should be from the **first list**, **the second** from the **second list**, etc.
 
-If **the length** of the two lists **is not equal**, just **add the remaining** elements **at the end of the list**.
+If **the length** of the two lists **is not equal**, just **add all remaining** elements **at the end of the final list**.
 
 ## Examples
 | **Input** | **Output** |
