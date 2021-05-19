@@ -8,15 +8,15 @@
 
 ## În această lecție veți învăța despre:
 
-**1. Stacks - ultimul intrat iese primul (LIFO)**
+**1. Stacks - ultimul intrat, primul ieșit (LIFO)**
 - Funcționalitatea stivelor
 - Implementarea stivelor folosind ArrayDeque
-- Privire de ansamblu al tuturor operațiilor stivelor
+- Privire de ansamblu a tuturor operațiilor stivelor
 
-**2. Queues - primul intrat iese primul (FIFO)**
+**2. Queues - primul intrat, primul ieșit (FIFO)**
 - Funcționalitatea cozii
 - Implementarea cozilor folosind ArrayDeque
-- Privire de ansamblu al tuturor operațiilor cozilor
+- Privire de ansamblu a tuturor operațiilor cozilor
 
 **3. Priority Queue**
 - Un tip diferit de coadă și implementarea sa
