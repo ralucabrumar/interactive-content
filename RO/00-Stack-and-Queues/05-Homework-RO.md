@@ -15,11 +15,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește **N numere întregi** din consolă și **le inversează prin intermediul unei stive**.
+Scrieți un program care citește **N numere întregi** din consolă și **le inversează ordinea prin intermediul unei stive**.
 
 Utilizați clasa `ArrayDeque <Integer>`.
 
-Doar introduceți datele de intrate în stivă și apoi le scoateți pe rând.
+Introduceți datele de intrate în stivă și apoi extrageți-le pe rând.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -93,25 +93,25 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Vi se va da un număr întreg **N**, care reprezintă **numărul de elemente de adăugat în stivă**, un întreg **S**, reprezentând **numărul de elemente de scos mai apoi din stivă** și, în final, un număr întreg **X** , un element **despre care va trebui să verificați dacă se află sau nu în stivă**.
+Vi se va da un număr întreg **N** care reprezintă **numărul de elemente care trebuie adăugate în stivă**, un număr întreg **S** care reprezintă **numărul de elemente care trebuie extrase din stivă** și un număr întreg **X**. Trebuie să verificați dacă elementul X se află sau nu în stivă**.
 
-Dacă e, printăm **true** în consolă.
+Dacă este prezent, imprimați **true** pe consolă.
 
-Dacă nu, printăm cel mai mic element prezent la momentul respectiv în stivă.
+Dacă nu este prezent, tipăriți cel mai mic element prezent la momentul respectiv în stivă.
 
-## Date de intrare
+## Intrare
 
-- Pe prima linie, vi se vor da **N** , **S** și **X**, separate prin spațiu.
-- Pe următoarea linie, vi se va da o linie cu numere **separate prin cel puțin un spațiu**.
+- Pe prima linie vi se vor da numerele **N**, **S** și **X**, separate prin spațiu
+- Pe următoarea linie, vi se va da o linie cu numere **separate prin cel puțin un spațiu**
 
-## Date de ieșire
+## Ieșire
 
 - Pe o singură linie se printează **true** dacă **X** e prezent în stivă sau, în caz contrar, **se printează cel mai mic** element din stivă.
 - Dacă stiva e goală, printăm 0.
