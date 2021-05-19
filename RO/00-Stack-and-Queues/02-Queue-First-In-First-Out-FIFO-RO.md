@@ -1,4 +1,4 @@
-# Coadă: Primul Intrat Iese Primul (FIFO)
+# Coadă: Primul Intrat, Primul Ieșit (FIFO)
 
 [slide hideTitle]
 
@@ -8,11 +8,11 @@
 
 **Cozile** sunt structuri de date similare cu **stivele**. 
 
-Își păstreză elementele în ordine. Elementele cozii sunt ordonate pe baza principiului **FIFO** - **primul intrat iese primul**. 
+Elementele cozii sunt ordonate pe baza principiului **FIFO** - **First In First Out**. 
 
-Când se adaugă un element este plasat mereu la **finalul** cozii. 
+Când se adaugă un element, acesta este plasat mereu la **finalul** cozii. 
 
-Prin eleminare se elemină un element de la **începutul** cozii.
+Eliminarea constă în ștergerea elementului de la **începutul** cozii.
 
 Această structură de date este modelată după cozile din viața reală, unde persoana care ajunge prima este servită înaintea celorlalți.
 
@@ -20,12 +20,12 @@ Această structură de date este modelată după cozile din viața reală, unde 
 
 [slide hideTitle]
 
-# Coadă: Tip de Dată Abstract
+# Coadă: Tip de Date Abstract
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-28-Queue-Abstract-Data-Type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-- Adăugând un element la finalul unei cozi
+- Adăugarea unui element la finalul unei cozi:
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-4.png" /]
 
@@ -46,7 +46,7 @@ Această structură de date este modelată după cozile din viața reală, unde 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-29-30-34-ArrayDeque-Java-Implementation-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Implementarea cozii folosind `ArrayDeque<E>`
+- Implementarea unei cozi folosind clasa `ArrayDeque<E>`:
 
 ```java
 ArrayDeque<Integer> queue = new ArrayDeque<>();
@@ -56,7 +56,7 @@ ArrayDeque<Integer> queue = new ArrayDeque<>();
 
     - `add()` - generează o **excepție** dacă coada este plină
 
-    - `offer()` - returnează **fals** dacă coada este plină
+    - `offer()` - returnează **false** dacă coada este plină
 
 
 - `poll()` și `remove()` - ambele metode elimină primul element din coadă:
@@ -66,7 +66,7 @@ ArrayDeque<Integer> queue = new ArrayDeque<>();
     - `poll()` - **returnează null** dacă coada este goală, altfel returnează elementul eliminat
 
 
-- `peek()` - primește valoarea primului element
+- `peek()` - returnează valoarea primului element
 
 [/slide]
 
@@ -78,7 +78,7 @@ ArrayDeque<Integer> queue = new ArrayDeque<>();
 
 ## Add() / Offer()
 
-Ambele funcții sunt folosite pentru adăugarea de elemente la începutul cozii
+Ambele metode sunt folosite pentru adăugarea elementelor la finalul cozii
 ```java live 
 ArrayDeque<Integer> queue = new ArrayDeque<>();
 
@@ -91,21 +91,22 @@ System.out.println(queue);
 
 Sunt folosite în scenarii diferite:
 
-- Dacă coada nu are limită de spațiu (coadă cu capacitate nelimitată) - atunci puteți folosi oricare funcție
+- Dacă coada nu are restricție de dimensiune (coadă cu capacitate nelimitată) - atunci puteți folosi oricare funcție
 
-- Dacă coada are restrcție de capacitate, este mai bine să folosiți `offer()` deoarece dacă funcția eșuează, va returna  **false**. Dacă folosiți `add()` cu o coadă cu restricție de capacitate și eșuează, asta va rezulta într-un **IllegalStateException** care trebuie procesat
+- Dacă coada are restricție de capacitate, este mai bine să folosiți `offer()` deoarece dacă funcția eșuează, va returna **false** fără a arunca o excepție 
+
+- Dacă folosiți `add()` cu o coadă cu restricție de capacitate și eșuează, acest lucru va avea ca rezultat excepția **IllegalStateException** care trebuie tratată
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-7.gif" /]
 
 
 ## Remove() / Poll()
 
-Ambele funcții elimină primul element din coadă, ștergându-l.
+Ambele funcții elimină primul element din coadă.
 
-Diferența dintre cele două este că atunci când sunt folosite pe o coadă goală `poll()` returnează **null**, în timp ce `remove()` generează un **NoSuchElementException**.
+Diferența dintre cele două este că atunci când sunt folosite pe o coadă goală, `poll()` returnează **null**, în timp ce `remove()` generează excepția **NoSuchElementException**.
 
-
-Aici este un exemplu cu `poll()`:
+Aici este un exemplu pentru metoda `poll()`:
 
 ```java live
 ArrayDeque<Integer> queue = new ArrayDeque<>();
@@ -118,7 +119,7 @@ queue.offer(10);
 System.out.println("The removed element is: " + queue.poll());
 queue.forEach(element -> System.out.print(element + " "));
 ```
-Nu contează dacă folosim **remove** sau **poll** aici. Ambele vor face același lucru, deoarece coada conține niște elemente.
+Nu contează dacă folosim **remove** sau **poll** aici. Ambele vor face același lucru, deoarece coada nu este goală.
 
 Lucrurile sunt diferite când lucrăm cu o coadă goală:
 
@@ -127,13 +128,13 @@ ArrayDeque<Integer> queue = new ArrayDeque<>();
 System.out.println("The removed element is: " + queue.poll());
 ```
 
-Rezultatele de mai sus sunt **nule**, dar dacă folosiți `remove()` veți avea o eroare:
+Rezultatul de mai sus este **null**, dar dacă folosiți `remove()` veți avea o eroare:
 ```java live
 ArrayDeque<Integer> queue = new ArrayDeque<>();
 System.out.println(queue.remove());
 ```
 
-Rularea ultimei părți de cod ar trebui să rezulte un **NoSuchElementException**.
+Rularea ultimei părți de cod va avea ca rezultat **NoSuchElementException**.
 
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-8.gif" /]
@@ -141,7 +142,7 @@ Rularea ultimei părți de cod ar trebui să rezulte un **NoSuchElementException
 
 ## Peek()
 
-Această funcție returnează primul element al cozii fără să-l elimine.
+Această funcție returnează primul element al cozii fără să îl elimine.
 
 ```java live
 ArrayDeque<Integer> queue = new ArrayDeque<>();
@@ -160,9 +161,9 @@ queue.forEach(element -> System.out.print(element + " "));
 
 
 [slide hideTitle]
-# Metode de Utilizare
+# Metode Utilitare
 
-- `size()` - returnează numărul de elemente dintr-o coadă
+- `size()` - returnează numărul de elemente dintr-o coadă:
 
 ```java live
 ArrayDeque<String> queueOfBooks = new ArrayDeque<>();
@@ -173,7 +174,7 @@ queueOfBooks.add("A Guide in Lucid Dreaming");
 System.out.println("The size of this queue is: " + queueOfBooks.size());
 ```
 
-- `toArray()` - transformă coada într-o mulțime
+- `toArray()` - transformă coada într-o matrice:
 
 ```java live
 ArrayDeque<String> queueOfWords = new ArrayDeque<>();
@@ -188,7 +189,7 @@ for (int j = 0; j < arr.length; j++) {
 }
 ```
 
-- `contains(element)` - verifică dacă coada conține elementul. Returnează **adevărat** dacă elementul este găsit și **fals** dacă nu este găsit.
+- `contains(element)` - verifică dacă coada conține elementul specificat; returnează **true** dacă elementul este găsit și **false** în caz contrar:
 
 ```java live
 ArrayDeque<String> queueOfWords = new ArrayDeque<>();
@@ -202,14 +203,14 @@ System.out.println(queueOfWords.contains("BMW 7"));
 [/slide]
 
 [slide hideTitle]
-# Privire în Ansamblu Asupra Tuturor Operațiilor
+# Prezentare Generală a Tuturor Operațiilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-35-Queue-Overview-of-all-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Hot Potato
+# Problemă cu Soluție: Hot Potato
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-36-problem-hot-potato-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -233,7 +234,7 @@ Numărătoarea începe cu primul copil.
 
 **La fiecare n aruncare, copilul care ține cartoful părăsește jocul**.
 
-Când un copil părăsește jocul, pasează cartoful înainte.
+Când un copil părăsește jocul, pasează cartoful la următorul copil.
 
 Procesul continuă să se repete **până când rămâne doar un singur copil**.
 
@@ -243,7 +244,20 @@ Creați un program care simulează jocul Cartoful Fierbinte.
 
 La final, **tipăriți numele ultimului copil**.
 
-## Exemplu
+
+## Intrare
+
+- Pe prima linie veți primi numele copiilor, separate prin spații
+
+- Pe a doua linie veți veți primi un număr **n** care reprezintă aruncarea cu numărul **n** a cartofului; țineți minte că la **fiecare **n** aruncare , copilul care ține cartoful la acel moment părăsește jocul**
+
+## Ieșire
+
+- De fiecare dată când un copil părăsește jocul, tipăriți un mesaj în formatul: `Removed {name}`
+
+- Când jocul se termină, imprimați numele câștigătorului: `Last is {name}`
+
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | Maria Peter Johny | Removed Peter |
@@ -393,7 +407,7 @@ Last is 2
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Math Potato
+# Problemă cu Soluție: Math Potato
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-39-math-potato-problem-and-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -411,13 +425,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere 
-Refaceți problema anterioară astfel încât un **copil este eliminat doar la un ciclu compus (nu prim)** (ciclurile încep de la 1)
+Refaceți problema anterioară astfel încât un **copil este eliminat doar la un ciclu compus (nu prim)**. Ciclurile încep de la 1.
 
 Dacă un **ciclu este prim**, doar **tipăriți numele copilului**.
 
 Ca înainte, tipăriți numele ultimului copil rămas. 
  
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | Maria Peter Tom | Removed Peter |
