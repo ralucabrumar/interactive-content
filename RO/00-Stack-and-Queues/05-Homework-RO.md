@@ -100,7 +100,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Vi se va da un număr întreg **N** care reprezintă **numărul de elemente care trebuie adăugate în stivă**, un număr întreg **S** care reprezintă **numărul de elemente care trebuie extrase din stivă** și un număr întreg **X**. Trebuie să verificați dacă elementul X se află sau nu în stivă**.
+Vi se va da un număr întreg **N** care reprezintă **numărul de elemente care trebuie adăugate în stivă**, un număr întreg **S** care reprezintă **numărul de elemente care trebuie extrase din stivă** și un număr întreg **X**. Trebuie să verificați dacă elementul X se află sau nu în stivă.
 
 Dacă este prezent, imprimați **true** pe consolă.
 
@@ -109,22 +109,22 @@ Dacă nu este prezent, tipăriți cel mai mic element prezent la momentul respec
 ## Intrare
 
 - Pe prima linie vi se vor da numerele **N**, **S** și **X**, separate prin spațiu
-- Pe următoarea linie, vi se va da o linie cu numere **separate prin cel puțin un spațiu**
+- Pe următoarea linie veți primi numere **separate prin cel puțin un spațiu**
 
 ## Ieșire
 
-- Pe o singură linie se printează **true** dacă **X** e prezent în stivă sau, în caz contrar, **se printează cel mai mic** element din stivă.
-- Dacă stiva e goală, printăm 0.
+- Imprimați **true** dacă **X** e prezent în stivă sau, în caz contrar, **imprimați cel mai mic** element din stivă
+- Dacă stiva e goală, imprimați 0
 
-## Exemplu
-| **Intrare** | **Ieșire** |
+## Exemple
+| **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
-| 5 2 13 | true | Trebuie să **adăugăm 5** elemente. Apoi scoatem **2** dintre ele. În final, trebuie să verificăm dacă 13 se găsește în stivă. Din moment ce se află în stivă, printăm **true**. |
+| 5 2 13 | true | Trebuie să **adăugăm 5** elemente. Apoi, extragem **2** elemente. În final, trebuie să verificăm dacă 13 se găsește în stivă. Din moment ce se află în stivă, imprimăm **true**. |
 | 1 13 45 32 4 |  |  |
 
-| **Intrare** | **Ieșire** |
+| **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
-| 4 1 666 | 13 | Scoatem un element (666) și apoi verificăm dacă 666 e prezent în stivă. Dacă nu e, printăm cel mai mic element (13) |
+| 4 1 666 | 13 | Scoatem un element (666) și apoi verificăm dacă 666 e prezent în stivă. Dacă nu este prezent, imprimăm cel mai mic element (13). |
 | 420 69 13 666 |  |  |
 
 [/task-description]
@@ -222,39 +222,39 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Aveți o secvență nulă și vi se vor da **N** comenzi.
+## Descriere
+Aveți o secvență goală și vi se vor da **N** comenzi.
 
-Fiecare comandă e de unul dintre tipurile următoare:
+Comenzile posibile sunt următoarele:
 
-- `1 X` - **Adăugăm** elementul **X** pe stivă
-- `2` - **Ștergem** elementul ce se găsește în vârful stivei
-- `3` - **Printăm** elementul din stivă
+- `1 X` - **Adăugați** elementul **X** pe stivă
+- `2` - **Ștergeți** elementul care se găsește în vârful stivei
+- `3` - **Imprimați** pe consolă cel mai mare element din stivă
 
-## Date de intrare
+## Intrare
 
-- Prima linie a datelor de intrare conține un număr întreg **N** , unde `1 ≤ N ≤ 10 ^ 5`
-- Următoarele **N** linii conțin comenzile. Toate comenzile vor fi valide și vor fi după formatul descris
+- Prima linie cu date de intrare conține un număr întreg **N** , unde `1 ≤ N ≤ 10 ^ 5`
+- Următoarele **N** linii conțin comenzile; toate comenzile vor fi valide și vor respecta formatul descris
 - Elementul **X** va fi în intervalul `1 ≤ X ≤ 10 ^ 9`
 - **Tipul comenzii** va fi în intervalul `1 ≤ Type ≤ 3`
 
-## Date de ieșire
+## Ieșire
 
-- Pentru fiecare comandă de `3`, **printăm elementul maxim** din stivă, pe o linie nouă.
+- Pentru fiecare comandă de tipul `3`, **imprimați pe o linie nouă cel mai mare element** din stivă
 
 ## Exemplu
 | **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
 | 9 | 26 | 9 comenzi |
-| 1 97 | 91 | Adaugă 97 |
-| 2 |  | Scoate un element |
-| 1 20 |  | Adaugă 20 |
-| 2 |  | Scoate un element |
-| 1 26 |  | Adaugă 26 |
-| 1 20 |  | Adaugă 20 |
-| 3 |  | Printează elementul maxim (26) |
-| 1 91 |  | Adaugă 91 |
-| 3 |  | Printează elementul maxim (91) |
+| 1 97 | 91 | Adaugați 97 |
+| 2 |  | Extrageți un element |
+| 1 20 |  | Adaugați 20 |
+| 2 |  | Extrageți un element |
+| 1 26 |  | Adaugați 26 |
+| 1 20 |  | Adaugați 20 |
+| 3 |  | Imprimați cel mai mare element (26) |
+| 1 91 |  | Adaugați 91 |
+| 3 |  | Imprimați cel mai mare element (91) |
 
 [/task-description]
 [code-io /]
@@ -464,16 +464,16 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Se dă un număr întreg **N**, reprezentând **numărul de elemente de adăugat în coadă**, un întreg **S** ce reprezintă **numărul de elemente de șters** din coadă și, în final, un număr întreg **X**, un element despre care trebuie să **verificați dacă se găsește în coadă**.
+Se dă un număr întreg **N**, reprezentând **numărul de elemente care trebuie adăugate în coadă**, un număr întreg **S** care reprezintă **numărul de elemente care trebuie șterse** din coadă și, în final, un număr întreg **X**. **Verificați dacă X este sau nu prezent în coadă**.
 
-Dacă e, se printează **true** în consolă, iar dacă nu e, **se printează cel mai mic element prezent în coadă la momentul respectiv**.
+Dacă este prezent, imprimați **true** pe consolă, iar dacă nu este prezent, **imprimați cel mai mic element prezent în coadă la momentul respectiv**.
 
 ## Exemplu
 | **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
 | 5 2 32 | true | Trebuie să adăugăm **5** elemente.  |
-| 1 13 45 32 4 |  | Apoi **scoatem 2** din ele.  |
-|  |  | În final, trebuie să verificăm dacă 13 se găsește în coadă. Din moment ce se găsește, printăm **true**.  |
+| 1 13 45 32 4 |  | Apoi, **scoatem 2** din ele.  |
+|  |  | În final, trebuie să verificăm dacă 13 se găsește în coadă. Din moment ce se găsește, imprimăm **true**.  |
 
 
 | **Intrare** | **Ieșire** |
@@ -574,27 +574,25 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Undeva în viitor, există o fabrică de robotică.
+Undeva în viitor, există o fabrică unde toți muncitorii din linia de ansamblare sunt roboți.
 
-Proiectul curent e linia de asamblare a roboților.
+Fiecare robot are un **timp de procesare**, adică timpul de care are nevoie pentru a procesa un produs. 
 
-Fiecare robot are un **timp de procesare**, timpul de care are nevoie pentru a procesa un produs. 
-
-Când un **robot e liber**, trebuie să **preia un produs pentru procesare** și să logheze numele său, produsul și timpul de începere al procesării.
+Când un **robot este liber**, el trebuie să **preia un produs pentru procesare** și să logheze numele său, produsul și timpul de începere al procesării.
 
 Fiecare robot **procesează un produs venit din linia de asamblare**. 
 
 Câte un **produs vine** din linie **o dată la fiecare secundă** (deci primul produs trebuie să apară la `[start time + 1 second]`). 
 
-Dacă un produs trece de linie și **nu există un robot liber** pentru a-l prelua, ar trebui să fie **pus din nou la coada de la linie**.
+Dacă un produs trece de linie și **nu există un robot liber** pentru a-l prelua, acesta trebuie să fie **pus din nou la coadă**.
 
-Roboții **stau în linie în ordinea apariției lor**.
+Roboții **stau în linia de asnamblare în ordinea introducerii lor**.
 
 ## Intrare
 
-- Pe prima linie, veți primi numele roboților și timpul lor de procesarer în formatul `numeRobot-timpDeProcesare;numeRobot-timpDeProcesare;numeRobot-timpDeProcesare`
-- Pe a doua linie, veți primi timpul de start, după formatul `hh:mm:ss`
-- Apoi, până la întâlnirea comenzii `End`, veți primi câte un produs pe linie.
+- Pe prima linie veți primi numele roboților și timpul lor de procesare în formatul `robotName-processTime;robotName-processTime;robotName-processTime`
+- Pe a doua linie veți primi timpul de start în formatul `hh:mm:ss`
+- Apoi, până la întâlnirea comenzii `End`, veți primi câte un produs pe fiecare linie
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -609,7 +607,7 @@ Roboții **stau în linie în ordinea apariției lor**.
 
 [hints] 
 [hint]
-Măriți timpul total în timp ce linia de produse este plină:
+Măriți timpul total cât timp linia de produse este plină:
 
 ```java
 while (!productLine.isEmpty()) {
@@ -1344,27 +1342,27 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-**Se dă o secvență ce constă în paranteze**. Determinați dacă **expresia e echilibrată**.
+**Se dă o secvență ce constă în mai multe paranteze**. Determinați dacă **expresia e echilibrată**.
 
-O secvență de paranteze **e echilibrată dacă** fiecare paranteză deschisă poate fi asociată în mod unic cu o paranteză de închidere care apare după cealaltă.
+O secvență de paranteze **este echilibrată dacă** fiecare paranteză deschisă poate fi asociată în mod unic cu o paranteză de închidere.
 
 De asemenea, **intervalul dintre ele trebuie să fie și el echilibrat**.
 
-Vi se vor da 3 tipuri de paranteze:  `(`,  `{`, și `[`.
+Vi se vor da 3 tipuri de paranteze: `(`, `{`, și `[`.
 
-`{[()]}` - Acestea sunt paranteze echilibrate.
+`{[()]}` - Acesta este un exemplu de paranteze echilibrate.
 
-`{[(])}` - Acestea nu sunt paranteze echilibrate.
+`{[(])}` - Acesta este un exemplu de paranteze neechilibrate.
 
 ## Intrare
 
-- Fiecare dată de intrare constă într-o singură linie, secvența de paranteze.
+- Fiecare intrare constă într-o singură linie reprezentată de secvența de paranteze
 - `1 ≤ Lungimea secvenței ≤ 1000`
-- Fiecare caracter al secvenței va fi unul dintre următoarele:  `{`, `}`, `(`, `)`, `[`, `]`.
+- Fiecare caracter al secvenței va fi unul dintre următoarele: `{`, `}`, `(`, `)`, `[`, `]`
 
 ## Ieșire
 
-- Pentru fiecare test pe cazuri, printați pe o linie nouă **"YES"** dacă parantezele sunt echilibrate. Altfel, printați **"NO"**.
+- Pentru fiecare caz, tipăriți pe o linie nouă **"YES"** dacă parantezele sunt echilibrate; în caz contrar, tipăriți **"NO"**
 
 
 
@@ -1471,16 +1469,16 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Fiecare membru al **șirului lui Fibonacci** e calculat din **suma a doi membri precedenți**.
+Fiecare element al **șirului lui Fibonacci** este calculat prin **însumarea celor două elemente precedente**.
 
 Primele 2 elemente sunt 1, 1.
 
 Astfel, secvența va fi 1, 1, 2, 3, 5, 8, 13, 21, 34…
 
-Următoarea secvența poate fi generată cu un vector, dar asta e ușor, deci **cerința voastră e să implementați asta în mod recursiv**.
+Următoarea secvența poate fi generată cu o matrice, dar această soluție este simplă, deci **cerința voastră e să implementați secvență în mod recursiv**.
 
-Dacă funcția `getFibonacci(n)` returnează al n-lea număr din șirul lui Fibonacci, putem exprima asta utilizând
-`getFibonacci(n) = getFibonacci(n-1) + getFibonacci(n-2)`.
+Dacă funcția `getFibonacci(n)` returnează al n-lea număr din șirul lui Fibonacci, putem exprima asta utilizând:
+`getFibonacci(n) = getFibonacci(n-1) + getFibonacci(n-2)`
 
 Totuși, asta nu se va termina în câteva secunde, ci se va genera o excepție de supraîncărcare a stivei. 
 
