@@ -24,7 +24,7 @@ Ambele moduri sunt descrise mai jos:
 
 [hints]
 [hint]
-Întocmiți o metodă diferită pentru fiecare model:
+Realizați o metodă diferită pentru fiecare model:
 
 ```java
 private static void fillPatternA(
@@ -43,7 +43,7 @@ private static void fillPatternB(
 ```
 [/hint] 
 [hint]
-Întocmiți o metodă pentru printarea matricei:
+Realizați o metodă pentru imprimarea matricei:
 
 ```java
 public static void printMatrix(
@@ -222,7 +222,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a genera următoarea **matrice de palindroame**. 
+Scrieți un program care generează următoarea **matrice de palindroame**. 
 
 Trebuie să existe un palindrom de **3 litere** pe fiecare poziție. 
 
@@ -241,7 +241,7 @@ De exemplu:
 
 ## Intrare
 
-- Numerele **r** și **c** se află pe prima linia a datelor de intrare
+- Numerele **r** și **c** se află pe prima linie a datelor de intrare
 - **r** și **c** sunt numere întregi din intervalul `[1 ... 26]`
 - `r + c <= 27`
 
@@ -396,15 +396,15 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Scrieți un program care găsește **diferența dintre sumele de pe diagonalele matricilor pătratice** (valoarea absolută).
+## Descriere
+Scrieți un program care găsește **diferența dintre sumele de pe diagonalele matricelor pătrate** (valoarea absolută).
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-3.png" /]
 
 ## Intrare
 
 - **Prima linie** conține un număr **n** – dimensiunea matricei
-- Următoarele **n**  **linii** conțin **valorile pentru fiecare rând** – **n** numere separate prin spațiu
+- Următoarele **n** **linii** conțin **valorile pentru fiecare rând** – **n** numere separate prin spațiu
 
 [hints]
 [hint]
@@ -571,15 +571,15 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Scrieți un program care citește o matrice dreptunghiulară de numere întregi de dimensiune **N x M** și găsește în interiorul ei matricea de dimensiune **3 x 3** care **are suma maximă de elemente**.
+## Descriere
+Scrieți un program care citește o matrice dreptunghiulară de numere întregi de dimensiune **N x M** și găsește în interiorul ei matricea de dimensiune **3 x 3** care **are suma maximă a elementelor**.
 
-## Date de intrare
+## Intrare
 
-- Pe prima linie, veți primi numărul de rânduri, **N**, și de coloane, **M**
+- Pe prima linie veți primi numărul de rânduri, **N**, și de coloane, **M**
 - Pe următoarele **N linii** veți primi **fiecare rând cu elementele aferente acestuia**
 
-Printați **elementele** pătratului de 3 x 3 sub forma unei matrice, împreună cu **suma acestora**. Vedeți formatul datelor de ieșire mai jos:
+Imprimați **elementele** pătratului 3 x 3 sub forma unei matrice, împreună cu **suma acestora**. Vedeți formatul datelor de ieșire mai jos:
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -788,25 +788,25 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Scrieți un program care citește o matrice de stringuri din consolă și realizează anumite operații cu elementele sale.
+## Descriere
+Scrieți un program care citește o matrice de șiruri de la consolă și realizează anumite operații cu elementele sale.
 
 Datele de la utilizator provin în mod similar cu cele de la problemele anterioare – mai întâi citiți **dimensiunile** și mai apoi **datele**.
 
-Programul vostru ar trebui să primească mai apoi comenzile după următorul format: `swap rând1 coloană1 rând2 coloană2`, unde rând1, rând2, coloană1, coloană2 sunt **coordonatele** matricei. 
+Programul vostru trebuie să primească comenzile în următorul format: `swap rând1 coloană1 rând2 coloană2`, unde rând1, rând2, coloană1, coloană2 sunt **coordonatele** matricei. 
 
-Ca o comandă să fie validă, aceasta trebuie să înceapă cu cuvântul-cheie **"swap"**, urmat de **4 coordonate valide** (nici mai multe, nici mai puține). 
+Pentru ca o comandă să fie validă, aceasta trebuie să înceapă cu cuvântul-cheie **"swap"**, urmat de **4 coordonate valide**. 
 
-Trebuie să **inversați valorile** de la coordonatele date `celula [rând1, coloană1] cu celula [rând2, coloană2]` **și să printați matricea după fiecare pas** (astfel veți putea verifica dacă operația s-a realizat corect).
+Trebuie să **inversați valorile** de la coordonatele date `celula [rând1, coloană1] cu celula [rând2, coloană2]` **și să imprimați matricea după fiecare pas** (astfel veți putea verifica dacă operația s-a realizat corect).
 
-Dacă **comanda nu este validă** (aceasta nu conține cuvântul-cheie `swap`, are mai puține sau mai multe coordonate introduse sau coordonatele date nu există), printați `Invalid input!` și treceți la următoarea comandă. 
+Dacă **comanda nu este validă** (aceasta nu conține cuvântul-cheie `swap`, are mai puține sau mai multe coordonate introduse sau coordonatele date nu există), imprimați `Invalid input!` și treceți la următoarea comandă. 
 
-Programul ar trebui să se termine odată cu introducerea stringului `END`.
+Programul trebuie să se termine odată după introducerea șirului `END`.
 
 
 [hints]
 [hint]
-Gândiți-vă la rezolvarea de excepții:
+Gândiți-vă la tratarea excepțiilor:
 
 ```java
  try {
@@ -833,7 +833,7 @@ Gândiți-vă la rezolvarea de excepții:
 | swap 0 1 1 0 |  |
 | END |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 1 2 | Invalid input! |
 | Hello World | World Hello |
@@ -1158,14 +1158,14 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Se dă o **secvență de linii de text**.
 
-Presupuneți că aceste linii de text formează o **matrice de caractere** (introduceți spații pe pozițiile care lipsesc, cu scopul creării unei matrice dreptunghiulare).
+Presupuneți că aceste linii de text formează o **matrice de caractere** (introduceți spații pe pozițiile lipsă pentru a crea o matrice dreptunghiulară).
 
 Scrieți un program care **rotește matricea** cu 90, 180, 270, 360, … de grade.
 
-Printați rezultatul în consolă, sub forma unei secvențe de stringuri, odată cu întâlnirea comenzii `END`.
+După întâlnirea comenzii `END`, imprimați rezultatul pe consolă, sub forma unei secvențe de șiruri.
 
 ## Exemplu
 
@@ -1173,11 +1173,11 @@ Printați rezultatul în consolă, sub forma unei secvențe de stringuri, odată
 
 ## Intrare
 
-Datele de intrare sunt citite din consolă:
+Datele de intrare sunt citite de la consolă:
 
 - Prima linie conține comanda în formatul `Rotate(X)` unde **X** reprezintă numărul de grade al rotației cerute
-- Următoarele linii conțin **liniile matricei** dată spre rotație
-- Datele de intrare se termină odată cu comanda `END`
+- Următoarele linii conțin **liniile matricei** care trebuie rotită
+- Datele de intrare se termină după introducerea comenzii `END`
 
 Datele de intrare vor fi mereu valide și vor respecta formatul descris. 
 
@@ -1185,13 +1185,13 @@ Nu trebuie să le validați în mod explicit.
 
 ## Ieșire
 
-Printați în consolă **matricea rotită** sub forma unei secvențe de linii de text.
+Tipăriți pe consolă **matricea rotită**, sub forma unei secvențe de linii de text.
 
 ## Constrângeri
 
-- Numărul ce reprezintă **gradele de rotație** e un număr întreg pozitiv din intervalul `[0 ... 90000]`, acesta fiind **multiplu de 90**
+- Numărul care reprezintă **gradele rotației** este un număr întreg pozitiv din intervalul `[0 ... 90000]` și este un **multiplu de 90**
 - Numărul de linii ale matricei se află în intervalul `[1 ... 1 000]`
-- Liniile matricei sunt **stringuri** de lungime `[1 ... 1 000]`
+- Liniile matricei sunt **șiruri** de lungime `[1 ... 1 000]`
 
 
 ## Exemplu
@@ -1611,7 +1611,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Veți primi **2 numere întregi** care reprezintă **dimensiunile** unei **matrice**.
 
 Apoi, trebuie să **completați matricea** cu **numere întregi crescătoare**, începând de la 1 și continuând cu fiecare rând, în felul următor:
@@ -1624,31 +1624,31 @@ Veți primi de asemenea câteva comenzi sub forma a **3 numere întregi** separa
 
 Acele 3 numere întregi vor reprezenta un **rând** din matrice, o **coloană** și o **rază**. 
 
-Apoi trebuie să **distrugeți** celulele care corespund acelor argumente **în mod încrucișat**.
+Apoi, trebuie să **distrugeți** celulele care corespund acelor argumente **în model de cruce**.
 
 **Distrugerea** unei celule înseamnă că **celula curentă** devine complet **inexistentă** în matrice.
 
-Distrugerea celulelor **în mod încrucișat** înseamnă că formați **o figură încrucișată** cu un punct central - egal cu celula cu coordonatele – **rândul dat** și **coloana**, și **liniile** de lungime egală cu **raza dată**. 
+Distrugerea celulelor **în model de cruce** înseamnă că formați **o cruce* cu un punct central - echivalent cu celula cu coordonatele date – **rândul dat** și **coloana**, și **liniile** de lungime egală cu **raza dată**. 
 
 Observați exemplele de mai jos pentru mai multe informații.
 
 **Datele de intrare se sfârșesc** când întâlniți comanda `Nuke it from orbit`.
 
-Când se întâmplă asta, trebuie să printați ceea ce a rămas din matricea inițială.
+Când se întâmplă asta, trebuie să imprimați ceea ce a rămas din matricea inițială.
 
 ## Intrare
 
-- Pe prima linie, veți primi dimensiunile matricei. Apoi trebuie să completați matricea cu elemente, conform acelor dimensiuni
-- Pe următoarele linii, veți începe să primiți **3 numere întregi** separate de un singur **spațiu**, care reprezintă rândul, coloana și raza
+- Pe prima linie veți primi dimensiunile matricei; apoi, trebuie să completați matricea cu elemente, conform dimensiuni date
+- Pe următoarele linii veți începe să primiți **3 numere întregi** separate de un singur **spațiu**, care reprezintă rândul, coloana și raza
   
-Apoi trebuie să distrugeți celulele, în funcție de coordonatele respective.
+Apoi, trebuie să distrugeți celulele conform coordonatelor respective.
 
 - Când primiți comanda `Nuke it from orbit`, datele de intrare se sfârșesc
 
 ## Ieșire
 
-- Datele de ieșire sunt simple. Trebuie să printați ce rămâne din matrice
-- Fiecare rând trebuie să fie printat pe linie nouă și fiecare coloană a unui rând - separată prin spațiu
+- Trebuie să imprimați ce rămâne din matrice
+- Fiecare rând trebuie să fie imprimat pe o linie nouă și fiecare coloană a unui rând trebuie separată prin spațiu
 
 ## Constrângeri
 
@@ -2137,38 +2137,38 @@ Parcarea e reprezentată de o **matrice dreptunghiulară** în care **prima** co
 
 O mașină poate intra din **orice celulă** a **primei coloane**, iar apoi decide să meargă spre un anumit loc de parcare. 
 
-Dacă acel loc **nu** e gol, mașina caută **cel mai apropiat** loc gol de parcare aflat pe **același** rând. 
+Dacă acel loc **nu** este gol, mașina caută **cel mai apropiat** loc gol de parcare aflat pe **același** rând. 
 
-Dacă **toate** celulele de pe acel rând sunt deja folosite, mașina nu poate parca pe acel loc și trebuie să plece. 
+Dacă **toate** celulele de pe acel rând sunt deja folosite, mașina nu poate parca și trebuie să plece. 
 
-Dacă **două** celule goale se găsesc la **aceeași** distanță față de locul de parcare **inițial**, celula care e **mai aproape** de intrare este cea aleasă. 
+Dacă **două** celule goale se găsesc la **aceeași** distanță față de locul de parcare **inițial**, celula care este **mai aproape** de intrare este preferată. 
 
-O mașină poate **trece** printr-un loc de parcare folosit.
+O mașină poate **traversa** printr-un loc de parcare folosit.
 
-Cerința voastră este să calculați distanța parcursă de fiecare mașină până la găsirea unui loc de parcare.
+Sarcina voastră este să calculați distanța parcursă de fiecare mașină până la găsirea unui loc de parcare.
 
-Exemplu: O mașină intră în parcare la rândul 1. Aceasta intenționează să meargă la celula 2, 2, deci se mută prin **exact patru** celule pentru a ajunge la locul său de parcare.
+Exemplu: O mașină intră în parcare la rândul 1. Aceasta intenționează să meargă la celula 2, 2, deci traversează **exact patru** celule pentru a ajunge la locul său de parcare.
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-7.png" /]
 
 ## Intrare
 
-- Pe prima linie a datelor de intrare, vi se dau numerele întregi **R** și **C**, numere ce definesc dimensiunile parcării
-- Pe următoarele linii, vi se dau întregii **Z, X, Y**, unde **Z** este rândul pe care se intră și **X, Y** sunt coordonatele locului de parcare dorit
+- Pe prima linie a datelor de intrare vi se dau numerele întregi **R** și **C**, numere ce definesc dimensiunile parcării
+- Pe următoarele linii vi se dau numerel întregi **Z, X, Y**, unde **Z** este rândul de intrare, iar **X, Y** sunt coordonatele locului de parcare dorit
 - Datele de intrare sunt introduse până la comanda `stop` 
 
 Toate numerele întregi sunt separate printr-un **singur** spațiu.
 
 ## Ieșire
 
-- Pentru fiecare mașină, printați distanța parcursă pentru locul de parcare dorit, sau pentru primul loc valabil, liber
-- Dacă o mașină nu poate parca pe locul intenționat, printați mesajul `Row {row number} full`
+- Pentru fiecare mașină, topăriți distanța parcursă până la locul de parcare dorit sau până primul loc liber valabil
+- Dacă o mașină nu poate parca nicăieri, tipăriți mesajul `Row {row number} full`
 
 ## Constrângeri
 
 - `2 <= R,C <= 10000`
-- Z, X, Y se află în interiorul dimensiunilor matricei. Y nu poate fi niciodată de pe prima coloană
-- Nu există mai mult de 1000 de linii de date de intrare
+- Z, X, Y se află în intervalul dimensiunilor matricei; Y nu poate fi niciodată de pe prima coloană
+- Nu există mai mult de 1000 de linii cu date de intrare
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -2630,11 +2630,11 @@ public class Main {
 [task-description]
 ## Descriere
 
-Mai întâi, veți primi o linie care conține numerele întregi **N** și **M** , care reprezintă rândurile și coloanele corespunzătoare vizuinei. 
+Mai întâi, veți primi o linie care conține numerele întregi **N** și **M**, care reprezintă rândurile și coloanele corespunzătoare vizuinei. 
 
-Apoi vi se dau **N** stringuri care pot consta **doar** în `.`, `B` , `P`.
+Apoi, vi se dau **N** șiruri care pot consta **doar** în caracterele `.`, `B` și `P`.
 
-**Iepurii** sunt marcați cu simbolul `B`, **jucătorul** se marchează cu simbolul `P`, iar **restul** se reprezintă prin spațiu, marcat cu un punct `.`. 
+**Iepurii** sunt marcați cu litera `B`, **jucătorul** este marcat cu litera `P`, iar **orice altceva** este spațiu gol, marcat cu un punct `.`. 
 
 Acestea reprezintă starea inițială a vizuinei. 
 
