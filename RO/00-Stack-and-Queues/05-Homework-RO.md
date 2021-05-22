@@ -1480,11 +1480,11 @@ Următoarea secvența poate fi generată cu o matrice, dar această soluție est
 Dacă funcția `getFibonacci(n)` returnează al n-lea număr din șirul lui Fibonacci, putem exprima asta utilizând:
 `getFibonacci(n) = getFibonacci(n-1) + getFibonacci(n-2)`
 
-Totuși, asta nu se va termina în câteva secunde, ci se va genera o excepție de supraîncărcare a stivei. 
+Totuși, recursivitatea acestei funcții nu are o finalitate, lucru care va genera o excepție de supraîncărcare a stivei. 
 
-Ca să se oprească recursivitatea, trebuie să aibă un caz de oprire.
+Pentru a opri recursivitatea, aceasta trebuie să aibă un caz de oprire.
 
-Cazul de oprire al recursivității este `getFibonacci(1)` și trebuie să returneze 1. Se întâmplă la fel pentru getFibonacci(0).
+Cazul de oprire a recursivității este `getFibonacci(1)` și trebuie să returneze 1. Același lucru este valabil pentru `getFibonacci(0)`.
 
 ## Intrare
 
@@ -1492,14 +1492,14 @@ Cazul de oprire al recursivității este `getFibonacci(1)` și trebuie să retur
 
 ## Ieșire
 
-- Datele de ieșire trebuie să fie al n-lea număr din șirul lui Fibonacci, începând de la 0
+- Datele de ieșire constă în al n-lea număr din șirul lui Fibonacci, începând de la 0
 
 [hints]
 [hint]
-Pentru al n-lea număr din șirul lui Fibonacci, calculăm al `N - 1st` și al `N - 2nd` număr, dar pentru calculul elementului al `N - 1st`, calculăm al `N - 1 - 1st(N - 2nd)` și `N - 1 - 2nd`, deci ave multe calcule repetate.
+Pentru al n-lea număr din șirul lui Fibonacci, calculăm al `N - 1st` și al `N - 2nd` număr, dar pentru calculul elementului al `N - 1st`, calculăm al `N - 1 - 1st(N - 2nd)` și `N - 1 - 2nd`, deci avem multe calcule repetate.
 [/hint] 
 [hint]
-Dacă doriți să vă dați seama cum puteți trece peste toate aceste calcule care nu sunt necesare, puteți căuta o tehnică numită [memoization](https://en.wikipedia.org/wiki/Memoization).
+Dacă doriți să aflați cum puteți omite toate aceste calcule care nu sunt necesare, puteți căuta o tehnică numită [memoization](https://en.wikipedia.org/wiki/Memoization).
 [/hint] 
 [/hints] 
 
@@ -1623,39 +1623,39 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Vi se dă text gol.
+Aveți sarcina de a crea un editor simplu de text.
 
-Cerința voastră e să implementați **4 tipuri de comenzi** legate de manipularea textului:
+Cerința voastră e să implementați **4 tipuri de comenzi** pentru manipularea textului:
 
-- 1 \[string\] - **lipește** \[string\] la finalul textului
-- 2 \[count\] - **șterge** ultimele \[count\] elemente din text
-- 3 \[index\] - **returnează** elementul de la poziția \[index\] din text
-- 4 - **anulează** ultima comandă neanulată de tip 1 sau 2 și returnează textul la starea dinaintea acelei operații
+- 1 \[string\] - **lipește** un șir dat la finalul textului
+- 2 \[count\] - **șterge** ultimele **\[count\]** elemente din text
+- 3 \[index\] - **returnează** elementul de pe poziția **\[index\]** din text
+- 4 - **anulează** ultima comandă de tip 1 sau 2 și returnează textul la starea dinaintea acelei operații
 
 ### Intrare
 
 - Prima linie conține **N** , numărul de operații, unde `1 ≤ N ≤ 105`
-- Fiecare din următoarele **N** linii conține numele operației, urmat de argumentul comenzii, dacă acesta există, separate de un spațiu, după formatul următor: `comandă argument`.
-- **Lungimea textului** nu va depăși **1000000**
-- Toate caracterele date drept date de intrare sunt **caractere engleze**
-- E **garantat** că avem secvența de **operații de intrare posibile de realizat**
+- Fiecare din următoarele **N** linii conține numele operației, urmat de argumentul comenzii, dacă acesta există, separate de un spațiu în formatul următor: `comandă argument`
+- **Lungimea textului** nu va depăși **1000000** de caractere
+- Toate caracterele date sunt **litere din alfabetul limbii engleze**
+- Este **garantat** că secvența de **operații dată poate fi realizată**
 
 ### Ieșire
 
-- Pentru fiecare operație de tip `3`, printați o **singură linie cu caracterul returnat din acea operație**.
+- Pentru fiecare operație de tip `3`, tipăriți o **singură linie cu caracterul returnat de acea operație**
 
 ## Exemplu
 | **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
-| 8 | c | Există 8 operații. Inițial, textul e gol.  |
-| 1 abc | y | Lipim "abc" |
-| 3 3 | a | Printăm al treilea caracter |
+| 8 |  | Există 8 operații. Inițial, textul e gol  |
+| 1 abc |  | Lipim "abc" |
+| 3 3 | c | Imprimăm al treilea caracter |
 | 2 3 |  | Ștergem 3 caractere |
 | 1 xy |  | Lipim "xy" |
-| 3 2 |  | Printăm al doilea caracter |
-| 4 |  | Anulăm ultima comandă - textul devine acum "" |
+| 3 2 | y | Imprimăm al doilea caracter |
+| 4 |  | Anulăm ultima comandă - textul devine "" |
 | 4 |  | Anulăm ultima comandă - textul devine "abc" |
-| 3 1 |  | Printăm primul caracter |
+| 3 1 | a | Imprimăm primul caracter |
 
 [/task-description]
 [code-io /]
@@ -1901,24 +1901,24 @@ public class Main {
 ## Descriere
 Expresiile matematice sunt **scrise în notația infix** , de exemplu `5 / ( 3 + 2 )`.
 
-Totuși, acest tip de notație **nu e eficientă pentru procesarea computerelor** , deoarece mai întâi trebuie să evaluăm expresia din interiorul parantezelor, deci nu există multe mișcări în față sau în spate.
+Totuși, acest tip de notație **nu este eficientă pentru procesarea efectuată de computere**, deoarece mai întâi trebuie să evaluăm expresia din interiorul parantezelor, deci există multe mutări înainte și înapoi.
 
-O metodă mai potrivită e **convertirea în așa-numita notație postfix** (numită și [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)), în care **expresia e evaluată de la stânga la dreapta** , de exemplu `3 2 + 5 /`.
+O metodă mai potrivită este **convertirea în notația postfix** (numită și [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)), în care **expresia este evaluată de la stânga la dreapta** , de exemplu `3 2 + 5 /`.
 
-Implementați un **algoritm care convertește** expresia matematică **din notația infix în notația postfix**. Utilizați faimosul [algoritm Shunting-yard](https://en.wikipedia.org/wiki/Shunting-yard_algorithm).
+Implementați un **algoritm care convertește** o expresie matematică **din notația infix în notația postfix**. Utilizați faimosul [algoritm Shunting-yard](https://en.wikipedia.org/wiki/Shunting-yard_algorithm).
 
 ## Intrare
 
-- Veți **primi o expresie pe o singură linie, constând în delimitatoare**
-- Delimitatoarele pot fi numere de la 0 la 9, variabile de la a la z, operatorii `+, -, *, /,` și parantezele ( sau )
-- Fiecare delimitator e **separat prin exact un spațiu**
+- Veți **primi o expresie matematică pe o singură linie**
+- Caracterele pot fi numere de la 0 la 9, variabile de la a la z, operatorii `+, -, *, /` și parantezele `(` sau `)`
+- Fiecare caracter este **separat printr-un singur spațiu**
 
 ## Ieșire
 
-- **Datele de ieșire trebuie să fie pe o singură linie**, constând în **delimitatoare**, **separate prin exact un spațiu**.
+- **Datele de ieșire trebuie să fie afișate pe o singură linie**, constând în **caractere** **separate printr-un singur spațiu**
 
 ## Exemple
-| **Iintrare** | **Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | `5 / ( 3 + 2 )` | `5 3 2 + /` |
 | `1 + 2 + 3` | `1 2 + 3 +` |
@@ -2021,43 +2021,43 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Vi se dau **N**  plante dintr-o grădină.
+Vi se dau **N** plante dintr-o grădină.
 
-Fiecare din aceste plante au un anumit nivelde pesticid.
+O anumită cantitate de pesticid a fost aplicată pentru fiecare plantă.
 
-După fiecare zi, dacă o plantă are **mai mult pesticid** decât planta din **stânga ei**, fiind mai slabă (mai mult GMO) decât în cea din stânga, **deci moare**.
+În fiecare zi, dacă o plantă are **mai mult pesticid** decât planta din **stânga ei**, aceasta este considerată ca fiind mai vulnerabilă decât în cea din stânga și **va muri**.
 
 Vi se dau valorile inițiale de pesticid și poziția fiecărei plante.
 
-Printați numărul de zile **după** care nu moare nicio plantă, i.e. timpul după care nu mai sunt plante cu mai mult pesticid decât planta din stânga lor.
+Imprimați numărul de zile **după** care nu mai moare nicio plantă. Acesta este numărul de zile după care nu mai există plante cu mai mult pesticid decât planta din stânga lor.
 
 ### Intrare
 
-- Datele de intrare constau într-un număr întreg  **N**, care reprezintă numărul de plante.
-- Următoarea **linie unică** constă în **N** numere întregi, unde fiecare întreg reprezintă poziția și cantitatea de pesticid al fiecărei plante. `1 ≤ N ≤ 100000`
-- Cantitatea de pesticid dintr-o plantă e între 0 și 1000000000
+- Datele de intrare constau într-un număr întreg **N**, care reprezintă numărul de plante
+- Următoarea **linie unică** constă în **N** numere întregi, unde fiecare număr întreg reprezintă poziția și cantitatea de pesticid ale fiecărei plante - `1 ≤ N ≤ 100000`
+- Cantitatea de pesticid pentru o plantă se află în intervalul 0-1000000000
 
 ### Ieșire
 
-- Datele de ieșire constau într-o valoarea unică egală cu numărul de zile după care nu mai moare nicio plantă.
+- Datele de ieșire constau într-o valoarea unică, egală cu numărul de zile după care nu mai moare nicio plantă
 
 
 ## Exemplu
 | **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
-| 7 | 2 | Inițial, toate plantele sunt vii.  |
+| 7 | 2 | Inițial, toate plantele sunt vii  |
 | 6 5 8 4 7 10 9 |  | `Plants = {(6, 1), (5, 2), (8, 3), (4, 4), (7, 5), (10, 6), (9, 7)}`  |
-|  |  | `Plantă[k] = (i, j)` \=\> a j-a plantă are cantitatea de pesticid \= i.  |
-|  |  | După prima zi, 4 plante rămân ca plante. 3, 5, și 6 mor.  |
-|  |  | `Plantele = {(6, 1), (5, 2), (4, 4), (9, 7)}`  |
-|  |  | După a doua zi, 3 plante supraviețuiesc, în timp ce planta 7 moare. `Plantele = {(6, 1), (5, 2), (4, 4)}`  |
-|  |  | După a treia zi, 3 plante supraviețuiesc și nu mai moare nicio plantă.  |
-|  |  | `Plantele = {(6, 1), (5, 2), (4, 4)}`  |
+|  |  | `Plants[k] = (i, j)` \=\> planta de pe poziția `j` are cantitatea de pesticid `i`  |
+|  |  | După prima zi, 4 plante rămân vii. Plantele de pe pozițiile 3, 5, și 6 mor.  |
+|  |  | `Plants = {(6, 1), (5, 2), (4, 4), (9, 7)}`  |
+|  |  | După a doua zi supraviețuiesc 3 plante, în timp ce planta de pe poziția 7 moare. `Plants = {(6, 1), (5, 2), (4, 4)}`  |
+|  |  | După a treia zi supraviețuiesc toate plantele rămase.  |
+|  |  | `Plants = {(6, 1), (5, 2), (4, 4)}`  |
 |  |  | După a doua zi, plantele se opresc din murit.  |
 
 [hints]
 [hint]
-Creați o matrice `plants`, un `ArrayDeque` de indici și `int [] days`:
+Creați o matrice `plants`, un `ArrayDeque` cu indici și `int[] days`:
 
 ```java
 Scanner reader = new Scanner(System.in);
@@ -2074,7 +2074,7 @@ int[] days = new int[n];
 ```
 [/hint] 
 [hint]
-Creați un **buclă-for** de la **1** la **n**:
+Creați o **buclă-for** de la **1** la **n**:
 
 ```java
 for (int i = 1; i < n; i++) {
