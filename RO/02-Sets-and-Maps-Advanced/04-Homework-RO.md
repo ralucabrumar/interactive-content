@@ -16,9 +16,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program simplu care citește din consolă o secvență de nume de utilizatori și păstrează o colecție cu numele unice.
+Scrieți un program simplu care citește o secvență de nume de utilizatori și păstrează o colecție care conține doar numele unice.
 
-Printați colecția în consolă, în ordinea inserării.
+Tipăriți numele unice de utilizatori în ordinea inserării lor.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -414,17 +414,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Pe prima linie, se dă **dimensiunea celor 2 seturi, n și m**.
+Pe prima linie se dă **dimensiunea celor 2 seturi, n și m**.
 
-Pe **următoarele n + m** linii, există **n numere care se află în primul set** și **m numere aflate în cel de-al doilea**.
+Pe **următoarele n + m** linii există **n numere care se află în primul set** și **m numere aflate în cel de-al doilea set**.
 
-Găsiți toate **elementele care nu se repetă** și care apar în **ambele seturi** și printați-le în **aceeași ordine** în consolă:
+Găsiți toate **elementele** care apar în **ambele seturi** și tipăriți-le în **aceeași ordine** pe consolă. Dacă elementul apare de mai multe ori, acesta trebuie tipărit doar o dată.
 
-Setul de dimensiune `n = 4:{1, 3, 5, 7}`
+Un set cu dimensiunea `n = 4:{1, 3, 5, 7}`
 
-Setul de dimensiune `m = 3:{3, 4, 5}`
+Un set cu dimensiunea `m = 3:{3, 4, 5}`
 
-Setul care conține toate elementele care se repetă \-\> `{3, 5}`
+Setul care conține toate elementele ca \-\> `{3, 5}`
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -643,7 +643,9 @@ public class Main {
 ## Descriere
 Se dau **n** simboluri de **compuși chimici**.
 
-Trebuie să **luați în vedere toate elementele chimice** utilizate în compuși și, la final, să printați toate cele care sunt **unice, în ordine crescătoare**.
+Trebuie să **luați în vedere toate elementele chimice** utilizate în compuși.
+
+La final, tipăriți toate elementele chimice **unice, în ordine alfabetică**.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -769,9 +771,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește un **text** din consolă și **numără aparițiile fiecărui caracter** al său.
+Scrieți un program care citește un **text** din consolă și **numără aparițiile fiecărui caracter**.
 
-Printați rezultatul în **ordine alfabetică** (ordine lexicografică), utilizând sintaxa: `{simbol}: {număr} time/s`.
+Imprimați rezultatul în **ordine alfabetică**, utilizând sintaxa: `{simbol}: {număr} time/s`.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -980,15 +982,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care primește informații cu privire la **persoane** și **numerele lor de telefon** din consolă.
+Scrieți un program care primește informații cu privire la niște **persoane** și **numerele lor de telefon**.
 
 Rămâne la latitudinea voastră să alegeți modul în care sunt introduse datele. Fiecare **înregistrare** trebuie să aibă doar **un nume** și **un număr de telefon** (ambele informații vor fi de tip string). 
 
 Dacă se introduce un nume care **există deja** în cartea de telefon, doar actualizați numărul de telefon.
 
-După ce ați completat cartea de telefon, la primirea **comenzii** "**search**", programul vostru trebuie să realizeze o căutare de contacte pe baza numelui și să printeze detaliile în formatul `{nume} -> {număr}`. 
+După ce ați completat cartea de telefon, la primirea **comenzii** "**search**", programul vostru trebuie să realizeze o căutare de contacte pe baza numelui și să imprime informațiile în formatul `{nume} -> {număr}`. 
 
-În cazul în care contactul nu e găsit, printați "**Contact** \{**name**\} **does not exist.**"
+În cazul în care contactul nu e găsit, imprimați "**Contact** \{**name**\} **does not exist.**"
 
 Programul trebuie să se termine odată cu primirea **comenzii** "**stop**".
 
@@ -1163,13 +1165,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Se dă o secvență de stringuri, fiecare pe o **linie nouă**.
+Se dă o secvență de șiruri, fiecare pe o **linie nouă**.
 
 Fiecare linie **impară** din consolă reprezintă o **resursă** (e.g. **Gold** (Aur), **Silver** (Argint), **Copper** (Bronz) și așa mai departe) și fiecare rând **par - cantitatea**.
 
-Cerința voastră este să **colectați** resursele și să le printați fiecare pe o **linie nouă**.
+Cerința voastră este să **colectați** resursele și să le imprimați fiecare pe o **linie nouă**.
 
-**Printați resursele și cantitățile acestora după formatul:**
+**Imprimați resursele și cantitățile acestora după formatul:**
 
 `{resursă} –> {cantitate}`
 
@@ -1426,15 +1428,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Se dă o secvență de stringuri, fiecare pe linie nouă, până la primirea comenzii "**stop**".
+Se dă o secvență de șiruri, fiecare pe linie nouă, până la primirea comenzii "**stop**".
 
-Primul string este **numele** unei persoane.
+Primul șir este **numele** unei persoane.
 
 Pe a doua linie, se dă **email-ul** persoanei respective.
 
-Cerința voastră este să **colectați** numele și emailurile persoanelor și **să ștergeți** emailurile ale căror domenii se termină cu "us", "uk" sau "com" (fără a se ține cont de litere mari sau mici).
+Cerința voastră este să **colectați** numele și email-urile persoanelor și **să ștergeți** email-urile ale căror domenii se termină cu "us", "uk" sau "com" (fără a se ține cont de litere mari sau mici).
 
-Printați după următorul format: `{nume} -> {email}`
+Tipăriți rezultatele în următorul format: `{nume} -> {email}`
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -1585,27 +1587,29 @@ public class Main {
 ## Descriere
 Se dă o secvență de nume de persoane, iar pentru fiecare persoană se specifică ce **cărți** se scot din pachet.
 
-Datele de intrare vor apărea pe linii **separate** după următorul **format**:
+Datele de intrare vor apărea pe linii **separate**, în următorul **format**:
 
 "\{**numePersoană**\}: \{**PT, PT, PT,… PT**\}"
 
-Unde P (2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A) este puterea cărții, iar T (S, H, D, C) este tipul. Datele de intrare se termină odată cu tragerea unui **"JOKER"** din pachet. 
+**P** (2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A) reprezintă puterea cărții, iar T (S, H, D, C) este tipul cărții. 
 
-Numele poate conține orice simbol ASCII, cu excepția "**:**" 
+Datele de intrare se termină odată cu tragerea unui **"JOKER"** din pachet. 
 
-Datele de intrare vor fi mereu valide și vor respecta mereu formatul descris, deci nu trebuie să mai verificați asta.
+Numele poate conține orice simbol ASCII, cu excepția "**:**".
 
-O persoană **nu poate avea mai mult de o carte** de aceeași putere și același tip, dacă aceasta trage o astfel de carte, aceasta se **anulează**. 
+Datele de intrare vor fi mereu valide și vor respecta mereu formatul descris, deci nu trebuie să verificați acest aspect.
 
-Persoanele joacă cu **multiple pachete de cărți**. 
+O persoană **nu poate avea mai mult de o carte** de aceeași putere și același tip. Dacă o persoană trage o astfel de carte, aceasta se **anulează**. 
 
-Fiecare carte are o valoare care e **calculată** prin puterea multiplicată cu tipul. 
+Persoanele joacă cu **mai multe pachete de cărți**. 
 
-Puterile cărților **de la 2 la 10** au aceeași valoare și **cele de la J la A** valorează **de la 11 la 14**. 
+Fiecare carte are o valoare care este **calculată** prin înmulțirea puterii cu valoarea corespunzătoare acelui tip de carte. 
 
-Tipurile sunt mapate multiplicatorilor în felul următor (`S -> 4`, `H-> 3`, `D -> 2`, `C -> 1`).
+Puterile cărților **de la 2 la 10** au aceeași valoare și **cele de la J la A** au valori **de la 11 la 14**. 
 
-În final, printați **valoarea totală a cărților pe care le are în mână pentru fiecare jucător**, după formatul:
+Tipurile sunt asociate multiplicatorilor în felul următor: `S -> 4`, `H-> 3`, `D -> 2`, `C -> 1`.
+
+În final, tipăriți **valoarea totală a cărților pe care le are în mână fiecare jucător**, în formatul:
 
 `{numePersoană}: {valoare}`
 
@@ -1701,11 +1705,11 @@ Datele de intrare se dau după formatul următor:
 
 `IP=(IP.Adresa) mesaj=(Un&exemplu&mesaj) utilizator=(numeUtilizator)`
 
-Cerința voastră este să **parsați** adresa **IP** și **numele de utilizator** date drept date de intrare pentru **fiecare utilizator**, trebuie să afișați **fiecare IP** din care utilizatorul a trimis un anumit mesaj, precum și **numărul de mesaje** trimise cu IP-ul respectiv. 
+Cerința voastră este să **parsați** adresa **IP** și **numele de utilizator** date drept date de intrare, iar pentru fiecare utilizator trebuie să afișați **fiecare IP** de la care utilizatorul a trimis un anumit mesaj, precum și **numărul de mesaje** trimise cu IP-ul respectiv. 
 
-Ca date de ieșire, numele de utilizator trebuie să fie **sortate în ordine alfabetică** în timp ce adresele lor IP se afișează în **ordinea primei lor apariții.** 
+Ca date de ieșire, numele de utilizatori trebuie să fie **sortate în ordine alfabetică**, în timp ce adresele lor IP se afișează în **ordinea primei lor apariții.** 
 
-Datele de ieșire trebuie să fie după formatul următor:
+Datele de ieșire trebuie să respecte formatul următor:
 
 ```
 numeUtilizator:
