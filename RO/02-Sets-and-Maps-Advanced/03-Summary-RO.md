@@ -5,11 +5,11 @@
 
 ## În această lecție ați învățat:
 
-- Ce sunt Seturile în Java?
+- Ce reprezintă Seturile în Java
      - colecție neordonată de obiecte
      - nu sunt permise elemente duplicate
      - oferă performanțe foarte rapide
-- Tipuri de Sets
+- Tipuri de Seturi
     - `HashSet<E>`
     ```java
     Set<String> hash = new HashSet<String>();
@@ -24,7 +24,7 @@
     ```
 
 - Matricele Asociative - Maps
-     - țineți un set de perechi `<cheie, valoare>`
+     - conțin un set de perechi `<cheie, valoare>`
      - conține chei unice
 
 - Tipuri de Maps
@@ -41,13 +41,13 @@
     Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
     ```
     
-## În lecția următoare, veți învăța:
+## În lecția următoare veți învăța:
 
-- Ce sunt Excepțiile
+- Ce sunt excepțiile
     * clasa `Exception` 
     * tipurile de excepții și ierarhia lor
-- Tratarea Excepțiilor
-- Ridicarea (Aruncarea) Excepțiilor
+- Tratarea excepțiilor
+- Ridicarea (aruncarea) excepțiilor
 - Cele mai bune practici
 
 [/slide]
