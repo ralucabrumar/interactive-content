@@ -1703,29 +1703,27 @@ public class Main {
 
 Datele de intrare se dau după formatul următor:
 
-`IP=(IP.Adresa) mesaj=(Un&exemplu&mesaj) utilizator=(numeUtilizator)`
+`IP=(IP.Address) message=(A&sample&message) user=(username)`
 
-Cerința voastră este să **parsați** adresa **IP** și **numele de utilizator** date drept date de intrare, iar pentru fiecare utilizator trebuie să afișați **fiecare IP** de la care utilizatorul a trimis un anumit mesaj, precum și **numărul de mesaje** trimise cu IP-ul respectiv. 
+Cerința voastră este să **parsați** adresa **IP** și **numele de utilizator** date drept date de intrare, iar pentru fiecare utilizator trebuie să afișați **fiecare IP** folosit pentru trimiterea unui anumit mesaj, precum și **numărul de mesaje** trimise cu IP-ul respectiv. 
 
 Ca date de ieșire, numele de utilizatori trebuie să fie **sortate în ordine alfabetică**, în timp ce adresele lor IP se afișează în **ordinea primei lor apariții.** 
 
 Datele de ieșire trebuie să respecte formatul următor:
 
 ```
-numeUtilizator:
-IP => număr, IP => număr
+username:
+IP => count, IP => count
 ```
 
-De exemplu, pentru următoarele date de intrare - 
-`IP=192.23.30.40 message='Hello&derps.' user=destroyer`
-trebuie să obțineți numele de utilizator **destroyer** și IP-ul **192.23.30.40** și să le afișați în următorul mod:
+De exemplu, pentru următoarele date de intrare - `IP=192.23.30.40 message='Hello&derps.' user=destroyer` - trebuie să obțineți numele de utilizator **destroyer** și IP-ul **192.23.30.40** și să le afișați în următorul mod:
 
 ```
 destroyer:
 192.23.30.40 => 1.
 ```
 
-Utilizatorul cu numele destroyer a trimis un mesaj de la adresa IP 192.23.30.40 o singură dată.
+Utilizatorul cu numele **destroyer** a trimis un mesaj de la adresa **IP 192.23.30.40** o singură dată.
 
 Verificați **exemplele** de mai jos. 
 
@@ -1733,29 +1731,29 @@ Acestea vor clarifica și mai mult ceea ce vi se cere.
 
 ## Intrare
 
-Datele de intrare provin din consolă ca **număr variat** de linii. 
+Datele de intrare provin din consolă sub forma unui **număr variabil** de linii. 
 
 Trebuie să parsați fiecare comandă până la întâlnirea comenzii `end`. 
 
-Datele de intrare vor fi după formatul de mai sus, nu trebuie să le mai validați în mod explicit.
+Datele de intrare vor fi mereu în formatul de mai sus, deci nu trebuie să le validați în mod explicit.
 
 ## Ieșire
 
-Pentru fiecare utilizator găsit, trebuie să afișați fiecare logare după următorul format:
+Pentru fiecare utilizator găsit, trebuie să afișați fiecare logare în următorul format:
 
 ```
-numeUtilizator:
-IP => număr, IP => număr
+username:
+IP => count, IP => count
 ```
 
-Adresele IP trebuie să fie separate prin virgulă, iar fiecare linie a adreselor IP trebuie să se termine cu punct.
+Adresele IP trebuie să fie separate prin virgulă, iar fiecare linie cu adrese IP trebuie să se termine cu punct.
 
 ## Constrângeri
 
 - Numărul de comenzi se află în intervalul \[1 ... 50\]
 - Adresele IP vor fi în formatul **IPv4** sau **IPv6**
 - Mesajele vor respecta următorul format: **Acesta&este&un&mesaj**
-- Numele de utilizator este un string cu lungimea aflată în intervalul \[3 ... 50\]
+- Numele de utilizator este un șir cu lungimea aflată în intervalul \[3 ... 50\]
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -1769,7 +1767,7 @@ Adresele IP trebuie să fie separate prin virgulă, iar fiecare linie a adreselo
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | `IP=FE80:0000:0000:0000:0202:B3FF:FE1E:8329 message='Hey&son' user=mother` | child0:  |
-| `IP=192.23.33.40 message='Hi&mom!' user=child0 | 192.23.33.40 => 1.` |
+| `IP=192.23.33.40 message='Hi&mom!' user=child0` | 192.23.33.40 => 1. |
 | `IP=192.23.30.40 message='Hi&from&me&too' user=child1` | child1:  |
 | `IP=192.23.30.42 message='spam' user=destroyer`| 192.23.30.40 \=\> 1. |
 | `IP=192.23.30.42 message='spam' user=destroyer` | destroyer:  |
@@ -2171,39 +2169,34 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Pe fiecare linie, se dau date ce respectă următorul format: "**city**\|**country**\|**population**". 
+Pe fiecare linie, se dau date care respectă următorul format: "**city**\|**country**\|**population**". 
 
-**Nu vor exista spații nefolositoare** nicăieri în cadrul datelor de intrare. 
+**Nu vor exista spații redundante** nicăieri în cadrul datelor de intrare. 
 
-Agregați datele **pe baza țării și a orașului** și printați-le în consolă. 
+Procesați datele **în funcție de țară și de oraș** și imprimați-le pe consolă. 
 
-**Pentru fiecare țară**, printați **populația totală**, iar pe linii separate se dau datele pentru fiecare din orașele țării respective. 
+Imprimați **populația totală** **pentru fiecare țară**, iar pe linii separate imprimați informațiile despre fiecare din orașele țării respective. 
 
-**Țările** trebuie să fie ordonate pe baza **populației lor totale, în ordine descrescătoare**, iar în fiecare țară **orașele** trebuie ordonate pe baza **aceluiași criteriu**. 
+**Țările** trebuie să fie ordonate descrescător pe baza **populației lor totale**, iar **orașele** trebuie ordonate pe baza **aceluiași criteriu**. 
 
 Dacă 2 țări/orașe au aceeași populație, mențineți-le în **ordinea** în care acestea **au fost introduse de la tastatură**. 
 
-Verificați exemplele! 
-
-Urmați cu strictețe **formatul datelor de ieșire**!
-
 ## Intrare
 
-- Datele de intrare trebuie să fie citite din consolă
-- Ele constau într-un număr variabil de linii și se termină cu comanda "**report**", la primirea acesteia
-- Datele de intrare vor fi mereu valide și vor respecta mereu formatul descris. Nu trebuie să le verificați în mod explicit
+- Datele de intrare constau într-un număr variabil de linii și se termină după introducerea comenzii "**report**"
+- Datele de intrare vor fi mereu valide și vor respecta mereu formatul descris; nu trebuie să le verificați în mod explicit
 
 ## Ieșire
 
-- Datele de ieșire trebuie să fie printate în consolă
-- Printați datele procesate pentru fiecare țară și oraș după formatul de mai jos
+- Datele de ieșire trebuie să fie imprimate în consolă
+- Imprimați datele procesate pentru fiecare țară și oraș în formatul de mai jos
 
 ## Constrângeri
 
 - Numele orașului, al țării și populația vor fi separate una de cealaltă prin **simbolul** `|`
 - **Numărul de linii ce conțin date de intrare** se află în intervalul \[2 ... 50\]
 - Nu se va repeta nicio pereche oraș-țară
-- **Numărul populației** fiecărui oraș va fi un număr întreg din intervalul \[0 ... 2 000 000 000\]
+- **Populația** fiecărui oraș va fi un număr întreg din intervalul \[0 ... 2 000 000 000\]
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -2894,7 +2887,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Se dă o secvență de logări de acces, după următorul format: 
+Se dă o secvență de logări de acces în următorul format: 
 
 `< IP > < utilizator > < durată >`.
 
@@ -2908,28 +2901,26 @@ Se dă o secvență de logări de acces, după următorul format:
 - 50.118.81 alex 46
 - 50.118.81 alex 4
 
-Scrieți un program care procesează datele cu privire la logări și printează **pentru fiecare utilizator durata totală** a sesiunilor acestuia, precum și o **listă de adrese IP unice**, după formatul 
+Scrieți un program care procesează datele cu privire la logări și imprimă **pentru fiecare utilizator durata totală** a sesiunilor acestuia, precum și o **listă de adrese IP unice**, în formatul:
 
-`< utilizator > < durată > [ < IP1 >, < IP2 >, ...]`. 
+`< user > < duration > [ < IP1 >, < IP2 >, ...]`
 
 Ordonați **utilizatorii alfabetic**. 
 
 Ordonați **adresele IP alfabetic**. 
 
-Datele de ieșire trebuie printate în următorul mod:
+Datele de ieșire trebuie imprimate în următorul mod:
 
 - alex: 62 [10.10.17.33, 212.50.118.81]
 - peter: 303 [10.10.17.34, 10.10.17.35, 192.168.0.11]
 
 ## Intrare
 
-Datele de intrare sunt date în consolă. 
+Pe prima linie se află un număr **n** - numărul de linii care urmează. 
 
-Pe prima linie se află un număr **n** - numărul de linii ce urmează. 
+Pe fiecare din următoarele **n** linii se află informații cu privire la logări, în următorul format: 
 
-Pe fiecare din următoarele n linii se află informații cu privire la logări, după următorul format: 
-
-`< IP > < utilizator > < durată >`. 
+`< IP > < user > < duration >`
 
 Datele de intrare vor fi mereu **valide** și vor respecta mereu formatul dat. 
 
@@ -2937,11 +2928,11 @@ Nu trebuie să le validați în mod explicit.
 
 ## Ieșire
 
-Printați **câte o singură linie pentru fiecare utilizator** (ordeonați utilizatorii alfabetic). 
+Imprimați **câte o singură linie pentru fiecare utilizator** (ordonați utilizatorii alfabetic). 
 
-Pentru fiecare utilizator, printați suma duratelor și toate sesiunile adreselor IP, ordonate alfabetic după formatul: 
+Pentru fiecare utilizator, imprimați suma duratelor sesiunilor și toate adresele IP folosite, ordonate alfabetic în formatul: 
 
-`< utilizator >: < durată > [< IP1 >, < IP2 >, ...]`. 
+`< user > < duration > [ < IP1 >, < IP2 >, ...]`
 
 Eliminați orice valori duplicate ale adreselor IP.
 
@@ -2949,8 +2940,8 @@ Eliminați orice valori duplicate ale adreselor IP.
 
 - **Numărul** liniilor, **n**, se află în intervalul \[1 ... 1000\]
 - `< IP >` este o adresă IP standard ce respectă formatul **a.b.c.d** unde **a**, **b**, **c** și **d** sunt numere întregi din intervalul \[0 ... 255\]
-- `< user >` constă doar în **caractere din alfabetul Latin**, de lungime \[1 .... 20\]
-- `< duration >` e un număr întreg din intervalul \[1 ... 1000\]
+- `< user >` constă doar în **caractere din alfabetul Latin**, iar lungimea șirului este cuprinsă în intervalul  \[1 .... 20\]
+- `< duration >` este un număr întreg din intervalul \[1 ... 1000\]
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -3375,53 +3366,51 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Ați învins toate cerințele, iar ultimul lucru rămas este să dețineți un obiect legendar.
+Ați reușit să îndepliniți toate misiunile, iar ultimul lucru pe care trebuie să îl faceți este sî obțineți un obiect legendar.
 
-Totuși, acesta este un proces anost și necesită o activitate agricolă vastă.
+Din păcate, acesta este un proces meticulos și necesită o activitate agricolă vastă.
 
-Totuși, nu sunteți foarte pretențioși - orice lucru legendar este binevenit.
+Oricum, nu sunteți foarte pretențios - orice obiect legendar este binevenit.
 
 Obiectele posibile sunt:
-- **Shadowmourne** – necesită **250 Shards** (cioburi)
-- **Valanyr** – necesită **250 Fragments** (fragmentele)
-- **Dragonwrath** – necesită **250 Motes** (fire)
+- **Shadowmourne** – necesită **250 Shards** 
+- **Valanyr** – necesită **250 Fragments** 
+- **Dragonwrath** – necesită **250 Motes**
 
-**Ciourile, fragmentele**, și **firele** sunt **materialele-cheie**, celelalte sunt **gunoaie**. 
+**Shards**, **fragments** și **motes** sunt **materiale-cheie**, iar orice alt material este **inutil**. 
 
-Vi se dau linii cu date de intrare, precum **2 fire 3 minereuri 15 pietre**. 
+Vi se dau linii cu date de intrare, precum **2 motes 3 ores 15 stones**. 
 
-Țineți cont de **materialele-cheie** - **primul** care ajunge la **250 de puncte câștigă cursa**. 
+Țineți evidența **materialelor-cheie** - **primul** care ajunge la **250 câștigă cursa**. 
 
-În acel punct, printați obiectul legendar obținut.
+În acel punct, imprimați obiectul legendar obținut.
 
-Apoi, printați bucățile **rămase**, fragmentele, firele, ordonate după **cantitate** în **ordine descrescătoare**, fiecare pe linie nouă. 
+După aceea, imprimați materialele **rămase** \(shards, fragments, motes\), ordonate descrescător după **cantitate**, fiecare pe o linie nouă. 
 
-În final, printați **gunoaiele** obținute, în **ordine alfabetică**.
+La final, imprimați în **ordine alfabetică** **materialele inutile** colectate.
 
 
 ## Intrare
 
-- Fiecare linie ce conține date de intrare respectă formatul:
+- Fiecare linie care conține date de intrare respectă formatul:
 
-`{cantitate} {material} {cantitate} {material} ... {cantitate} {material}`
+`{quantity} {material} {quantity} {material} ... {quantity} {material}`
 
 
 ## Ieșire
 
-- Pe prima linie, printați obiectul obținut, în formatul: 
-`{Legendary item} obtained!`
-- Pe următoarele 3 linii, printați materialele-cheie rămase, ordonate descrescător după cantitate
-  - Dacă 2 materiale-cheie au aceeași cantitate, printați-le în ordine alfabetică
-- Pe ultimele linii, printați obiectele ce reprezintă gunoiul, în ordine alfabetică:
-  - Toate materialele sunt printate după următorul format: 
-  `{material}: {cantitate}`
-  - Toate datele de ieșire trebuie scrise **cu litere mici** , exceptând prima literă a obiectului legendar.
+- Pe prima linie, împrimați obiectul obținut, în formatul: `{Legendary item} obtained!`
+- Pe următoarele 3 linii, imprimați materialele-cheie rămase, ordonate descrescător după cantitate
+  - dacă 2 materiale-cheie au aceeași cantitate, imprimați-le în ordine alfabetică
+- Pe ultimele linii, imprimați în ordine alfabetică materialele inutile:
+- Toate materialele sunt imprimate în următorul format: `{material}: {quantity}`
+- Toate datele de ieșire trebuie scrise **cu litere mici**, exceptând prima literă a obiectului legendar
 
 ## Constrângeri
 
-- Perechile cantitate-material sunt între 1 și 25 per linie
+- Numărul de perechi cantitate-material de pe fiecare linie este în intervalul \[1 ... 25\]
 - Numărul de linii se află în intervalul \[1 ... 10\]
-- Toate materialele sunt scrise cu litere mari sau mici
+- Materialele pot fi scrise atât cu majuscule, cât și cu minuscule
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -3435,7 +3424,7 @@ Apoi, printați bucățile **rămase**, fragmentele, firele, ordonate după **ca
 
 [hints]
 [hint]
-Stocați cheia și resturile de materiale în două structuri de date diferite. 
+Stocați materialele-cheie și materialele inutile în două structuri de date diferite. 
 
 ```java
 Map<String, Integer> legendaryResources = new TreeMap<>();
@@ -3447,7 +3436,7 @@ Map<String, Integer> trashResources = new TreeMap<>();
 ```
 [/hint] 
 [hint]
-Citiți liniile de date de intrare până se obține obiectul.
+Citiți linii cu date de intrare până la obținerea obiectului:
 
 ```java
 while (!legendaryObtained) {
@@ -3456,7 +3445,7 @@ while (!legendaryObtained) {
 ```
 [/hint] 
 [hint]
-Împărțiți delimitatorii pentru fiecare linie cu date de intrare și iterați prin aceștia. 
+Împărțiți textul de pe fiecare linie cu date de intrare și iterați prin elementele obținute. 
 
 ```java
 String[] tokens = scan.nextLine().split("\\s+");
@@ -3694,57 +3683,57 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Eroii III e cel mai super joc existent.
+Heroes III este cel mai super joc existent.
 
 Toată lumea îl iubește și toată lumea îl joacă.
 
-John nu e o excepție de la regulă.
+John nu este o excepție de la regulă.
 
 Unitățile sale preferate din joc sunt toate **tipurile** de dragoni – negri, roșii, aurii, azurii, etc... 
 
-Îi îndrăgește atât de mult încât le dă **nume** și continuă să logheze **statisticile lor** : **daunele, sănătatea* și **armura**.
+Îi îndrăgește atât de mult încât le dă **nume** și continuă să logheze **atributele lor** : **daunele, viața* și **armura**.
 
-Procesarea tuturor datelor e un proces destul de detaliat, deci ne-ar trebui un program care să se ocupe de asta.
+Procesarea tuturor datelor e un proces destul de detaliat, iar John ar vrea să aibă un program care să se ocupe de asta.
 
 Din moment ce John nu e programator, este sarcina voastră să îl ajutați.
 
-Trebuie să clarificați dragonii pe baza **tipului** lor. 
+Trebuie să clasificați dragonii în funcție de **tipul** lor. 
 
-Pentru fiecare dragon, identificat prin **numele** său, rețineți informații despre **statistica acestuia**. 
+Pentru fiecare dragon identificat prin **numele** său, păstrați informații despre **atributele acestuia**. 
 
 Tipul **rămâne** în ordinea în care a fost introdus de la tastatură, dar dragonii sunt **sortați** alfabetic după nume. 
 
-Pentru fiecare tip, trebuie să printați și media **daunelor**, a **sănătății** și a **armurii** dragonilor. 
+Pentru fiecare tip, trebuie să imprimați și media **daunelor**, a **vieții** și a **armurii** dragonilor. 
 
-Pentru fiecare dragon, printați statistica.
+Pentru fiecare dragon, imprimați **atributele** acestuia.
 
-**Ar putea exista statistici lipsă** din datele de intrare, totuși. 
+Există posibilitatea ca unele atribute să lipsească* din datele de intrare. 
 
-Dacă o statistică lipsește, trebuie să îi asignați valorile standard. 
+Dacă un atribut lipsește, trebuie să îi atribuiți valorile standard. 
 
 Valorile standard sunt următoarele: 
-- sănătate (health) - **250**
+- vață (health) - **250**
 - daune (damage) - **45** 
 - armură (armor) - **10**
 
-Statisticile lipsă vor fi marcate cu **null**.
+Atributele lipsă vor fi marcate cu **null**.
 
 Datele de intrare respectă următorul format: 
 
-`{tip} {nume} {daune} {sănătate} {armură}`
+`{type} {name} {damage} {health} {armor}`
 
-Fiecărui întreg i se poate asigna o valoare **nulă**. 
+Fiecărui număr întreg i se poate atribui o valoare **nulă**. 
 
 Vedeți exemplele de mai jos pentru o înțelegere mai bună a cerinței.
 
-Dacă același dragon este introdus de la tastatură pentru a doua oară, noile statistici trebuie să le **suprascrie** pe cele vechi. 
+Dacă același dragon este introdus de la tastatură pentru a doua oară, noile vloari ale atributelor trebuie să le **suprascrie** pe cele vechi. 
 
 Doi dragoni sunt considerați **echivalenți** dacă au **același** nume și tip.
 
-## Date de intrare
+## Intrare
 
-- Pe prima linie, se dă **numărul N** - numărul de dragoni
-- Pe **următoarele N linii** se dau **datele de intrare** după formatul **descris mai sus**. Vom avea un spațiu care separă elementele.
+- Pe prima linie se dă **numărul N** - numărul de dragoni
+- Pe **următoarele N linii** se dau **datele de intrare** în formatul **descris mai sus**. Vom avea un spațiu care separă elementele.
 
 ### Date de ieșire
 
