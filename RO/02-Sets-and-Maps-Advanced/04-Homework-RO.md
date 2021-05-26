@@ -3726,32 +3726,32 @@ Fiecărui număr întreg i se poate atribui o valoare **nulă**.
 
 Vedeți exemplele de mai jos pentru o înțelegere mai bună a cerinței.
 
-Dacă același dragon este introdus de la tastatură pentru a doua oară, noile vloari ale atributelor trebuie să le **suprascrie** pe cele vechi. 
+Dacă același dragon este introdus de la tastatură pentru a doua oară, noile valori ale atributelor trebuie să le **suprascrie** pe cele vechi. 
 
 Doi dragoni sunt considerați **echivalenți** dacă au **același** nume și tip.
 
-## Intrare
+### Intrare
 
 - Pe prima linie se dă **numărul N** - numărul de dragoni
-- Pe **următoarele N linii** se dau **datele de intrare** în formatul **descris mai sus**. Vom avea un spațiu care separă elementele.
+- Pe **următoarele N linii** se dau **datele de intrare** în formatul **descris mai sus**; elementele vor fi separate printr-un spațiu
 
-### Date de ieșire
+### Ieșire
 
-- Printați datele procesate în consolă
-- Pentru fiecare tip, printați statistica medie a dragonilor, după formatul corespunzător dragonilor săi, după formatul: 
+- Imprimați datele procesate în consolă
+- Pentru fiecare tip, imprimați media atributelor dragonilor, în formatul:
 
-`{Tip}::({daune}/{sănătate}/{armură})`
+`{Type}::({damage}/{health}/{armor})`
 
-- Nivelele pentru daune, sănătate și armură trebuie rotunjite la 2 zecimale.
-- Pentru fiecare dragon, printați statistica după formatul: 
+- Valorile pentru daune, viață și armură trebuie rotunjite cu 2 zecimale
+- Pentru fiecare dragon, tipăriți atributele sale în formatul: 
 
-`-{Nume} -> damage: {daune}, health: {sănătate}, armor: {armură}`
+`-{Name} -> damage: {damage}, health: {health}, armor: {armor}`
 
 ### Constrângeri
 
 - N se află în intervalul \[1 ... 100\]
-- Tipul de dragon și numele constau într-un singur cuvânt, care începe cu majusculă.
-- Nivelul de daune, sănătate și armură sunt numere întregi din intervalul \[0 ... 100000\] sau **null**
+- Tipul de dragon și numele constau într-un singur cuvânt, care începe cu majusculă
+- Valorile daunelor, vieții și armurii sunt numere întregi din intervalul \[0 ... 100000\] sau **null**
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -3768,7 +3768,7 @@ Doi dragoni sunt considerați **echivalenți** dacă au **același** nume și ti
 
 [hints]
 [hint]
-Declare the default values in the class body:
+Declarați valorile implicite în corpul clasei:
 
 ```java
 private static final int DAMAGE = 45;
@@ -3777,8 +3777,8 @@ private static final int ARMOR = 10;
 ```
 [/hint] 
 [hint]
-Create a `getStat` method.
-It will be used to set the initial stats of each dragon.
+Creați o metodă `getStat`.
+Aceasta va fi utilizată pentru a seta atributele inițiale ale fiecărui dragon.
 
 ```java
 private static int getStat(String arg, int defaultValue) {
@@ -3791,7 +3791,7 @@ private static int getStat(String arg, int defaultValue) {
 ```
 [/hint] 
 [hint]
-Use a LinkedHashMap to store the dragon types:
+Utilizați LinkedHashMap pentru a stoca tipurile de dragoni:
 
 ```java
 Map<String, Map<String, List<Integer>>> dragonTypeMap = new LinkedHashMap<>();
