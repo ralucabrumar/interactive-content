@@ -6,9 +6,10 @@
 ## În această lecție ați învățat:
 
 - Ce sunt excepțiile în Java?
-     - ierarhie de excepție
-- Cum să Manuiți Excepția?
-     - **try-catch** constructor
+     - ierarhia excepțiilor 
+     -
+- Tratarea excepțiilor
+     - instrucțiunea **try-catch** 
     ```java 
     try {
     // Specify a piece of code logic that could raise an exception 
@@ -17,7 +18,7 @@
     }
     ```
 
-     - **try-finally** declarația 
+     - instrucțiunea **try-finally**
     ```java 
     try {
     // Specify a piece of code logic that could raise an exception 
@@ -26,7 +27,7 @@
     }
     ```
 
-- Cum să ridici (throw) excepții
+- Generarea excepțiilor
      - utilizarea cuvântului cheie **throw**
      ```java
      try {
@@ -36,7 +37,7 @@
      }
      ```
      
-     - relansarea excepțiilor
+     - re-aruncarea excepțiilor
      ```java
      try {
           Integer.parseInt(str);
@@ -47,15 +48,15 @@
      ```
 
 - Cele Mai Bune Practici
-     - utilizarea blocului de captură (**catch**)
+     - utilizarea blocului **catch**
      - alegerea **tipului de excepție**
 
-## În următoarea lecție, veți învăța:
+## În următoarea lecție veți învăța:
 
-- Ce este Depanarea?
+- Ce este depanarea?
      - lucrul cu instrumentele de depanare (`debuggers`)
-     - importanța Depanării
-- Lucrul cu **IntelliJ IDEА Depanator**
+     - importanța depanării
+- Lucrul cu **IntelliJ IDEА Debugger**
      - puncte de întrerupere
 - Inspecția Datelor
 
