@@ -270,15 +270,15 @@ Inserați rezultatul pe platformă.
 [task-description]
 ## Descriere
 
-Citiți fișierul numit "input.txt" care este prevăzut pentru acest exercițiu și scrieți conținutul său într-un fișier în timp ce ocoliți orice semne de punctuație.
+Citiți fișierul numit "input.txt" care este prevăzut pentru acest exercițiu și scrieți conținutul său într-un fișier în timp ce omiteți orice semne de punctuație.
 
-Ocoliți următoarele simboluri: `,`, `.`, `!`, `?`.
+Omiteți următoarele simboluri: `,`, `.`, `!`, `?`.
 
 ## Instrucțiuni
 
 Ar trebui să aveți deja toate resursele necesare descărcate de la cerința precedentă.
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
+Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **nu codul**.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -309,7 +309,7 @@ OutputStream outputStream =
 ```
 [/hint] 
 [hint]
-Creați o **listă**, care conține toate caracterele pe care trebuie să le ocoliți și **verificați** dacă caracterul curent este **prezent** in lista:
+Creați o **listă** care conține toate caracterele pe care trebuie să le omiteți și **verificați** dacă caracterul curent este **prezent** în listă:
 
 ```java
 List<Character> symbols = new ArrayList<>();
