@@ -42,7 +42,7 @@ try (BufferedReader inputStream = Files.newBufferedReader(path)) {
     e.printStackTrace();
 }
 ```
-Apelarea metodei `newBufferedReader()` a clasei Files și transmiterea căii ca argumenta are ca rezultat crearea instanței BufferedReader (**flux tamponat**).
+Apelarea metodei `newBufferedReader()` a clasei Files și transmiterea căii ca argument are ca rezultat crearea instanței BufferedReader (**flux tamponat**).
 
 Următorul exemplu ilustrează copierea conținutului unui fișier în alt fișier:
 
@@ -122,9 +122,9 @@ Files.write(outPath, lines);
 
 ## Descriere
 
-Citiți fișierul dat, denumit "**input.txt**" și sortați toate liniile. 
+Citiți fișierul "**input.txt**" și sortați toate liniile. 
 
-Scrieți textul către **un alt text a fișierului**.
+Scrieți textul în **alt fișier txt**.
 
 Utilizați clasele **Path** și **Files**.
 
@@ -132,7 +132,7 @@ Utilizați clasele **Path** și **Files**.
 
 Ar trebui să aveți deja toate resursele necesare descărcate de la cerința precedentă.
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
+Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **nu codul**.
 
 
 ## Exemplu
