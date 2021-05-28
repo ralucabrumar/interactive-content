@@ -506,9 +506,9 @@ Apoi, în interiorul blocului `try`, creați un flux de intrare pentru imaginea 
 
 Inițializați un nou **flux de intrare** folosind `new File("Calea-absolută-către\imaginea-voastră.jpg")`.
 
-Puteți obține calea absolută către imaginea voastră apăsând click-dreapta pe ea, și selectând "**Properties**" (Proprietăți).
+Puteți obține calea absolută către imaginea voastră apăsând click-dreapta pe ea, și selectând "**Properties**".
 
-Va apărea o fereastră, iar calea va fi localizată lângă "**Location:**" (Locație). 
+Va apărea o fereastră, iar calea va fi localizată lângă "**Location:**". 
 
 Selectați calea și inserați-o în următorul mod:
 
@@ -522,7 +522,7 @@ După aceea, creați un flux de ieșire cu șirul "**cat-copy.jpg**" drept param
 FileOutputStream outputImage = new FileOutputStream("cat-copy.jpg");
 ```
 
-Creați un `byte[]` **buffer**.
+Creați u **buffer** `byte[]`.
 
 Utilizați o buclă while pentru **a scrie datele** în fluxul de ieșire, ca mai jos.
 
@@ -552,18 +552,18 @@ Imaginea clonată este acum **salvată** în fișierul proiectului vostru.
 [slide hideTitle]
 # Problemă: Serialize Array List
 
-Scrieți un program care salvează și încarcă un **ArrayList** de doubles într-un fișier folosind **ObjectInputStream** și **ObjectOutputStream**. 
+Scrieți un program care salvează și încarcă într-un fișier un **ArrayList** cu numere de tip double, folosind **ObjectInputStream** și **ObjectOutputStream**. 
 
-Denumiți noul fișier ca **list.ser**
+Denumiți noul fișier **list.ser**.
 
-IDE-ul vostru trebuie să adauge următoarele **importuri** în proces:
+IDE-ul vostru trebuie să **importeze** următoarele elemente:
 
 ```java
 import java.io.*;
 import java.util.ArrayList;
 ```
 
-Pentru a începe, creați un ArrayList de **doubles** în corpul metodei `main()`.
+Pentru a începe, creați un ArrayList de numere de tip **double** în corpul metodei `main()`.
 
 ```java
 ArrayList<Double> numbers = new ArrayList<>();
@@ -602,17 +602,17 @@ Prin furnizarea doar a **numelui**, fără o cale, fișierul va fi salvat în di
 
 `ObjectOutputStream` va fi responsabil de scrierea obiectului în fișierul pe care `FileOutputStream` l-a creat.
 
-Apelarea metodei `writeObject(numbers)` îi transmite programului să înceapă scrierea în **list.ser**
+Apelarea metodei `writeObject(numbers)` îi transmite programului să înceapă scrierea în **list.ser**.
 
-O practică bună este utilizarea lui `.flush()` - golește fluxul de ieșire și forțează orice bytes tampon de ieșire să fie eliminați.
+O practică bună este utilizarea metodei `.flush()` - golește fluxul de ieșire și forțează eliminare oricăror octeți tamponați de ieșire.
 
-Când deschideți fișierul **list.ser**, veți vedea următoarea **ieșire**:
+Când deschideți fișierul **list.ser**, veți vedea următoarele date de **ieșire**:
 
 ```
 ���sr�java.util.ArrayListx����a��I�sizexp���w���sr�java.lang.Double���J)k��D�valuexr�java.lang.Number��������xp@G�����sq�~�@@@�����sq�~�@'ffffffx
 ```
 
-Nu vă îngrijorați dacă nu înțelegeți exact ce se întâmplă, Java poate să îl citească fără nicio problemă.
+Nu vă îngrijorați dacă nu înțelegeți exact ce se întâmplă, Java poate să citească aceste datefără nicio problemă.
 
 Folosind acest fișier, puteți **deserializa** Arraylist cu ajutorul `ObjectInputStream`.
 
@@ -645,7 +645,7 @@ Acum puteți să vedeți datele din ArrayList, tipărite pe **consolă**:
 [slide hideTitle]
 # Problemă: Serialize Custom Object
 
-Scrieți un program care salvează și încarcă informațiile despre un obiect personalizat folosind **ObjectInputStream** și **ObjectOutputStream**.
+Scrieți un program care salvează și încarcă informațiile despre un obiect personalizat, folosind **ObjectInputStream** și **ObjectOutputStream**.
 
 Denumiți noul fișier ca **course.ser**.
 
@@ -728,7 +728,7 @@ try {
 }
 ```
 
-În interiorul lui `try`, setați numele fișierului salvat la **course.ser**.
+În interiorul blocului`try`, setați numele fișierului salvat la **course.ser**.
 
 Apoi, creați o instanță `ObjectOutputStream` pentru a scrie obiectul `courseOne` în fișier.
 
@@ -767,7 +767,7 @@ try {
 
 Declarați un nou obiect de tip `Course`, numit **courseDsl**.
 
-Creați `FileInputStream` pentru a citi **course.ser**. 
+Creați un `FileInputStream` pentru a citi **course.ser**. 
 
 Apoi, creați o instanță `ObjectInputStream`.
 
@@ -813,7 +813,7 @@ Apoi, creați o matrice cu toate căile pentru cele trei fișiere `.txt`:
 String[] sourceFiles = { "C:/fileOne.txt", "C:/fileTwo.txt", "C:/fileThree.txt"};
 ```
 
-Creați un bloc try-catch și un `byte[]` **buffer** (tampon).
+Creați un bloc try-catch și un **buffer** `byte[]`.
  
 ```java
 try {
