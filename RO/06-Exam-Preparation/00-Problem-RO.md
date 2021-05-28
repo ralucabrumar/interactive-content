@@ -34,7 +34,7 @@ Dacă primul loot box devine gol, tipăriți:
 
 `First lootbox is empty`
 
-Dacă al doilea devine goală, imprimați:
+Dacă al doilea devine gol, imprimați:
 
 `Second lootbox is empty`
 
