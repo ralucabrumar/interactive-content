@@ -18,8 +18,7 @@ public class Main {
 ## Descriere
 _V-ați săturat să fiți singurul din echipa voastră fără echipament bun, așa că ați decis să cumpărați niște "loot boxes" pentru a avea șansa de a primi câteva obiecte interesante._
 
-
-Fiecare achiziție vă oferă două "loot boxes" și sunt reprezentate ca o succesiune de numere întregi.
+Fiecare achiziție vă oferă două "loot boxes" care sunt reprezentate ca o succesiune de numere întregi.
 
 În primul rând, vi se va oferi **o secvență de numere întregi, care reprezinta primul loot box**. Ulterior, vi se va oferi o altă **secvență de numere întregi, care reprezintă al doilea loot box**.
 
@@ -31,7 +30,7 @@ Dacă **suma** valorilor lor este **un număr par,** adăugați elementul **îns
 
 Trebuie să **opriți** însumarea obiectelor când una dintre casete devine goală.
 
-Dacă ptimul loot box devine gol, tipăriți:
+Dacă primul loot box devine gol, tipăriți:
 
 `First lootbox is empty`
 
@@ -45,49 +44,49 @@ Dacă suma articolelor revendicate este egală sau mai mare de 100, tipăriți:
 
 `Your loot was epic! Value: {sum of claimed items}`
 
-În caz contrar, tipăriți
+În caz contrar, tipăriți:
 
 `Your loot was poor... Value: {sum of claimed items}`
 
 ## Intrare
 
 - Pe **prima linie** veți primi numerele întregi care reprezintă **primul loot box**, **separate** printr-un **spațiu**.
-- Pe **a doua linie**, veți primi numerele întregi care reprezintă **al doilea loot box, separate** printr-un **spațiu**.
+- Pe **a doua linie** veți primi numerele întregi care reprezintă **al doilea loot box**, separate** printr-un **spațiu**
 
 ## Ieșire
 
-- Pe **prima** linie de ieșire - tipăriți care casetă este acum goală, în formatul descris mai sus
-- Pe linia **a doua** - calitatea a casetei, în formatul descris mai sus.
+- Pe **prima** linie de ieșire - tipăriți casetă este goală, în formatul descris mai sus
+- Pe **a doua** linie - calitatea obiectelor revendicate, în formatul descris
 
 ## Constrângeri
 
-- Toate numerele date vor fi numere întregi valide în intervalul [0 ... 100].
-- Nu va exista un caz în care ambele casete devin goale în același timp.
+- Toate numerele date vor fi numere întregi valide în intervalul [0 ... 100]
+- Nu va exista un caz în care ambele casete devin goale în același timp
 
 
-## Exaemple
+## Exemple
 | **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
 | 10 11 8 13 5 6 | Second lootbox is empty | Mai întâi însumăm 10 și 3. Obținem 13, care nu este un număr par, așa că luăm ultimul element din a doua casetă și îl mutăm pe ultima poziție din prima casetă. Starea actuală a casetelor:  |
 | 0 4 7 3 6 23 3 | Your loot was poor... Value: 42 | 10 11 8 13 5 6 3 |
 |  |  | 0 4 7 3 6 23 |
-|  |  | Următoarea sumă este 33, deci facem același lucru din nou. La a treia iterație suma este 16, care este un număr par, așa că eliminăm ambele casete și adăugăm valoarea elementelor revendicate. Sumăm elementele până când una dintre cutii devine goală. |
+|  |  | Următoarea sumă este 33, deci facem același lucru din nou. La a treia iterație suma este 16, care este un număr par, așa că eliminăm ambele valori și adăugăm valoarea elementelor revendicate. Însumăm elementele până când una dintre cutii devine goală. |
 
 [hints]
 [hint]
-Creați două matrice de numere întregi pentru stocarea fiecărui lootbox.
-Asigurați-vă că ați convertit numerele date drept date de intrare în `Integer`.
+Creați două matrice de numere întregi pentru stocarea fiecărui loot box.
+Asigurați-vă că ați convertit numerele introduse în `Integer`.
 
 [/hint] 
 [hint]
-Creați o coadă pentru primul lootbox și o stivă pentru cel de-al doilea. 
+Creați o coadă pentru primul loot box și o stivă pentru cel de-al doilea. 
 [/hint] 
 [hint]
 Utilizați metoda `.peek()` pentru a prelua **primul** element din **coadă**, precum și **ultimul** element din **stivă**.
 [/hint] 
 [/hints] 
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 20 40 60 80 100 | First lootbox is empty |
 | 10 20 30 40 50 60 | Your loot was epic! Value: 500 |
