@@ -40,7 +40,7 @@ Dacă al doilea devine gol, imprimați:
 
 În cele din urmă, trebuie să determinați calitatea obiectelor revendicate.
 
-Dacă suma articolelor revendicate este egală sau mai mare de 100, tipăriți:
+Dacă suma articolelor revendicate este egală sau mai mare decât 100, tipăriți:
 
 `Your loot was epic! Value: {sum of claimed items}`
 
@@ -50,12 +50,12 @@ Dacă suma articolelor revendicate este egală sau mai mare de 100, tipăriți:
 
 ## Intrare
 
-- Pe **prima linie** veți primi numerele întregi care reprezintă **primul loot box**, **separate** printr-un **spațiu**.
-- Pe **a doua linie** veți primi numerele întregi care reprezintă **al doilea loot box**, separate** printr-un **spațiu**
+- Pe **prima linie** veți primi numerele întregi care reprezintă **primul loot box**, **separate** printr-un **spațiu**
+- Pe **a doua linie** veți primi numerele întregi care reprezintă **al doilea loot box**, **separate** printr-un **spațiu**
 
 ## Ieșire
 
-- Pe **prima** linie de ieșire - tipăriți casetă este goală, în formatul descris mai sus
+- Pe **prima** linie de ieșire - tipăriți care casetă este goală, în formatul descris mai sus
 - Pe **a doua** linie - calitatea obiectelor revendicate, în formatul descris
 
 ## Constrângeri
