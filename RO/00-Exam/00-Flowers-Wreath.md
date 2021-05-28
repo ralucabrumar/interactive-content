@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -15,31 +15,31 @@ public class Main {
 [task-description]
 # Descriere
 
-Vrei să participi la un concurs de coroane de flori, dar pentru a participa trebuie să faci cel puțin 5 coroane de flori.
+Vreți să participați la un concurs de coroane de flori, dar pentru a participa trebuie să faceși cel puțin 5 coroane de flori.
 
 Vi se vor oferi **două secvențe de numere întregi**, **reprezentând trandafiri și crini**.
 
-Trebuie să începeți să faceți coroane **știind că o coroană are nevoie de 15 flori**.
+Trebuie să începeți să faceți coroane, **știind că o coroană are nevoie de 15 flori**.
 
-Scopul tău este să faci **cel puțin 5 coroane de flori**.
+Scopul vostru este să faceți **cel puțin 5 coroane de flori**.
 
-Veți începe să creați din **ultimii crini** și **primii trandafiri**.
+Veți începe să confecționați coroanele din **ultimii crini** și **primii trandafiri**.
 
-Dacă suma valorilor lor este **egală** cu **15** - **creați o coroană** și **eliminați-le**.
+Dacă suma valorilor lor este **egală** cu **15** - **confecționați o coroană** și **eliminați florile utilizate**.
 
-Dacă suma este **mai mare de 15**, doar **micșorați** valoarea **crinilor cu 2**.
+Dacă suma lor este **mai mare de 15**, **micșorați** valoarea **crinilor cu 2**.
  
-Dacă suma este **mai mică de 15, trebuie să le stocați pentru mai târziu și să le eliminați**.
+Dacă suma lor este **mai mică de 15, trebuie să le stocați pentru mai târziu și să le eliminați**.
  
-Trebuie să **nu mai** combinați atunci când nu mai aveți **trandafiri sau crini**.
+Trebuie să vă opriți din confecționat atunci când nu mai aveți **trandafiri sau crini**.
 
-În cele din urmă, dacă aveți **flori stocate, ar trebui să faceți cât mai multe coroane de flori cu ele**.
+În cele din urmă, dacă aveți **flori stocate, trebuie să faceți cât mai multe coroane de flori cu ele**.
 
 ## Intrare
 
-- Pe **prima linie**, veți primi numerele întregi care reprezintă **crinii**, **separați** prin „**,**”.
+- Pe **prima linie**, veți primi numere întregi care reprezintă **crinii**, **separați** prin **", "**
 
-- Pe **a doua linie**, veți primi numerele întregi reprezentând **trandafirii**, **separați** prin „**,**”.
+- Pe **a doua linie**, veți primi numere întregi reprezentând **trandafirii**, **separați** prin **", "**
 
 ## Ieșire
 
@@ -49,9 +49,9 @@ Trebuie să **nu mai** combinați atunci când nu mai aveți **trandafiri sau cr
 
 ## Constrângeri
 
-- Toate numerele date vor fi numere întregi valide în intervalul \[0, 120\].
+- Toate numerele date vor fi numere întregi valide în intervalul \[0, 120\]
 
-- Nu aveți situație cu număr negativ.
+- Nu aveți situație cu număr negativ
 
 ## Exemple
 
@@ -62,19 +62,19 @@ Trebuie să **nu mai** combinați atunci când nu mai aveți **trandafiri sau cr
 
 ## Comentariu
 
-- Începem cu ultimii crini (13) și primii trandafiri (2) -> 13 + 2 = 15 -> 15 = 15 Așa că creăm o coroană de flori și le îndepărtăm.
+- Începem cu ultimii crini (13) și primii trandafiri (2) -> 13 + 2 = 15 -> 15 = 15, ceea ce înseamnă că vom crea o coroană de flori și vom elimina ambele valori.
 
-- Apoi avem 9 + 10 = 19 -> 19> 15 deci micșorăm crinii cu 2 -> 7 + 10 = 17 și micșorăm crinii cu 2 -> 5 + 10 = 15 și creăm încă o coroană de flori și le eliminăm.
+- Apoi avem 9 + 10 = 19 -> 19> 15, deci micșorăm numărul de crini cu 2 -> 7 + 10 = 17; micșorăm din nou numărul de crini cu 2 -> 5 + 10 = 15, creăm încă o coroană de flori și eliminăm valorile.
 
-- Apoi, avem 7 + 8 = 15. Mai creăm o coroană de flori și le eliminăm.
+- Apoi, avem 7 + 8 = 15; creăm încă o coroană de flori și eliminăm valorile.
 
-- Apoi, avem 2 + 12 = 14 -> 14 <15, deci trebuie să stocăm suma pentru mai târziu și să eliminăm tema.
+- Apoi, avem 2 + 12 = 14 -> 14 < 15, deci trebuie să stocăm florile pentru mai târziu și să eliminăm valorile.
 
 - Apoi, avem 15 + 0 = 15, deci creăm încă o coroană de flori.
 
-- Și, în sfârșit, avem 10 + 5 = 15, creăm încă o coroană de flori și nu mai amestecăm pentru că nu ne mai rămân flori.
+- Și, în sfârșit, avem 10 + 5 = 15, creăm încă o coroană de flori și ne oprim din confecționat coroane pentru că nu mai sunt flori rămase.
 
-- Acum avem un total de 5 coroane de flori și mai avem 14 flori rămase, dar nu mai putem crea coroane de flori pentru că 14 <15.
+- Acum avem un total de 5 coroane de flori și mai avem 14 flori rămase, dar nu mai putem crea coroane de flori pentru că 14 < 15.
 
 |**Intrare**|**Ieșire**|
 |---|---|
@@ -89,7 +89,7 @@ Trebuie să **nu mai** combinați atunci când nu mai aveți **trandafiri sau cr
 13 este **mai mic** decât 15, ceea ce înseamnă că trebuie să le **stocăm** suma pentru mai târziu și să le **eliminăm**.
 [/hint] 
 [hint]
-Apoi, avem `7 + 10 = 17`
+Apoi, avem `7 + 10 = 17„
 
 **Micșorăm** crinii cu **2**:
 `5 + 10 = 15`
