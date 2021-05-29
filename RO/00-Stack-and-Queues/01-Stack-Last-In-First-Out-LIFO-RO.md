@@ -14,16 +14,16 @@ Când adăugați un element, acesta este plasat întotdeauna **în partea de sus
 Eliminarea unui element se face de asemenea tot din **partea de sus** a stivei.
 
 Stivele oferă următoarele funcționalități:
-     - **pushing**: introducerea unui element în partea de sus a stivei
-     - **popping**: extragerea unui element din partea de sus a stivei
-     - obținerea (**peeking at**) primului element din partea de sus a stivei fără a-l elimina
+- **pushing**: introducerea unui element în partea de sus a stivei
+- **popping**: extragerea unui element din partea de sus a stivei
+- **peeking at**: obținerea primului element din partea de sus a stivei fără a-l elimina
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-3.png" /]
 
 [/slide]
 
 [slide hideTitle]
-# Implementarea Stivei și Metode Încorporate
+# Implementarea Stivelor și Metode Încorporate
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-12-ArrayDeque-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -111,7 +111,7 @@ System.out.println(stackOfCars.contains("BMW M3"));
 [/slide]
 
 [slide hideTitle]
-# O Prezentare Generală a Tuturor Operațiilor
+# Prezentarea Generală a Tuturor Operațiilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-14-Stack-Overview-of-all-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -136,15 +136,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care primește două de instrucțiuni pentru **browser**:
+Scrieți un program care primește două tipuri de instrucțiuni pentru **browser**:
 
 - Navigare normală: un **URL**, reprezentat de un **șir**
 
-- Comanda "**back**", care setează adresa URL curentă la ultima adresă URL setată
+- Comanda "**back**", care setează adresa URL curentă la ultima adresă URL accesată
 
-După fiecare instrucțiune, programul trebuie să **tipărească adresa URL curentă**.
+După fiecare instrucțiune, programul trebuie să **imprime adresa URL curentă**.
 
-Dacă instrucțiunea **back** nu poate fi executată, tipăriți `no previous URLs`.
+Dacă instrucțiunea **back** nu poate fi executată, tipăriți: `no previous URLs`.
 
 Programul **se încheie** după introducerea comenzii `Home`.
 
@@ -171,21 +171,21 @@ ArrayDeque<String> browser = new ArrayDeque<>();
 ```
 [/hint] 
 [hint]
-Folosiţi o variabilă de tip `String` pentru a stoca pagina curentă:
+Folosiţi o variabilă de tip `String` pentru a stoca URL-ul curent:
 
 ```java
 String currentURL = "";
 ```
 [/hint] 
 [hint]
-Folosiţi metoda `push()` la trecerea pe pagina următoare:
+Folosiţi metoda `push()` pentru a trece pe pagina următoare:
 
 ```java
 browser.push(currentURL);
 ```
 [/hint] 
 [hint]
-Folosiţi metoda `pop()` la întoarcerea la URL-ul precedent:
+Folosiţi metoda `pop()` pentru întoarcerea la URL-ul precedent:
 
 ```java
 currentURL = browser.pop();
@@ -389,7 +389,7 @@ Collections.addAll(stack, tokens);
 ```
 [/hint] 
 [hint]
-Puteți să **adăugați** elementele și apoi să le eliminați:
+Puteți să **adăugați** elementele și apoi să le **eliminați**:
 
 ```java
 System.out.println(stack.pop());
@@ -482,9 +482,9 @@ public class Main {
 [task-description]
 
 ## Descriere
-Creați un program simplu care **convertește un număr zecimal în reprezentarea sa binară**.
+Creați un program simplu care **convertește un număr în sistem zecimal în reprezentarea sa binară**.
 
-Implementați o soluție elegantă **folosind o stivă**.
+Implementați o soluție elegantă, **folosind o stivă**.
 
 **Imprimați reprezentarea binară** pe consolă.
 
@@ -616,7 +616,7 @@ public class Main {
 ## Descriere
 Vi se oferă o expresie **aritmetică** cu **paranteze**.
 
-Scanați prin șir și **extrageți** fiecare **sub-expresie**.
+Parcurgeți șirul și **extrageți** fiecare **sub-expresie**.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -640,8 +640,8 @@ ArrayDeque<Integer> stack = new ArrayDeque<>();
 ```
 [/hint] 
 [hint]
-**Scanați** prin expresie, căutând **paranteze**.
-Dacă găsiți o paranteză de deschidere, împingeți **indicele** în stivă:
+**Parcurgeți** expresia, căutând **paranteze**.
+Dacă găsiți o paranteză de deschidere, adăugați **indicele** în stivă:
 
 ```java
 if (character == '(') {
@@ -650,7 +650,7 @@ if (character == '(') {
 ```
 [/hint] 
 [hint]
-Dacă găsiți o paranteză de închidere, **scoateți** primul element de sus din stivă:
+Dacă găsiți o paranteză de închidere, **scoateți** primul element din partea de sus a stivei:
 
 ```java
 else if (character == ')') {
