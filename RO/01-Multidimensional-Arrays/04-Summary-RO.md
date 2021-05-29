@@ -5,7 +5,7 @@
 
 ## În această lecție ați învățat:
 
-- Ce Este o Matrice Multidimensională
+- Ce este o Matrice Multidimensională
      - matricele pot avea mai multe dimensiuni
 
 ```java
@@ -22,7 +22,7 @@ int[][] matrix = {
 };
 ```
 
-- Manipularea unei :atrice
+- Manipularea unei Matrice
     - Accesarea Elementelor unei `Matrice 2D`
     ```java
     int [][] array = new int [5][5];
