@@ -10,9 +10,9 @@
 
 Elementele cozii sunt ordonate pe baza principiului **FIFO** - **First In First Out**. 
 
-Când se adaugă un element, acesta este plasat mereu la **finalul** cozii. 
+Când un element este adăugat, acesta este plasat mereu la **finalul** cozii. 
 
-Eliminarea constă în ștergerea elementului de la **începutul** cozii.
+Eliminarea constă în ștergerea unui element de la **începutul** cozii.
 
 Această structură de date este modelată după cozile din viața reală, unde persoana care ajunge prima este servită înaintea celorlalți.
 
@@ -42,7 +42,7 @@ Această structură de date este modelată după cozile din viața reală, unde 
 
 [slide hideTitle]
 
-# Implementarea Cozii cu ArrayDeque
+# Implementarea Cozilor cu ArrayDeque
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-29-30-34-ArrayDeque-Java-Implementation-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -52,7 +52,7 @@ Această structură de date este modelată după cozile din viața reală, unde 
 ArrayDeque<Integer> queue = new ArrayDeque<>();
 ```
 
-- `offer(element)` și `add(element)` - ambele metode adaugă elemente la sfârșitul cozii. Diferența dintre ele este că:
+- `offer(element)` și `add(element)` - ambele metode adaugă elemente la sfârșitul cozii. Diferența dintre ele este faptul că:
 
     - `add()` - generează o **excepție** dacă coada este plină
 
@@ -72,13 +72,13 @@ ArrayDeque<Integer> queue = new ArrayDeque<>();
 
 [slide hideTitle]
 
-# Operațiile Cozii
+# Operațiile Cozilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-31-33-Add-Remove-Peak-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Add() / Offer()
 
-Ambele metode sunt folosite pentru adăugarea elementelor la finalul cozii
+Ambele metode sunt folosite pentru adăugarea elementelor la finalul cozii.
 ```java live 
 ArrayDeque<Integer> queue = new ArrayDeque<>();
 
@@ -93,9 +93,9 @@ Sunt folosite în scenarii diferite:
 
 - Dacă coada nu are restricție de dimensiune (coadă cu capacitate nelimitată) - atunci puteți folosi oricare funcție
 
-- Dacă coada are restricție de capacitate, este mai bine să folosiți `offer()` deoarece dacă funcția eșuează, va returna **false** fără a arunca o excepție 
+- Dacă coada are restricție de capacitate, este mai bine să folosiți `offer()` deoarece dacă funcția eșuează, va returna **false**, fără a arunca o excepție 
 
-- Dacă folosiți `add()` cu o coadă cu restricție de capacitate și eșuează, acest lucru va avea ca rezultat excepția **IllegalStateException** care trebuie tratată
+- Dacă folosiți metoda `add()` pentru o coadă cu restricție de capacitate și aceasta eșuează, acest lucru va avea ca rezultat excepția **IllegalStateException**, care trebuie tratată
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-7.gif" /]
 
@@ -106,7 +106,7 @@ Ambele funcții elimină primul element din coadă.
 
 Diferența dintre cele două este că atunci când sunt folosite pe o coadă goală, `poll()` returnează **null**, în timp ce `remove()` generează excepția **NoSuchElementException**.
 
-Aici este un exemplu pentru metoda `poll()`:
+Aici aveți un exemplu pentru metoda `poll()`:
 
 ```java live
 ArrayDeque<Integer> queue = new ArrayDeque<>();
@@ -119,16 +119,16 @@ queue.offer(10);
 System.out.println("The removed element is: " + queue.poll());
 queue.forEach(element -> System.out.print(element + " "));
 ```
-Nu contează dacă folosim **remove** sau **poll** aici. Ambele vor face același lucru, deoarece coada nu este goală.
+Nu contează dacă folosim **remove()** sau **poll()** aici. Ambele vor face același lucru, deoarece coada nu este goală.
 
-Lucrurile sunt diferite când lucrăm cu o coadă goală:
+Lucrurile stau diferit dacă lucrăm cu o coadă goală:
 
 ```java live
 ArrayDeque<Integer> queue = new ArrayDeque<>();
 System.out.println("The removed element is: " + queue.poll());
 ```
 
-Rezultatul de mai sus este **null**, dar dacă folosiți `remove()` veți avea o eroare:
+Rezultatul de mai sus este **null**, dar dacă folosiți `remove()` veți obține o eroare:
 ```java live
 ArrayDeque<Integer> queue = new ArrayDeque<>();
 System.out.println(queue.remove());
@@ -249,7 +249,7 @@ La final, **tipăriți numele ultimului copil**.
 
 - Pe prima linie veți primi numele copiilor, separate prin spații
 
-- Pe a doua linie veți veți primi un număr **n** care reprezintă aruncarea cu numărul **n** a cartofului; țineți minte că la **fiecare **n** aruncare , copilul care ține cartoful la acel moment părăsește jocul**
+- Pe a doua linie veți veți primi un număr **n** care reprezintă aruncarea cu numărul **n** a cartofului; țineți minte că la fiecare **n** aruncări, copilul care ține cartoful la acel moment părăsește jocul
 
 ## Ieșire
 
