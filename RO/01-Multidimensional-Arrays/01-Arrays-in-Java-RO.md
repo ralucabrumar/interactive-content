@@ -12,11 +12,11 @@ O matrice este o **secvență de elemente** care deține un **număr fix de valo
 
 Fiecare **unitate** dintr-o matrice se numește **element**, iar **fiecare element este accesat** prin **indicele său numeric**.
 
-Următoarea ilustrație explică o **matrice cu 5 elemente reprezentate de numere întregi**:
+Următoarea imagine ilustrează o **matrice cu 5 elemente reprezentate de numere întregi**:
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-2.png" /]
 
-După cum este exemplificat în ilustrația de mai sus, **numerotarea elementelor începe cu 0**. **Primul element** poate fi accesat la **indicele 0** și **ultimul la indicele 4**.
+După cum este exemplificat în ilustrația de mai sus, **numerotarea elementelor începe cu 0**. **Primul element** poate fi accesat cu **indicele 0** și **ultimul cu indicele 4**.
 
 [/slide]
 
@@ -58,7 +58,7 @@ for (int i = 0; i < numbers.length; i++) {
 
 Folosind o **buclă-for**, parcurgem lungimea matricii și atribuim o valoare fiecărui element, iar apoi tipărim elementul curent.
 
-- Accesarea elementelor matricei:
+Accesarea elementelor matricei:
   
 ``` java live
 int[] numbers = {25, 45, 65};
