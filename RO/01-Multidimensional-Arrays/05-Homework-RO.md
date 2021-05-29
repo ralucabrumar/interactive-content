@@ -57,7 +57,7 @@ public static void printMatrix(
 [/hints] 
 
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 3, A | 1 4 7  |
@@ -397,7 +397,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care găsește **diferența dintre sumele de pe diagonalele matricelor pătrate** (valoarea absolută).
+Scrieți un program care găsește **diferența dintre sumele de pe diagonalele unor matrice pătrate** (valoarea absolută).
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-3.png" /]
 
@@ -408,7 +408,7 @@ Scrieți un program care găsește **diferența dintre sumele de pe diagonalele 
 
 [hints]
 [hint]
-Utilizați o **singură buclă** `i = [1 ... n]` pentru a însuma diagonalele:
+Utilizați o **singură buclă** `i = [1 ... n]` pentru a determina suma diagonalelor:
 
 ```java
 for (int i = 0; i < n; i++) {
