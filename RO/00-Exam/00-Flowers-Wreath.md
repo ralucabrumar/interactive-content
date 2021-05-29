@@ -89,31 +89,31 @@ Trebuie să vă opriți din confecționat atunci când nu mai aveți **trandafir
 13 este **mai mic** decât 15, ceea ce înseamnă că trebuie să le **stocăm** suma pentru mai târziu și să le **eliminăm**.
 [/hint] 
 [hint]
-Apoi, avem `7 + 10 = 17„
+Apoi, avem `7 + 10 = 17`.
 
-**Micșorăm** crinii cu **2**:
+**Micșorăm** numărul de crini cu **2**:
 `5 + 10 = 15`
 
-15 este **egal** cu 15 și creăm **o coroană de flori**.
+15 este **egal** cu 15, deci creăm **o coroană de flori**.
 [/hint] 
 [hint]
-Al treilea, avem `3 + 8 = 11`
+A treia oară, avem `3 + 8 = 11`.
 **11** < **15** -\> le stocăm suma pentru mai târziu și le eliminăm.
 [/hint] 
 [hint]
-Al patrulea, avem `5 + 7 = 12`
+A patra oară, avem `5 + 7 = 12`.
 Le stocăm suma pentru mai târziu și le eliminăm.
 [/hint] 
 [hint]
 Apoi, avem `10 + 6 = 16` -\> 16 \> 15
-**Micșorăm** crinii cu **2** -\> `8 + 6 = 14`
+**Micșorăm** numărul de crini cu **2** -\> `8 + 6 = 14`
 Deoarece 14 este mai mic de 15, le **stocăm** suma pentru mai târziu și le eliminăm.
 [/hint] 
 [hint]
-Și, în sfârșit, avem `10 + 5 = 15`, creăm încă o coroană de flori și nu mai amestecăm pentru că nu ne mai rămân flori.
+Și, în sfârșit, avem `10 + 5 = 15`,deci creăm încă o coroană de flori.
 [/hint] 
 [hint]
-Încetăm să mai creăm pentru că nu ne mai rămân flori.
+Încetăm să mai confecționăm coroane pentru că nu ne mai rămân flori.
 Avem 1 coroană de flori și 50 de flori depozitate. 
 Creăm încă 3 coroane de flori, deoarece `3 * 15 = 45` -> `50 - 45 = 5` -\> **5** \< **15**.
 [/hint] 
