@@ -5,7 +5,7 @@
 
 ## În această lecție ați învățat:
 
-- **Stacks** - Last In First Out -**LIFO**
+- **Stacks** - Last In First Out (LIFO)
 
    - `push()`
 
@@ -30,7 +30,7 @@
     ```
 
 
-- **Queues** - First in First Out -**FIFO**
+- **Queues** - First In First Out (FIFO)
 
     - `add()`
 
