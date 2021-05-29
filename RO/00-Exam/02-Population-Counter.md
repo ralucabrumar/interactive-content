@@ -72,6 +72,7 @@ Dacă două țări/orașe au aceeași populație, păstrați-le în **ordinea** 
 |report|=>Sofia: 1| 
 ||Italy (total population: 3)|
 ||=>Rome: 3|
+
 [/task-description]
 [code-io /]
 [tests]
