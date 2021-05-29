@@ -23,14 +23,14 @@ for (int row = 0; row < rows; row++) {
     // For-loop through the columns
     for (int column = 0; column < cols; column++) {
 
-        // Getting an element of the current row and column and assigning a value  
-        matrix[row][column] = Integer.parseInt(inputTokens[column]);
+    // Getting an element of the current row and column and assigning a value  
+    matrix[row][column] = Integer.parseInt(inputTokens[column]);
     }
 }
 ```
 
 - Întâi, citim lungimea rândurilor și a coloanelor matricei
-- Apoi, inițializăm o matrice de numere întregi cu numărul de rânduri și coloane date
+- Apoi, inițializăm o matrice de numere întregi cu numărul dat de rânduri și coloane 
 - Creăm o **buclă-for** pentru a parcurge rândul unei matrice unidimensionale
 - Apoi, citim elementele care vor face parte din matricea noastra bidimensională
 - Avem nevoie de o buclă interioară care va parcurge coloana unei matrice unidimensionale particulare
@@ -52,7 +52,7 @@ for (int row = 0; row < matrix.length; row++) {
 }
 ```
 
-Accesăm fiecare element al matricei unul câte unul și le tipărim, separate printr-un spațiu.
+Accesăm elementele matricei unul câte unul și le tipărim, separate printr-un spațiu.
 
 [/slide]
 
@@ -77,7 +77,7 @@ public class Main {
 ## Descriere
 Creați un program care citește două matrice "2D" de numere întregi de la consolă și le compară element cu element.
 
-Pentru o mai bună reutilizare a codului, puteți realiza compararea într-o metodă care returnează **true** dacă sunt egale și **false**, în caz contrar.
+Pentru o mai bună reutilizare a codului, puteți realiza compararea într-o metodă care returnează **true** dacă sunt egale și **false** în caz contrar.
 
 Fiecare definiție a unei matrice va conține o linie cu un număr întreg pozitiv `R` - numărul de rânduri ale matricei și `C` - numărul de coloane. În continuare vor urma `R` linii care conțin `C` numere, separate prin spații - **fiecare linie va avea un număr egal de elemente**.
 
@@ -277,7 +277,7 @@ Definirea matricei pe consolă va conține o linie cu două **numere întregi po
 
 Numărul ale cărui poziții va trebui să le găsiți va fi introdus pe o singură linie după matrice.
 
-Trebuie să tipăriți fiecare poziție pe o singură linie. Prima dată, tipăriți linia, apoi coloana pe care apare numărul.
+Trebuie să tipăriți fiecare poziție pe o singură linie. Prima dată tipăriți linia, apoi coloana pe care apare numărul.
 
 Dacă numărul nu apare în matrice, tipăriți `not found`.
 
