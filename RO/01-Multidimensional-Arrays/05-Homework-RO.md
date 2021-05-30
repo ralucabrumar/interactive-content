@@ -245,7 +245,7 @@ De exemplu:
 - **r** și **c** sunt numere întregi din intervalul `[1 ... 26]`
 - `r + c <= 27`
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 4 6 | aaa aba aca ada aea afa |
@@ -397,7 +397,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care găsește **diferența dintre sumele diagonalelor unor matrice pătrate** (valoarea absolută).
+Scrieți un program care găsește **diferența dintre sumele diagonalelor unei matrice pătrate** (valoarea absolută).
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-3.png" /]
 
@@ -433,7 +433,7 @@ secondaryDiagonal += matrix[i][matrix[i].length - 1 - i];
 [/hints] 
 
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
 | 3 | 15 | **Diagonala principală:** `sum = 11 + 5 + (-12) = 4`  |
@@ -822,7 +822,7 @@ Gândiți-vă la tratarea excepțiilor:
 [/hints] 
 
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 3 | 5 2 3 |
@@ -1165,7 +1165,7 @@ Presupuneți că aceste linii de text formează o **matrice de caractere** (intr
 
 Scrieți un program care **rotește matricea** cu 90, 180, 270, 360, … de grade.
 
-După întâlnirea comenzii `END`, imprimați rezultatul pe consolă, sub forma unei secvențe de șiruri.
+După întâlnirea comenzii `END`, imprimați rezultatul pe consolă sub forma unei secvențe de șiruri.
 
 ## Exemplu
 
@@ -1628,7 +1628,7 @@ Apoi, trebuie să **distrugeți** celulele care corespund acelor argumente, **î
 
 **Distrugerea** unei celule înseamnă că **celula curentă** devine complet **inexistentă** în matrice.
 
-Distrugerea celulelor **în model de cruce** înseamnă că formați **o cruce* cu un punct central - echivalent cu celula cu coordonatele date – **rândul dat** și **coloana**, și **liniile** de lungime egală cu **raza dată**. 
+Distrugerea celulelor **în model de cruce** înseamnă că formați **o cruce** cu un punct central - echivalent cu celula cu coordonatele date – **rândul dat** și **coloana**, și **liniile** de lungime egală cu **raza dată**. 
 
 Observați exemplele de mai jos pentru mai multe informații.
 
@@ -1638,7 +1638,7 @@ Când se întâmplă asta, trebuie să imprimați ceea ce a rămas din matricea 
 
 ## Intrare
 
-- Pe prima linie veți primi dimensiunile matricei; apoi, trebuie să completați matricea cu elemente, conform dimensiuni date
+- Pe prima linie veți primi dimensiunile matricei; apoi, trebuie să completați matricea cu elemente, conform dimensiunilor date
 - Pe următoarele linii veți începe să primiți **3 numere întregi** separate de un singur **spațiu**, care reprezintă rândul, coloana și raza
   
 Apoi, trebuie să distrugeți celulele conform coordonatelor respective.
@@ -1657,7 +1657,7 @@ Apoi, trebuie să distrugeți celulele conform coordonatelor respective.
 - Raza va fi un număr din intervalul `[0, 2 ^ 31 - 1]`
 
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- | 
 | 5 5 | 1 2 3 4 5 |
@@ -2638,7 +2638,7 @@ Apoi, vi se dau **N** șiruri care pot consta **doar** în caracterele `.`, `B` 
 
 Aceste marcaje reprezintă starea inițială a vizuinei. 
 
-Apoi, veți primi un șir cu **comenzi**, precum `LLRRUUDD` – unde fiecare literă reprezintă următoarea **mișcare** a jucătorului (Stânga (Left), Dreapta (Right), Sus (Up), Jos (Down)).
+Apoi, veți primi un șir cu **comenzi**, precum `LLRRUUDD` – unde fiecare literă reprezintă următoarea **mișcare** a jucătorului (Stânga - Left, Dreapta - Right, Sus - Up, Jos - Down).
 
 **După** fiecare pas al jucătorului, fiecare iepure merge în sus, jos, la stânga și apoi la dreapta (celulele învecinate marcate cu "." **își schimbă** valoarea în `B`). 
 
@@ -2652,7 +2652,7 @@ Toate activitățile **acestei** rundei finale continuă (e.g. toți iepurașii 
 
 **Nu** va fi niciun caz în care mișcările jucătorului iau sfârșit înainte ca acesta să moară sau să câștige.
 
-În final, imprimați starea finală a vizuinei, fiecare rând fiind imprimat pe o linie separată. 
+La final, imprimați starea finală a vizuinei, fiecare rând fiind imprimat pe o linie separată. 
 
 Pe ultima linie, tipăriți `dead: {rând} {coloană}` sau `won: {rând} {coloană}`. 
 
@@ -3073,7 +3073,7 @@ Datele de ieșire constau în diagonalele inversate ale matricei, unde numerele 
 
 Toate numerele întregi se află în intervalul `[1 ... 1000]`.
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 4 | 10 |
@@ -3435,9 +3435,9 @@ Simbolul corespunzător coordonatelor `startRow` și `startCol` va fi numit `sta
 Scrieți un program care, începând de la rândul `startRow` și coloana `startCol`, schimbă în `fillChar` fiecare simbol din matrice care:
 
 - este echivalent cu `startChar`
-- poate fi atins de la `startChar` mergând în sus (`row – 1`), în jos (`row + 1`), la stânga (`col – 1`) și la dreapta (`col + 1`) și `călcând` DOAR pe simbolurile echivalente cu `startChar`
+- poate fi atins de la `startChar` mergând în sus (`row – 1`), în jos (`row + 1`), la stânga (`col – 1`) și la dreapta (`col + 1`) și `traversând` DOAR simbolurile echivalente cu `startChar`
 
-Începeți de la `startRow` și `startCol` și deplasați-vă schimbând **rândul** sau **coloana** (nu ambele deodată, adică nu puteți merge pe diagonală) cu **1**. Puteți merge doar pe pozițiile care conțin `startChar`. 
+Începeți de la `startRow` și `startCol` și deplasați-vă schimbând **rândul** sau **coloana** (nu ambele deodată, i.e. nu puteți merge pe diagonală) cu **1**. Puteți traversa doar pozițiile care conțin `startChar`. 
 
 Odată ce găsiți toate acele poziții, trebuie să le schimbați valoarea cu simbolul `fillChar`.
 
@@ -3472,7 +3472,7 @@ Pentru unele teste, puteți rezolva problema utilizând o abordare simplă. Solu
 
 
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 3 | xxx |
