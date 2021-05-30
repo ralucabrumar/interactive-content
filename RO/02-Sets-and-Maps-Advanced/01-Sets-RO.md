@@ -13,9 +13,9 @@ Interfața **Set** extinde interfața **Collection**.
 
 **Interfețele** în Java reprezintă un **comportament**, fără să specifice vreo formă de **implementare**.
 
-Scopul interfeței este să **specifice existența unor metode** cu un comportament particular, și pot fi implementate de orice clasă.
+Scopul interfeței este să **specifice existența unor metode** cu un comportament particular, care pot fi implementate de orice clasă.
 
-**Interfețele** nu sunt **subiectul acestui curs**, vom învăța mai multe despre ele în cursul despre Java OOP.
+**Interfețele** nu sunt **subiectul acestui curs**. Vom învăța mai multe despre ele în cursul despre Java OOP.
 
 **Există trei tipuri diferite de seturi:**
 - `HashSet<E>`
@@ -26,17 +26,17 @@ Scopul interfeței este să **specifice existența unor metode** cu un comportam
 - Nu sunt permise elemente duplicate
 - Elementele nu sunt stocate în ordine
 - Oferă performanțe foarte rapide
-- Setul poate avea **cel mult o valoare nulă**
-- Spre deosebire de Liste și Matrice, Setul **NU** acceptă indici sau poziționarea elementelor sale
+- Pot conține **cel mult o valoare nulă**
+- Spre deosebire de liste și matrice, seturile **NU** acceptă indici sau poziționarea elementelor lor
 
 **Pe baza caracteristicilor seturilor, acestea poti fi utilizate atunci când:**
-- Doriți să stocați elemente unice fără duplicare
+- Doriți să stocați elemente unice fără duplicate
 - Vreți o performanță rapidă, iar ordinea elementelor nu este importantă
 
-**De exemplu**, puteți utiliza un set:
-- Pentru a stoca **numere întregi unice**
-- Pentru a stoca **cărți la întâmplare într-un joc de cărți**
-- Pentru a stoca **numere în ordine aleatorie**, etc.
+**De exemplu**, puteți utiliza un set pentru a stoca:
+- **numere întregi unice**
+- **cărți unice într-un joc de cărți**
+- **numere în ordine aleatorie**, etc.
 
 [/slide]
 
@@ -48,18 +48,18 @@ Scopul interfeței este să **specifice existența unor metode** cu un comportam
 
 Clasa **HashSet** implementează interfața **Set**, susținută de un **Hash Table**.
 
-**Nu oferă garanții** în legătură cu **succesiunea elementelor** atunci când le iterați.
+**Nu oferă garanții** în legătură cu **succesiunea elementelor** în timpul parcurgerii acestora.
 
-Clasa **HashSet** oferă **performanță** constantă în timp pentru operațiile de bază - `add()`, `remove()`, `contains()` și `size()`.
+Clasa **HashSet** oferă **performanță** constantă de timp pentru operațiile de bază - `add()`, `remove()`, `contains()` și `size()`.
 
 - Inițializare:
 ```java
 Set<String> hash = new HashSet<String>();
 ```
 
-- `add()` - adaugă un element în `HashSet`, returnează `true` dacă elementul a fost **adăugat** cu succes
+- `add()` - adaugă un element în `HashSet` și returnează `true` dacă elementul a fost **adăugat** cu succes
 
-Dacă setul conține deja elementul, acesta rămâne neschimbat și se returnează `false`.
+Dacă setul conține deja elementul, acesta rămâne neschimbat, iar metoda returnează `false`.
 
 ```java live
 Set<String> hash = new HashSet<>();
@@ -90,7 +90,7 @@ System.out.println(hash.remove("Ana"));
 ```
 
 
-- `contains()` - returnează `true` dacă elementul există în `HashSet`, iar în caz contrar, returnează `false` 
+- `contains()` - returnează `true` dacă elementul există în `HashSet`, iar în caz contrar, returnează `false`
 
 ```java live
 Set<String> hash = new HashSet<>();
@@ -103,7 +103,7 @@ System.out.println(hash.contains("Alice"));
 System.out.println(hash.contains("Ana"));
 ```
 
-- `size()` - returnează număril de elemente care sunt stocate în `HashSet`:
+- `size()` - returnează numărul de elemente care sunt stocate în `HashSet`
 
 ```java live
 Set<String> hash = new HashSet<>();
@@ -123,11 +123,11 @@ System.out.println(hash.size());
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-9-TreeSet-Add-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Elementele sunt ordonate pe baza **ordinii lor naturale**.
+Elementele sunt sortate pe baza **ordinii lor naturale**.
 
-TreeSet garantează costuri de timp **log(n)** pentru operațiile de bază - `add()`, `remove()` și `contains()`.
+**TreeSet** garantează costuri de timp **log(n)** pentru operațiile de bază - `add()`, `remove()` și `contains()`.
 
-**Valorile nule** nu sunt **acceptate** de `TreeSet`.
+**Valorile nule** **nu sunt acceptate** de `TreeSet`.
 
 - Inițializare:
 ```java
@@ -136,7 +136,7 @@ Set<String> tree = new TreeSet<>();
 
 - `add()` - adaugă un element în `TreeSet`, returnează `true` dacă elementul a fost adăugat cu succes
 
-Dacă setul conține deja elementul, acesta rămâne neschimbat și se returnează `false`.
+Dacă setul conține deja elementul, acesta rămâne neschimbat, iar metoda returnează `false`.
 
 ```java live
 Set<String> tree = new TreeSet<>();
@@ -163,7 +163,7 @@ System.out.println(tree.remove("Ana"));
 System.out.println(tree);
 ```
 
-- `contains()` - returnează `true` dacă elementele există în `TreeSet`, altfel, returnează `false`
+- `contains()` - returnează `true` dacă elementele există în `TreeSet`; altfel, returnează `false`
 
 ```java live
 Set<String> tree = new TreeSet<>();
@@ -193,9 +193,9 @@ Un LinkedHashSet permite maxim **un element nul**.
 Set<String> linkedHashSet = new LinkedHashSet<>();
 ```
 
-- `add()` - adaugă un element în `LinkedHashSet`, returnează `true` dacă elementul a fost adăugat cu succes
+- `add()` - adaugă un element în `LinkedHashSet` și returnează `true` dacă elementul a fost adăugat cu succes
 
-Dacă setul conține deja elementul, acesta rămâne neschimbat și este returnat `false`.
+Dacă setul conține deja elementul, acesta rămâne neschimbat, iar metoda returnează `false`.
 
 ```java live
 Set<String> linkedHashSet = new LinkedHashSet<>();
@@ -211,7 +211,7 @@ System.out.println(linkedHashSet.add("Alice"));
 ```
 
 
--  `remove()` - caută elemental specificat, returnează `true` dacă elementul specificat există în `LinkedHashSet`, iar apoi rlimină elementul; altfel, returnează `false`
+-  `remove()` - caută elemental specificat, returnează `true` dacă elementul specificat există în `LinkedHashSet`, iar apoi elimină elementul; altfel, returnează `false`
 
 ```java live
 Set<String> linkedHashSet = new LinkedHashSet<>();
@@ -263,7 +263,7 @@ public class Main {
 ## Descriere
 Scrieți un program care:
   - Înregistrează numărul corespunzător fiecărei mașini care intră în parcare
-  - Elimină numărul mașinii când mașina părăsește parcarea
+  - Elimină numărul când mașina părăsește parcarea
 
 ## Intrare
 Intrarea constă într-un șir care respectă formatul \[**direction**, **carNumber**\].
@@ -271,7 +271,7 @@ Intrarea constă într-un șir care respectă formatul \[**direction**, **carNum
 Datele de intrare se opresc după introducerea șirului `END`.
 
 ## Ieșire
-Rezultatul constă în toate numerele tuturor mașinilor care se află în parcare.
+Rezultatul afișat este reprezentat de toate numerele mașinilor care se află în parcare.
 
 Dacă parcarea este goală, tipăriți: `Parking Lot is Empty`.
 
@@ -467,10 +467,10 @@ Când invitatul sosește, trebuie să verificați **dacă acesta există** în o
 
 Toate **numerele de rezervare** sunt formate din **8 caractere**.
 
-Toate **numerele de rezervare** VIP încep cu o **cifră**.
+Toate **numerele de rezervare VIP** încep cu o **cifră**.
 
 ## Intrare
-- Până la introducerea comenzii `PARTY`, veți primi invitații pentru oaspeți
+- Până la introducerea comenzii `PARTY`, veți primi rezervări pentru invitați
 - Până la introducerea comenzii `END`, veți primi o a doua listă cu invitații care au participat la petrecere
   
 ## Ieșire
@@ -757,16 +757,16 @@ public class Main {
 [task-description]
 ## Descriere
 Scrieți un program care:
-   - Citește 20 de numere pentru ambii jucători, separate printr-un **singur spațiu**
+   - Citește 20 de numere pentru doi jucători, separate printr-un **singur spațiu**
    - Fiecare jucător poate **să dețină numai numere unice**
    
-La fiecare rundă, ambii jucători iau numărul din partea de sus a pachetului.
+În fiecare rundă, ambii jucători extrag numărul din partea de sus a pachetului.
 
 Jucătorul cu numărul mai mare primește ambele numere și le adaugă în partea de jos a pachetului.
 
 Jocul se termină după 50 de runde sau dacă un jucător își pierde toate numerele.
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 26 58 16 92 44 65 65 77 57 23 71 57 7 52 85 44 32 70 38 23 | Second player wins! |
