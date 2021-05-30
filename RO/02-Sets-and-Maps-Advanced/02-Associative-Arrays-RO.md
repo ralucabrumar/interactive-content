@@ -5,11 +5,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-16-17-Associative-Arrays-Maps-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Ați învățat că Matricele stochează elementele ca o colecție ordonată, iar acestea pot fi accesate prin intermediul indicilor - **de tip int**.
+Ați învățat că matricele stochează elementele sub forma unei colecții ordonate, iar acestea pot fi accesate prin intermediul indicilor - **de tip int**.
 
-În schimb, o Matrice Asociativă stochează elemente în perechi **cheie**-**valoare** și le puteți accesa printr-un index de alt tip (de ex. un șir).
+În schimb, o matrice asociativă stochează elemente în perechi **cheie**-**valoare** care pot fi accesate printr-un indice de alt tip (de ex. un șir).
 
-Un obiect este folosit drept cheie (index) către un alt obiect (valoare).
+Un obiect este folosit drept cheie (indice) către un alt obiect (valoare).
 
 Tipurile de date ale cheii și valorii nu pot fi primitive precum `int`, `double`, `boolean` etc.
 
@@ -19,7 +19,7 @@ Tipul **cheii** și al **valorii** poate fi identic sau diferit, în funcție de
 
 În Java, matricele asociative se numesc **Maps**. 
 
-Map **nu poate conține chei duplicate**.
+Un Map **nu poate conține chei duplicate**.
 
 Fiecare **cheie** poate asocia cel mult o valoare.
 
@@ -49,15 +49,15 @@ Pentru o **cheie**, o singură **valoare** poate fi stocată în aceeași instan
 
 **Principalele caracteristici ale Maps sunt:**
 - Conțin un set de perechi \<key, value\>
-- Conține chei unice
+- Conțin chei unice
 - Fiecare cheie poate asocia cel mult o valoare
 - Valorile pot fi duplicate
 
 **Pe baza caracteristicilor Maps, iată câteva exemple:**
-- Map a codurilor de eroare și descrierile acestora
-- Map a codurilor poștale și a orașelor
-- Map a managerilor și angajaților; fiecare manager (**cheie**) este asociat cu o listă de angajați (**valoare**) pe care o gestionează
-- Map a claselor și a studenților; fiecare clasă (**cheie**) este asociată cu o listă de studenți (**valoare**)
+- Un map al codurilor de eroare și al descrierilor acestora
+- Un map al codurilor poștale și al orașelor
+- Un map al managerilor și al angajaților; fiecare manager (**cheie**) este asociat cu o listă de angajați (**valoare**)
+- Un map al claselor și al studenților; fiecare clasă (**cheie**) este asociată cu o listă de studenți (**valoare**)
 
 
 [/slide]
@@ -72,7 +72,7 @@ Pentru o **cheie**, o singură **valoare** poate fi stocată în aceeași instan
 
 **Hashmap** implementează toate operațiile **Map** și **admite valori nule** și **o cheie nulă**.
 
-Luați în considerare utilizarea unui **HashMap** atunci când **ordinea nu contează și valorile nule sunt acceptabile**.
+Luați în considerare utilizarea unui **HashMap** atunci când **ordinea nu contează și valorile nule sunt acceptate**.
 
 - Inițializare:
 ```java
@@ -110,11 +110,11 @@ hashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-24-TreeMap-Put-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`TreeMap <Key, Value>` este **sortat** în funcție de **ordinea naturală a cheilor sale**.
+`TreeMap<Key, Value>` este **sortat** în funcție de **ordinea naturală a cheilor sale**.
 
-**TreeMaps** în Java **nu permite chei nule**.
+**TreeMaps** în Java **nu permit chei nule**.
 
-Este mai bine să utilizați **TreeMap** când doriți **un Map sortat în funcție de chei** (de ex. **ordine alfabetică** sau **ordine numerică**).
+Un **TreeMap** este util atunci când doriți **un Map ordonat în funcție de chei** (de ex. **ordine alfabetică** sau **ordine numerică**).
 
 - Inițializare:
 
@@ -140,11 +140,11 @@ treeMap.forEach((k, v) -> System.out.println(k + " - " + v));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-27-HashMap-LinkedHashMap-TreeMap-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`LinkedHashMap <Key, Value>` moștenește clasa HashMap, dar **menține ordinea de inserare**. 
+`LinkedHashMap<Key, Value>` moștenește clasa HashMap, dar **menține ordinea de inserare**. 
 
-**Păstrează cheile în ordinea adăugării lor.**
+**Un LinkedHashMap păstrează cheile în ordinea adăugării lor.**
 
-Este mai bine să utilizați **LinkedHashMap** când doriți **un Map în care perechile cheie-valoare sunt sortate după ordinea lor de inserare.**
+Un **LinkedHashMap** este util atunci când doriți **un Map în care perechile cheie-valoare sunt sortate în funcție de ordinea lor de inserare.**
 
 - Inițializare:
 
@@ -173,11 +173,9 @@ linkedHashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 
 - `put(K key, V value)` - **adaugă elementele** în map
 
-La un moment dat, în map poate exista doar o singură pereche cheie-valoare pentru fiecare cheie.
+La un moment dat, în Map poate exista doar o singură pereche cheie-valoare pentru fiecare cheie.
 
-Dacă metoda `put()` este apelată de mai multe ori cu aceeași cheie, **cea mai recentă valoare** transmisă metodei pentru cheia respectivă va **suprascrie** ceea ce este deja stocat în Map pentru cheia respectivă.
-
-**Cea mai recentă valoare înlocuiește valoarea existentă** pentru cheia dată.
+Dacă metoda `put()` este apelată de mai multe ori cu aceeași cheie, **cea mai recentă valoare** transmisă metodei pentru cheia respectivă va **suprascrie** valoarea deja stocată în Map pentru cheia respectivă.
 
 ```java
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -195,7 +193,7 @@ System.out.println(airplanes.get("Boeing 737"));
 ```
 
 - `get(K key)` - **accesează o valoare** cu ajutorul cheii sale și returnează obiectul valorii
-- 
+
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -221,7 +219,7 @@ System.out.println(airplanes.get("Boeing 737"));
 System.out.println(airplanes.get("Airbus A320"));
 ```
 
-- `size()` - returnează **numărul de elemente (înregistrări)** din hartă
+- `size()` - returnează **numărul de elemente (înregistrări)** din map
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -229,7 +227,7 @@ airplanes.put("Airbus A320", 150);
 System.out.println(airplanes.size());
 ```
 
-- `containsKey(K key)` - verifică **dacă există o astfel de cheie** în Map, iar dacă aceasta există, returnează `true`; altfel, returnează `false`
+- `containsKey(K key)` - verifică **dacă există o astfel de cheie** în map, iar dacă aceasta există, returnează `true`; altfel, returnează `false`
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Airbus A320", 150);
@@ -238,7 +236,7 @@ if (airplanes.containsKey("Airbus A320")) {
 }
 ```
 
-- `containsValue(V value)` - verifică **dacă există o astfel de valoare** în Map, iar dacă aceast există, returnează `true`; altfel, returnează `false`
+- `containsValue(V value)` - verifică **dacă există o astfel de valoare** în map, iar dacă aceast există, returnează `true`; altfel, returnează `false`
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Airbus A320", 150);
@@ -266,7 +264,7 @@ System.out.println(airplanes.isEmpty());
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-21-Looping-Through-Maps-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Iterarea prin obiecte de tip `Map.Entry <K, V>` **nu poate modifica** colecția (este read-only).
+Iterarea prin obiectele de tip `Map.Entry<K, V>` **nu poate modifica** colecția (este read-only).
 
 Există mai multe moduri de a itera printr-un Map.
 
