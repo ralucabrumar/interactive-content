@@ -773,7 +773,7 @@ public class Main {
 ## Descriere
 Scrieți un program care citește un **text** și **numără aparițiile fiecărui caracter**.
 
-Imprimați rezultatul în **ordine alfabetică**, utilizând sintaxa: `{simbol}: {număr} time/s`.
+Imprimați rezultatul în **ordine alfabetică**, utilizând sintaxa: `{symbol}: {count} time/s`.
 
 ## Exemple
 | **Intrare** | **Ieșire** |
@@ -988,9 +988,9 @@ Rămâne la latitudinea voastră să alegeți modul în care sunt introduse date
 
 Dacă se introduce un nume care **există deja** în cartea de telefon, actualizați numărul de telefon.
 
-După ce ați completat cartea de telefon, la primirea **comenzii** "**search**", programul vostru trebuie să realizeze o căutare de contacte pe baza numelui și să imprime informațiile în formatul `{nume} -> {număr}`. 
+După ce ați completat cartea de telefon, la primirea **comenzii** "**search**", programul vostru trebuie să realizeze o căutare de contacte pe baza numelui și să imprime informațiile în formatul `{name} -> {number}`. 
 
-În cazul în care contactul nu e găsit, imprimați "**Contact** \{**name**\} **does not exist.**"
+În cazul în care contactul nu e găsit, imprimați "**Contact** \{**name**\} **does not exist.**".
 
 Programul trebuie să se termine odată cu primirea **comenzii** "**stop**".
 
@@ -1173,7 +1173,7 @@ Cerința voastră este să **colectați** resursele și să le imprimați, fieca
 
 **Imprimați resursele și cantitățile acestora în formatul:**
 
-`{resursă} –> {cantitate}`
+`{resource} –> {quantity}`
 
 Cantitățile date sunt numere din **intervalul** \[1 ... 2 000 000 000\].
 
@@ -1436,7 +1436,7 @@ Pe a doua linie, se dă **email-ul** persoanei respective.
 
 Cerința voastră este să **colectați** numele și email-urile persoanelor și **să ștergeți** email-urile ale căror domenii se termină cu "us", "uk" sau "com" (fără a se ține cont de scrierea cu litere mari sau mici).
 
-Tipăriți rezultatele în următorul format: `{nume} -> {email}`.
+Tipăriți rezultatele în următorul format: `{name} -> {email}`.
 
 ## Exemple
 | **Intrare** | **Ieșire** |
@@ -1585,7 +1585,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Se dă o secvență de persoane, iar pentru fiecare persoană se specifică ce **cărți** sunt extrase din pachetul lor de cărți.
+Se dă o secvență de persoane, iar pentru fiecare persoană se specifică **cărțile** care sunt extrase din pachetul.
 
 Datele de intrare vor apărea pe linii **separate**, în următorul **format**:
 
@@ -1605,13 +1605,13 @@ Persoanele joacă cu **mai multe pachete de cărți**.
 
 Fiecare carte are o valoare care este **calculată** prin înmulțirea puterii cu valoarea corespunzătoare acelui tip de carte. 
 
-Puterile cărților **de la 2 la 10** au valoare indicată de număr, iar **cele de la J la A** au valori **de la 11 la 14**. 
+Puterile cărților **de la 2 la 10** au valoarea indicată de număr, iar **cele de la J la A** au valori **de la 11 la 14**. 
 
 Tipurile sunt asociate multiplicatorilor în felul următor: `S -> 4`, `H-> 3`, `D -> 2`, `C -> 1`.
 
 La final, tipăriți **valoarea totală a cărților pe care le are în mână fiecare jucător**, în formatul:
 
-`{numePersoană}: {valoare}`
+`{personName}: {value}`
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -2175,7 +2175,7 @@ Pe fiecare linie de intrare se dau date care respectă următorul format: "**cit
 
 Procesați datele **în funcție de țară și de oraș** și imprimați-le pe consolă. 
 
-Imprimați **populația totală** **pentru fiecare țară**, iar pe linii separate imprimați informațiile despre fiecare din orașele țării respective. 
+Imprimați **populația totală** **pentru fiecare țară**, iar pe linii separate imprimați informațiile despre fiecare dintre orașele țării respective. 
 
 **Țările** trebuie să fie ordonate **descrescător** pe baza **populației lor totale**, iar **orașele** trebuie ordonate pe baza **aceluiași criteriu**. 
 
@@ -2911,8 +2911,8 @@ Ordonați **adresele IP alfabetic**.
 
 Datele de ieșire trebuie imprimate în următorul mod:
 
-- alex: 62 [10.10.17.33, 212.50.118.81]
-- peter: 303 [10.10.17.34, 10.10.17.35, 192.168.0.11]
+- alex: 62 \[10.10.17.33, 212.50.118.81\]
+- peter: 303 \[10.10.17.34, 10.10.17.35, 192.168.0.11\]
 
 ## Intrare
 
@@ -2939,7 +2939,7 @@ Eliminați orice valori duplicate ale adreselor IP.
 ## Constrângeri
 
 - **Numărul** liniilor, **n**, se află în intervalul \[1 ... 1000\]
-- `< IP >` este o adresă IP standard ce respectă formatul **a.b.c.d** unde **a**, **b**, **c** și **d** sunt numere întregi din intervalul \[0 ... 255\]
+- `< IP >` este o adresă IP standard care respectă formatul **a.b.c.d** unde **a**, **b**, **c** și **d** sunt numere întregi din intervalul \[0 ... 255\]
 - `< user >` constă doar în **caractere din alfabetul latin**, iar lungimea șirului este cuprinsă în intervalul  \[1 .... 20\]
 - `< duration >` este un număr întreg din intervalul \[1 ... 1000\]
 
@@ -3368,9 +3368,9 @@ public class Main {
 ## Descriere
 Sarcina voastră este să obțineți un obiect legendar. 
 
-Pentru a obține realiza acest lucru trebuie să treceți printr-un proces meticulos de colectare a materialelor necesare.
+Pentru a realiza acest lucru trebuie să treceți printr-un proces meticulos de colectare a materialelor necesare.
 
-Oricum, nu sunteți foarte pretențios - orice obiect legendar este binevenit.
+Nu sunteți foarte pretențios - orice obiect legendar este binevenit.
 
 Obiectele posibile sunt:
 - **Shadowmourne** – necesită **250 Shards** 
@@ -3379,7 +3379,7 @@ Obiectele posibile sunt:
 
 **Shards**, **fragments** și **motes** sunt **materiale-cheie**, iar orice alt material este **nefolositor**. 
 
-Vi se dau linii cu date de intrare în formatul: **2 motes 3 ores 15 stones**. 
+Vi se dau linii cu date de intrare, precum **2 motes 3 ores 15 stones**. 
 
 Țineți evidența **materialelor-cheie** - **primul** care ajunge la **250 câștigă cursa**. 
 
@@ -3402,7 +3402,7 @@ La final, imprimați în **ordine alfabetică** **materialele nefolositoare** co
 - Pe prima linie, împrimați obiectul obținut, în formatul: `{Legendary item} obtained!`
 - Pe următoarele 3 linii, imprimați materialele-cheie rămase, ordonate descrescător după cantitate
   - dacă două materiale-cheie au aceeași cantitate, imprimați-le în ordine alfabetică
-- Pe ultimele linii, imprimați în ordine alfabetică materialele inutile
+- Pe ultimele linii, imprimați în ordine alfabetică materialele nefolositoare
 - Toate materialele sunt imprimate în următorul format: `{material}: {quantity}`
 - Toate datele de ieșire trebuie scrise **cu litere mici**, exceptând prima literă a obiectului legendar
 
@@ -3683,7 +3683,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Heroes III este cel mai super joc existent.
+Heroes III este un joc foarte popular.
 
 Toată lumea îl iubește și toată lumea îl joacă.
 
