@@ -7,7 +7,7 @@
 
 Ați învățat că matricele stochează elementele sub forma unei colecții ordonate, iar acestea pot fi accesate prin intermediul indicilor - **de tip int**.
 
-În schimb, o matrice asociativă stochează elemente în perechi **cheie**-**valoare** care pot fi accesate printr-un indice de alt tip (de ex. un șir).
+În schimb, o matrice asociativă stochează elemente în perechi **cheie**-**valoare**, care pot fi accesate printr-un indice de alt tip (de ex. un șir).
 
 Un obiect este folosit drept cheie (indice) către un alt obiect (valoare).
 
@@ -68,7 +68,7 @@ Pentru o **cheie**, o singură **valoare** poate fi stocată în aceeași instan
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-19-20-Hashmap-Put-HashMap-Remove-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`HashMap<Key, Value>` este implementat ca **Hash Table** și nu există **nicio ordonare a perechilor cheie-valoare**.
+`HashMap<Key, Value>` este implementat sub formă de **Hash Table** și nu există **nicio ordonare a perechilor cheie-valoare**.
 
 **Hashmap** implementează toate operațiile **Map** și **admite valori nule** și **o cheie nulă**.
 
@@ -171,7 +171,7 @@ linkedHashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-18-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- `put(K key, V value)` - **adaugă elementele** în map
+- `put(K key, V value)` - **adaugă elementele date** în map
 
 La un moment dat, în Map poate exista doar o singură pereche cheie-valoare pentru fiecare cheie.
 
@@ -209,7 +209,7 @@ airplanes.remove("Boeing 737");
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `clear()` - elimină toate elementele (înregistrările) din map
+- `clear()` - elimină toate elementele (înregistrările) din Map
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -219,7 +219,7 @@ System.out.println(airplanes.get("Boeing 737"));
 System.out.println(airplanes.get("Airbus A320"));
 ```
 
-- `size()` - returnează **numărul de elemente (înregistrări)** din map
+- `size()` - returnează **numărul de elemente (înregistrări)** din Map
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -227,7 +227,7 @@ airplanes.put("Airbus A320", 150);
 System.out.println(airplanes.size());
 ```
 
-- `containsKey(K key)` - verifică **dacă există o astfel de cheie** în map, iar dacă aceasta există, returnează `true`; altfel, returnează `false`
+- `containsKey(K key)` - verifică **dacă există o astfel de cheie** în Map, iar dacă aceasta există, returnează `true`; altfel, returnează `false`
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Airbus A320", 150);
@@ -236,7 +236,7 @@ if (airplanes.containsKey("Airbus A320")) {
 }
 ```
 
-- `containsValue(V value)` - verifică **dacă există o astfel de valoare** în map, iar dacă aceast există, returnează `true`; altfel, returnează `false`
+- `containsValue(V value)` - verifică **dacă există o astfel de valoare** în Map, iar dacă aceast există, returnează `true`; altfel, returnează `false`
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Airbus A320", 150);
@@ -300,9 +300,9 @@ for (Integer number : cars.values()) {
 }
 ```
 
-- Iterarea prin Map utilizând metoda încorporată `entrySet()`
-  - `entry.getKey()` - returnează cheia din înregistrări
-  - `entry.getValue()` - returnează valoarea din înregistrări
+- Iterarea prin elementele unui Map utilizând metoda încorporată `entrySet()`
+  - `entry.getKey()` - returnează cheia din Entry
+  - `entry.getValue()` - returnează valoarea din Entry
 
 ```java live
 Map<String, Integer> cars = new LinkedHashMap<>();
@@ -442,7 +442,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care **determină** numărul de apariții al unor **numere reale**.
+Scrieți un program care **determină** numărul de apariții ale unor **numere reale**.
 
 Intrarea constă într-o singură **linie care conține numere reale separate prin spații**.
 
@@ -450,7 +450,7 @@ Imprimați numerele **în ordinea apariției**.
 
 Toate numerele trebuie să fie formatate **cu o cifră după punctul zecimal**.
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | \-2.5 4 3 \-2.5 \-5.5 4 3 3 \-2.5 3 | \-2.5 \-\> 3 |
@@ -576,12 +576,12 @@ public class Main {
 ## Descriere
 Scrieți un program care:
 - Citește de pe consolă **un număr de studenți**
-- Citește pe **pereche de rânduri**:
+- Citește o **pereche de rânduri**:
        - prima linie conține **numele studentului**
        - a doua linie reprezintă **notele studentului** pentru cursurile la care a participat
 - Imprimați pe consolă: `{name} graduated with {averageScore}`
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 | George graduated with 4.375 |
@@ -618,7 +618,7 @@ Map<String, Double[]> graduationList = new TreeMap<>();
 **Valorile** pot fi sub formă de **matrice**.
 [/hint] 
 [hint]
-Este necesară o **variabilă** pentru a calcula media:
+O altă **variabilă** poate fi necesară pentru a calcula media:
 
 ```java
 double average; // ...
