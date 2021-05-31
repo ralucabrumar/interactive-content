@@ -5,11 +5,11 @@
 
 ## În această lecție ați învățat:
 
-- Ce reprezintă Seturile în Java
+- Ce reprezintă Sets în Java
      - colecție neordonată de obiecte
      - nu sunt permise elemente duplicate
      - oferă performanțe foarte rapide
-- Tipuri de Seturi
+- Tipuri de Sets
     - `HashSet<E>`
     ```java
     Set<String> hash = new HashSet<String>();
@@ -25,7 +25,7 @@
 
 - Matricele Asociative - Maps
      - conțin un set de perechi `<cheie, valoare>`
-     - conține chei unice
+     - conțin chei unice
 
 - Tipuri de Maps
     - `HashMap<K, V>`
