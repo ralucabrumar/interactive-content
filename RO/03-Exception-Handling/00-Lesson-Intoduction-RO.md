@@ -16,15 +16,15 @@
 
 **2. Tratarea excepțiilor**
 
-- Captură multiplă
+- Bloc multi-catch
 
 - Instrucțiunea try-finally
 
-**3. Generarea excepțiilor**
+**3. Generarea (aruncarea) excepțiilor**
 
 - Folosirea cuvântului-cheie `Throw`
 
-- Regenerarea de excepții
+- Re-generarea de excepții
 
 **4. Cele mai bune practici**
 
