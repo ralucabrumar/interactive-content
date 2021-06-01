@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-23-24-best-practices-using-catch-block-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Blocurile **Catch** trebuie să:
+Blocurile **catch** trebuie să:
 
 - înceapă cu excepțiile care se află cel mai jos în ierarhie
 - continue cu excepțiile mai generale
