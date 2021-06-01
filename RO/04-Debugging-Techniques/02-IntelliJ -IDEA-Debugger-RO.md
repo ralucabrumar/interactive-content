@@ -13,10 +13,10 @@ Este util deoarece permite:
 - Adăugarea unor **puncte de întrerupere**
     - adăugăm **puncte de întrerupere** atunci când vrem să oprim programul pe o anumită linie de cod
 
-- Vizualizarea **fluxul programului**
+- Vizualizarea **fluxului programului**
     - acest lucru înseamnă să vedem, de exemplu, de câte ori va itera **bucla for**
 
-- Controlul **fluxul de execuție**
+- Controlul **fluxului de execuție**
     - acest lucru ne permite să **controlăm** pas cu pas **fluxul** **execuției programului**
     
 - Urmărirea **valorilor** stocate în **variabile**
@@ -24,7 +24,7 @@ Este util deoarece permite:
 
 ## Lansarea Unui Proces de Depanare
 
-Pentru a rula depanatorul în **IntelliJ IDEA** trebuie să apăsăm **Ctrl + Alt + F5**.
+Pentru a rula depanatorul în **IntelliJ IDEA** trebuie să folosim combinația **Ctrl + Alt + F5**.
 
 După aceea, va apărea o listă pop-up, din care trebuie să selectăm procesul dorit.
 
@@ -32,7 +32,7 @@ După aceea, va apărea o listă pop-up, din care trebuie să selectăm procesul
 
 Putem rula depanatorul pe un program care nu rulează.
 
-De asemenea, îl putem atașa la un program care nu este **disponibil direct în** **IntelliJ IDEA**.
+De asemenea, îl putem atașa la un program care nu este **direct disponibil în** **IntelliJ IDEA**.
 
 [image assetsSrc="debugging-techniques-example(1).png" /]
 
@@ -64,11 +64,11 @@ Există o comandă rapidă, care este - "**Shift + F9**".
 De asemenea, ne permite să observăm valorile variabilelor.
 
 
-## Fereastra de Depanare
+## Fereastra Debug
 
-**Fereastra de depanare** ne arată sesiunea de depanare.
+**Fereastra Debug** ne arată sesiunea de depanare.
 
-În fereastră, există tab pentru **consolă** și tab pentru **depanator**.
+În fereastră există tab pentru **consolă** și tab pentru **depanator**.
 
 În tab-ul consolei putem introduce datele necesare.
  
