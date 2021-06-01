@@ -26,7 +26,7 @@ Pentru a preveni acest lucru, aceste evenimente trebuie "tratate".
 
 Doar obiectele care reprezintă instanțe ale acestei clase (sau ale uneia din subclasele sale) sunt "aruncate" de Mașina Virtuală Java.
 
-Clasa **Throwable** este o bază a tuturor excepțiilor din JVM (Mașina Virtuală Java).
+Clasa **Throwable** este baza tuturor excepțiilor din JVM (Mașina Virtuală Java).
 
 Orice obiect de tip **throwable** conține o captură a stivei de execuție a thread-ului său la momentul creării sale.
 
