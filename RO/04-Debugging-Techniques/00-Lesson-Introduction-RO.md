@@ -7,7 +7,7 @@
 
 ## În această lecție veți învăța:
 
-**1. Prezentarea generală a depanării**
+**1. Prezentare generală a depanării**
 
 - Ce este depanarea
 - Depanare vs testare
@@ -19,8 +19,8 @@
 **3. Puncte de întrerupere**
 
 **4. Inspecția datelor**
-- Variabile și tab-uri Watches
-- Fereastra 
+- Tab-urile Variables și Watches
+- Fereastra Evaluate
 
 **5. Găsirea unui defect**
 - Sfaturi pentru găsirea defectelor
