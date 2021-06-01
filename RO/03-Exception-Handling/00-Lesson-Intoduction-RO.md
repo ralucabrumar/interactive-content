@@ -22,7 +22,7 @@
 
 **3. Generarea (aruncarea) excepțiilor**
 
-- Folosirea cuvântului-cheie `Throw`
+- Folosirea cuvântului-cheie `throw`
 
 - Re-generarea de excepții
 
