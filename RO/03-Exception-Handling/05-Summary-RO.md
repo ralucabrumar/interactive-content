@@ -5,9 +5,9 @@
 
 ## În această lecție ați învățat:
 
-- Ce sunt excepțiile în Java?
+- Ce sunt excepțiile 
      - ierarhia excepțiilor 
-     -
+     
 - Tratarea excepțiilor
      - instrucțiunea **try-catch** 
     ```java 
@@ -28,7 +28,7 @@
     ```
 
 - Generarea excepțiilor
-     - utilizarea cuvântului cheie **throw**
+     - utilizarea cuvântului-cheie **throw**
      ```java
      try {
           …
@@ -47,17 +47,17 @@
      }
      ```
 
-- Cele Mai Bune Practici
+- Cele mai bune practici
      - utilizarea blocului **catch**
-     - alegerea **tipului de excepție**
+     - alegerea corectă a **tipului de excepție**
 
 ## În următoarea lecție veți învăța:
 
-- Ce este depanarea?
+- Ce este depanarea
      - lucrul cu instrumentele de depanare (`debuggers`)
      - importanța depanării
 - Lucrul cu **IntelliJ IDEА Debugger**
      - puncte de întrerupere
-- Inspecția Datelor
+- Inspecția datelor
 
 [/slide]
