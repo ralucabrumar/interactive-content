@@ -61,7 +61,7 @@ Clasele **Exceptions** și **Errors** sunt subclase ale clasei **Throwable**.
 
 **Excepțiile** sunt de două tipuri:
 
-- **Checked** - o excepție care este verificată (notificată) de către compilator în momentul compilării
+- **Verificate (checked)** - o excepție care este verificată (notificată) de către compilator în momentul compilării
      - numite și **Compile Time Exceptions**
 
 ```java 
@@ -72,7 +72,7 @@ Clasele **Exceptions** și **Errors** sunt subclase ale clasei **Throwable**.
 ```
  
 
-- **Unchecked** - o excepție care apare în momentul execuției
+- **Neverificate (unchecked)** - o excepție care apare în momentul execuției
      - numite și **Runtime Exceptions**
 
 ```java 
