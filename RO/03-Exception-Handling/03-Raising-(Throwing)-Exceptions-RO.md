@@ -6,13 +6,13 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-18-22-throwing-exceptions-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Excepțiile sunt aruncate (ridicate) cu ajutorul cuvântul cheie **throw**.
+Excepțiile sunt aruncate cu ajutorul cuvântul cheie **throw**.
 
 Acestea sunt folosite pentru a notifica persoana responsabilă pentru cod în cazul în care apare o eroare sau o situație neprevăzută.
 
-**Când se aruncă o excepție:**
+**Când o excepție este "aruncată":**
 - Execuția programului se oprește
-- Excepția se deplasează peste stivă până când se ajunge la un bloc **catch** potrivit pentru a o trata
+- Excepția se deplasează peste stivă până când ajunge la un bloc **catch** potrivit pentru a o trata
    
 Excepțiile nesoluționate afișează un mesaj de eroare, iar execuția programului se oprește.
 
@@ -43,11 +43,11 @@ try {
 
 [slide hideTitle]
 
-# Re-aruncarea Excepțiilor
+# Re-Aruncarea Excepțiilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-21-re-throwing-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Excepțiile prinse pot fi aruncate din nou:
+- Excepțiile găsite pot fi aruncate din nou:
 
 ```java
 try {
@@ -99,9 +99,9 @@ Definiți o clasă simplă **Person** care are următoarele câmpuri:
 
 Clasa trebuie să conțină următoarele câmpuri:
 
-- first name (string) 
+- first name (String) 
 
-- last name (string) 
+- last name (String) 
 
 - age (int)
 
@@ -133,9 +133,9 @@ Efectuați validări în **setters** pentru a menține starea obiectelor **Perso
 
 Pentru a verifica acest lucru, utilizați metoda `string.IsNullOrEmpty()`.
 
-**Vârsta** trebuie să fie în intervalul [0 … 120].
+**Vârsta** trebuie să fie în intervalul \[0 … 120\].
 
-Dacă sunt introduse date nu sunt valide, **aruncați** excepțiile corespunzătoare, cu **mesaje sugestive**.
+Dacă datele introduse nu sunt valide, **aruncați** excepțiile corespunzătoare, cu **mesaje sugestive**.
 
 De exemplu, dacă **numele** este un **șir gol**, o excepție adecvată poate fi **IllegalArgumentException**.
 
@@ -176,7 +176,7 @@ public Person(String firstName, String lastName, int age) {
 
 În clasa **Main**, testați dacă clasa voastră se comportă corect.
 
-Creați mai multe obiecte de tip **Person** - unul cu **date valabile**, unul cu un **șir gol pentru prenume**, unul cu **un șir null pentru numele de familie**, unul cu **vârstă negativă** și una cu **vârsta > 120**.
+Creați mai multe obiecte de tip **Person** - unul cu **date valabile**, unul cu un **șir gol pentru prenume**, unul cu **un șir null pentru numele de familie**, unul cu **vârstă negativă** și unul cu **vârsta > 120**.
 
 Verificați dacă executarea codului are ca rezultat erori atunci când sunt furnizate date necorespunzătoare.
 
@@ -195,7 +195,7 @@ public static void main(String[] args) {
 }
 ```
 
-- **Pasul 4. Adăugați Blocuri try-catch**
+- **Pasul 4. Adăugați Blocuri Try-Catch**
 
 Pentru a preveni oprirea programului, încadrați liniile nevalide în blocuri **try-catch**.
 
