@@ -6,7 +6,7 @@
 
 ## În această lecție veți învăța:
 
-**1. Noțiuni de bază ale fluxului**
+**1. Noțiuni de bază ale fluxurilor**
 
 - Deschiderea unui flux de fișiere
 - Închiderea unui flux de fișiere
@@ -14,7 +14,7 @@
 - Ce sunt fluxurile de ieșire
 
 **2. Tipuri de fluxuri**
-- Fluxuri de tip Byte și Character
+- Fluxuri byte și character
 - Combinarea / învelirea fluxurilor
 - Fluxuri tamponate pentru citirea informațiilor pe bucăți
 
@@ -23,9 +23,9 @@
 - Căile directoarelor și cum să lucrați cu ele
 - Scrierea informațiilor într-un fișier
 
-**4. Serializarea și Deserializarea**
+**4. Serializarea și deserializarea**
 - Definiția serializării și cum funcționează aceasta 
-- Serializarea obiectelor pentru a salva obiectelor într-un fișier
+- Serializarea obiectelor pentru a salva obiecte într-un fișier
 - Deserializarea obiectelor pentru a încărca obiecte dintr-un fișier
 
 [/slide]
