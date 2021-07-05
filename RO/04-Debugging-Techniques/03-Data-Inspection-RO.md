@@ -8,7 +8,7 @@
 
 Cea mai importantă parte a depanării este **inspecția datelor**.
 
-Acest aspect este important deoarece putem vedea **variabilele** și ceea ce păstrează în **memorie**.
+Acest aspect este important deoarece putem vedea **variabilele** și ce păstrează în **memorie**.
 
 De asemenea, urmărim **fluxul de execuție a codului**.
 
@@ -87,7 +87,7 @@ Există o comandă rapidă pentru a accesa **fereastra de evaluare** - "**Alt + 
 
 [slide hideTitle]
 
-# Găsirea Unui Defect
+# Găsirea Unei Erori
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-25-26-finding-a-defect-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -106,7 +106,7 @@ Dacă totul funcționează conform așteptărilor, putem continua căutarea alto
 [/slide]
 
 [slide hideTitle]
-# Sfaturi Pentru Găsirea Defectelor
+# Sfaturi Pentru Găsirea Erorilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-27-28-tips-for-finding-defects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -118,7 +118,7 @@ Iată câteva sfaturi pentru găsirea erorilor:
 - Urmăriți codul cu atenție
 - Verificați clasele care au generat erori înainte
 - Verificați dacă există modificări în cod
-- Dacă nu găsiți nimic, faceți o pauză
+- Dacă nu găsiți nimic, luați o pauză
 - Cereți ajutor
 
 [/slide]
@@ -146,7 +146,7 @@ Dacă testul rulează fără probleme, putem continua cu remedierea altor bug-ur
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-30-psychological-considerations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Cu cât scriem mai multe coduri, cu atât avem mai multă încredere.
+Cu cât scriem mai mult cod, cu atât avem mai multă încredere.
 
 Credem că codul nostru nu are erori, dar acestea cel mai probabil există.
 
