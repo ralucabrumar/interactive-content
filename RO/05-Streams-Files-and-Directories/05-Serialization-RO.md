@@ -8,11 +8,11 @@ Serializarea în Java este procesul prin care un obiect este reprezentat ca o se
 
 Această secvență conține informații despre tipul obiectului și tipul de date stocate în el.
 
-Procesele de serializare și deserializare sunt utile dacă dorim ca aplicația noastră să poată comunic cu alte aplicații și să trimită sau să primească date care trebuie procesate.
+Procesele de serializare și deserializare sunt utile dacă dorim ca aplicația noastră să poată comunica cu alte aplicații și să trimită sau să primească date care trebuie procesate.
 
 **Serializarea** ne permite să **convertim starea unui obiect într-un flux de octeți**, care apoi poate fi salvat într-un fișier de pe discul local sau trimis prin rețea la orice altă mașină.
 
-**Deserializarea** ne permite să inversăm procesul, ceea ce înseamnă **reconvertirea a fluxului de octeți serializat într-un obiect**.
+**Deserializarea** ne permite să inversăm procesul, ceea ce înseamnă **reconvertirea fluxului de octeți serializat într-un obiect**.
 
 În cuvinte mai simple, **serializarea unui obiect** este procesul de **salvare a stării unui obiect** într-o **secvență de octeți**, iar **deserializarea** este procesul de **reconstituire a unui obiect din octeții** generați.
 
@@ -22,7 +22,7 @@ Procesele de serializare și deserializare sunt utile dacă dorim ca aplicația 
 
 [slide hideTitle]
 
-# Serializarea
+# Serializare
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-41-Serialization-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -43,7 +43,7 @@ objectOutputStream.writeObject(names);
 ```
 În exemplul de mai sus, creăm un **FileOutputStream** și plasăm locația fișierului în constructor.
 
-Este o bună practică să stocați obiectul serializat în fișiere cu extensia `.ser`.
+Stocarea obiectului serializat în fișiere cu extensia `.ser` este o practică bună.
 
 Apoi, învelim FileOutputStream cu un **ObjectOutputStream**.
 
@@ -98,7 +98,7 @@ Creați o clasă numită "**Cube**". Trebuie să aibă **proprietățile** **col
 - Height: 12.4
 - Depth: 3.0
 
-**Serializați** și **deserializați** instanța creată. Când este salvat într-un fișier, obiectul ar trebui să arate ca exemplul de mai jos.
+**Serializați** și **deserializați** instanța creată. Când este salvat într-un fișier, obiectul ar trebui să arate ca în exemplul de mai jos.
 
 ## Exemple
 
