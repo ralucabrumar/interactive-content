@@ -95,7 +95,7 @@ Aici sunt câteva **metode** utile furnizate de clasele **Files** și **Paths**:
 
 | **Metodă** | **Descriere** |
 | --- | --- |
-| **Files.exists()**| Testează dacă fișierul notat prin acest pathname abstract există. Returnează true dacă și numai dacă fișierul sau directorul notat prin acest pathname astract există; altfel returnează false. |
+| **Files.exists()**| Testează dacă fișierul notat prin această cale abstractă există. Returnează true dacă și numai dacă fișierul sau directorul notat prin această cale abstractă există; altfel returnează false. |
 | **Paths.get()** | Obține calea resursei de la un singur șir sau de la o secvență de șiruri care pot fi unite pentru a forma calea completă.|
 | **Files.readAllLines()** | Citește toate liniile dintr-un fișier. |
 | **Files.write(outputPath, content)** | Scrie conținutul într-un fișier. |
