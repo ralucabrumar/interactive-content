@@ -5,7 +5,7 @@
 
 ## În această lecție ați învățat:
 
-- Fluxurile sunt utilizate citirea, scrierea și transferarea datelor
+- Fluxurile sunt utilizate pentru citirea, scrierea și transferarea datelor
 
 - Există două tipuri principale de fluxuri:
 
@@ -45,8 +45,8 @@
      ```
 
 
-- Fluxurile tamponate îmbunătățesc performanța
-- Fluxurile pot fi legate între ele:
+- Fluxurile cu buffer îmbunătățesc performanța
+- Fluxurile pot fi legate între ele prin transmiterea instanței unui flux altui flux:
 
 
     ```java
