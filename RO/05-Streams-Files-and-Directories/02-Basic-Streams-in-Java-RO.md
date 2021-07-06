@@ -7,7 +7,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-15-16-Byte-Stream-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Fluxurile de octeți în Java sunt utilizate pentru a efectua intrarea și ieșirea de octeți.
+Fluxurile de octeți în Java sunt utilizate pentru a efectua intrarea și ieșirea octeților.
 
 Fluxurile de octeți sunt fluxuri de cel mai mic nivel.
 
@@ -41,7 +41,7 @@ Chiar daca există multe clase asociate cu fluxurile de octeți, cele mai frecve
 [task-description]
 
 ## Descriere
-Citiți fișierul numit "**input.txt**" și scrieți într-un alt fișier reprezentarea **ASCII** a fiecărui caracter.
+Citiți fișierul numit "**input.txt**" și scrieți în alt fișier reprezentarea **ASCII** a fiecărui caracter.
 
 Scrieți fiecare spațiu sau linie nouă așa cum este - nu trebuie convertite în reprezentarea lor ASCII.
 
@@ -699,7 +699,7 @@ Scanner reader = new Scanner(new FileInputStream(path));
 
 În exemplul de mai sus este folosită clasa `Scanner`, pe care o cunoaștem deja.
 
-Aici este folosită pentru a înveli `FileInputStream`. Până acum am făcut acest lucru prin învelirea `System.in`, care nu este altceva decât o constantă care deține un `InputStream`.
+Aici este folosită pentru a înveli `FileInputStream`. Până acum am făcut acest lucru prin învelirea lui `System.in`, care nu este altceva decât o constantă care conține un `InputStream`.
 
 [/slide]
 
@@ -773,36 +773,36 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **n
 
 [slide hideTitle]
 
-# Fluxuri Tamponate
+# Fluxuri cu Tampon
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-23-Buffered-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Fluxurile tamponate sunt următorul strat de abstractizare peste fluxul de octeți.
+Fluxurile cu tampon sunt următorul strat de abstractizare peste fluxul de octeți.
 
-Fluxurile pe care le-am văzut până acum folosesc **I/O netamponate**.
+Fluxurile pe care le-am văzut până acum folosesc **I/O fără tampon**.
 
-Acest lucru înseamnă că fiecare solicitare de citire sau scriere este gestionată direct de sistemul de operare.
+Acest lucru înseamnă că fiecare solicitare de citire sau scriere este gestionată direct de către sistemul de operare.
 
 Acest aspect poate face programul mai puțin eficient, deoarece fiecare cerere de acest tip adesea consumă spațiul discului, activitate de rețea sau alte operații costisitoare.
 
-Pentru a depăși acest tip de cheltuieli, platforma Java implementează Fluxuri Tamponate I/O.
+Pentru a depăși acest tip de cheltuieli, platforma Java implementează Fluxurile cu Tampon I/O.
 
-Fluxurile tamponate de intrare citesc date dintr-o zonă de memorie cunoscută sub numele de buffer (tampon).
+Fluxurile de intrare cu tampon citesc date dintr-o zonă de memorie cunoscută sub numele de buffer (tampon).
 
-Când fluxul tamponat este inițializat, se creează o matrice tampon internă .
+Când fluxul cu tampon este inițializat, se creează o matrice tampon internă .
 
-Fluxul tampon poate fi folosit pentru a înveli un flux de caractere și ne poate oferi acces la metode foarte utile. 
+Fluxul cu tampon poate fi folosit pentru a înveli un flux de caractere și ne poate oferi acces la metode foarte utile. 
 
-Există patru clase de fluxuri tampon utilizate pentru a înveli fluxuri netamponate:
+Există patru clase de fluxuri cu tampon, utilizate pentru a înveli fluxurile fără tampon:
 
- - **BufferedInputStream** și **BufferedOutputStream** creează **fluxuri tamponate de octeți**
- - **BufferedReader** și **BufferedWriter** creează **fluxuri tamponate de caractere**
+ - **BufferedInputStream** și **BufferedOutputStream** creează **fluxuri de octeți cu tampon**
+ - **BufferedReader** și **BufferedWriter** creează **fluxuri de caractere cu tampon**
 
 Să ne uitam la următorul exemplu:
 
 [image assetsSrc="streams-files-directories-example(5).png" /]
 
-În loc să citim conținutul byte cu byte sau caracter cu caracter, putem folosi un tampon pentru a obține fragmente mai mari de text.
+În loc să citim conținutul octet cu octet sau caracter cu caracter, putem folosi un tampon pentru a obține fragmente mai mari de text.
 
 În acest caz, tamponul va conține două caractere în același timp.
 
@@ -1070,15 +1070,15 @@ Poate vă așteptați ca fluxurile standard să fie fluxuri de caractere, dar, d
 
 `System.out` și `System.err` sunt definite ca obiecte **PrintStream**.
 
-Chiar daca din punct de vedere tehnic este un flux de octet, PrintStream utilizează intern un **obiect de tip flux de caractere** pentru a imita **multe dintre caracteristicile fluxurilor de caractere**.
+Chiar daca din punct de vedere tehnic este un flux de octeți, PrintStream utilizează intern un **obiect de tip flux de caractere** pentru a imita **multe dintre caracteristicile fluxurilor de caractere**.
 
-În schimb, `System.in` este un flux de octeți **fără caracteristici ale fluxuri de caractere**. 
+În schimb, `System.in` este un flux de octeți **fără caracteristici ale fluxurilor de caractere**. 
 
 Pentru a utiliza **Standard Input** ca flux de caractere, înveliți `System.in` în **InputStreamReader**.
 
-Următorul exemplu este pentru un flux tamponat de intrare care citește conținutul din `System.in` (**Console**):
+Următorul exemplu este pentru un flux de intrare cu tampon care citește conținutul din `System.in` (**Console**):
 
-Creăm un flux **BufferedReader** care înveleșste **InputStreamReader**.
+Creăm un flux **BufferedReader** care înveleșste un **InputStreamReader**.
 
 Apoi, **InputStreamReader** învelește fluxul `System.in`.
 
