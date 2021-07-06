@@ -269,7 +269,7 @@ Inserați rezultatul pe platformă.
 [task-description]
 ## Descriere
 
-Citiți fișierul numit "input.txt" care este prevăzut pentru acest exercițiu și scrieți conținutul său într-un fișier în timp ce omiteți orice semne de punctuație.
+Citiți fișierul numit "input.txt" care este prevăzut pentru acest exercițiu și scrieți conținutul său într-un fișier, omițând toate semnele de punctuație.
 
 Omiteți următoarele simboluri: `,`, `.`, `!`, `?`.
 
@@ -279,7 +279,7 @@ Ar trebui să aveți deja toate resursele necesare descărcate de la cerința pr
 
 Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **nu codul**.
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | On January 1 , 1533 , Michael Angelo, then fifty-seven years old, writes | On January 1  1533  Michael Angelo then fifty-seven years old writes |
