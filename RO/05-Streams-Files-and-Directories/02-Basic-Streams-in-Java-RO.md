@@ -773,38 +773,38 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **n
 
 [slide hideTitle]
 
-# Fluxuri cu Tampon
+# Fluxuri cu Buffer
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-23-Buffered-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Fluxurile cu tampon sunt următorul strat de abstractizare peste fluxul de octeți.
+Fluxurile cu buffer sunt următorul strat de abstractizare peste fluxul de octeți.
 
-Fluxurile pe care le-am văzut până acum folosesc **I/O fără tampon**.
+Fluxurile pe care le-am văzut până acum folosesc **I/O fără buffer**.
 
 Acest lucru înseamnă că fiecare solicitare de citire sau scriere este gestionată direct de către sistemul de operare.
 
 Acest aspect poate face programul mai puțin eficient, deoarece fiecare cerere de acest tip adesea consumă spațiul discului, activitate de rețea sau alte operații costisitoare.
 
-Pentru a depăși acest tip de cheltuieli, platforma Java implementează Fluxurile cu Tampon I/O.
+Pentru a depăși acest tip de cheltuieli, platforma Java implementează Fluxurile cu Buffer I/O.
 
-Fluxurile de intrare cu tampon citesc date dintr-o zonă de memorie cunoscută sub numele de buffer (tampon).
+Fluxurile de intrare cu buffer citesc date dintr-o zonă de memorie cunoscută sub numele de buffer (tampon).
 
-Când fluxul cu tampon este inițializat, se creează o matrice tampon internă .
+Când fluxul cu buffer este inițializat, se creează o matrice buffer internă .
 
-Fluxul cu tampon poate fi folosit pentru a înveli un flux de caractere și ne poate oferi acces la metode foarte utile. 
+Fluxul cu buffer poate fi folosit pentru a înveli un flux de caractere și ne poate oferi acces la metode foarte utile. 
 
-Există patru clase de fluxuri cu tampon, utilizate pentru a înveli fluxurile fără tampon:
+Există patru clase de fluxuri cu buffer, utilizate pentru a înveli fluxurile fără buffer:
 
- - **BufferedInputStream** și **BufferedOutputStream** creează **fluxuri de octeți cu tampon**
- - **BufferedReader** și **BufferedWriter** creează **fluxuri de caractere cu tampon**
+ - **BufferedInputStream** și **BufferedOutputStream** creează **fluxuri de octeți cu buffer**
+ - **BufferedReader** și **BufferedWriter** creează **fluxuri de caractere cu buffer**
 
 Să ne uitam la următorul exemplu:
 
 [image assetsSrc="streams-files-directories-example(5).png" /]
 
-În loc să citim conținutul octet cu octet sau caracter cu caracter, putem folosi un tampon pentru a obține fragmente mai mari de text.
+În loc să citim conținutul octet cu octet sau caracter cu caracter, putem folosi un buffer pentru a obține fragmente mai mari de text.
 
-În acest caz, tamponul va conține două caractere în același timp.
+În acest caz, buffer-ul va conține două caractere în același timp.
 
 Acest lucru va crește semnificativ **performanța** aplicațiilor noastre.
 
@@ -1076,7 +1076,7 @@ Chiar daca din punct de vedere tehnic este un flux de octeți, PrintStream utili
 
 Pentru a utiliza **Standard Input** ca flux de caractere, înveliți `System.in` în **InputStreamReader**.
 
-Următorul exemplu este pentru un flux de intrare cu tampon care citește conținutul din `System.in` (**Console**):
+Următorul exemplu este pentru un flux de intrare cu buffer care citește conținutul din `System.in` (**Console**):
 
 Creăm un flux **BufferedReader** care înveleșste un **InputStreamReader**.
 
