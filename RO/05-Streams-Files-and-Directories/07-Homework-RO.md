@@ -71,7 +71,7 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **n
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește fișierul **input.txt** din folderul cu resurse pe care l-ați descărcat și imprimă pe consolă **suma** simbolurilor ASCII ale fiecăreia dintre liniile sale.
+Scrieți un program care citește fișierul **input.txt** din folderul cu resurse pe care l-ați descărcat și imprimă pe consolă **suma** valorilor ASCII ale tuturor caracterelor din fișier.
 
 Utilizați **BufferedReader** în combinație cu **FileReader**.
 
@@ -138,9 +138,9 @@ Trimiteți doar **rezultatul** programului vostru, **nu codul**.
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește fișierul **input.txt** din folderul cu resurse pe care l-ați descărcat și schimbați toate literele astfel încât textul să conțină doar majuscule.
+Scrieți un program care citește fișierul **input.txt** din folderul cu resurse pe care l-ați descărcat și schimbă toate literele astfel încât textul să conțină doar majuscule.
 
-Scrieți ieșirea într-un alt fișier (**output.txt**).
+Scrieți ieșirea în alt fișier (**output.txt**).
 
 Utilizați **BufferedReader** și **PrintWriter**.
 
@@ -203,9 +203,9 @@ Scrieți un program care citește fișierul **input.txt** din folderul cu resurs
 
 Să presupunem că:
 
-- **a, e, i, o, u** sunt vocale, doar cu litere mici
+- **a, e, i, o, u** sunt vocale, doar litere mici
 - **toate celelalte** litere sunt consoane
-- semnele de punctuație sunt **(!,.?)**
+- semnele de punctuație sunt **(! , . ?)**
 - spațiile nu trebuie luate în considerare
 
 Scrieți rezultatele în alt fișier - **output.txt**.
@@ -376,7 +376,7 @@ The - 1
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește conținutul a **două** fișiere de tip text (**inputOne.txt** , **inputTwo.txt**) și **le combină** într-un fișier nou.
+Scrieți un program care citește conținutul a **două** fișiere de tip text (**inputOne.txt**, **inputTwo.txt**) și **le combină** într-un fișier nou.
 
 ## Instrucțiuni
 Folosiți resursele primite anterior.
@@ -472,7 +472,7 @@ Folder size: 2878
 [slide hideTitle]
 # Problemă: Copy a Picture
 
-Scrieți un program care face o copie a fișierul **cat.jpg** folosind **FileInputStream**, **FileOutputStream** și tamponul `byte[]`. 
+Scrieți un program care face o copie a fișierul **cat.jpg** folosind **FileInputStream**, **FileOutputStream** și buffer-ul `byte[]`. 
 
 Folosiți resursele primite anterior.
 
@@ -488,7 +488,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 ```
 
-Alternativa este utilizarea `import java.io.*;`.
+Alternativa este `import java.io.*;`.
 
 În interiorul metodei `main`, creați un bloc `try-catch`:
 
@@ -510,7 +510,7 @@ Puteți obține calea absolută către imaginea voastră apăsând click-dreapta
 
 Va apărea o fereastră, iar calea va fi localizată lângă "**Location:**". 
 
-Selectați calea și inserați-o în următorul mod:
+Selectați calea și inserați-o după cum urmează:
 
 ```java
 FileInputStream inputImage = new FileInputStream(new File("C:\Folder-With-Resources\...\cat.jpg"));
@@ -522,7 +522,7 @@ După aceea, creați un flux de ieșire cu șirul "**cat-copy.jpg**" drept param
 FileOutputStream outputImage = new FileOutputStream("cat-copy.jpg");
 ```
 
-Creați u **buffer** `byte[]`.
+Creați un **buffer** `byte[]`.
 
 Utilizați o buclă while pentru **a scrie datele** în fluxul de ieșire, ca mai jos.
 
@@ -545,7 +545,7 @@ try {
 }
 ```
 
-Imaginea clonată este acum **salvată** în fișierul proiectului vostru. 
+Imaginea clonată este acum **salvată** în folderul proiectului vostru. 
 
 [/slide]
 
@@ -604,7 +604,7 @@ Prin furnizarea doar a **numelui**, fără o cale, fișierul va fi salvat în di
 
 Apelarea metodei `writeObject(numbers)` îi transmite programului să înceapă scrierea în **list.ser**.
 
-O practică bună este utilizarea metodei `.flush()` - golește fluxul de ieșire și forțează eliminare oricăror octeți tamponați de ieșire.
+O practică bună este utilizarea metodei `.flush()` - golește fluxul de ieșire și forțează eliminarea oricăror octeți tamponați de ieșire.
 
 Când deschideți fișierul **list.ser**, veți vedea următoarele date de **ieșire**:
 
