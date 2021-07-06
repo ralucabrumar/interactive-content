@@ -14,9 +14,9 @@
 - Ce sunt fluxurile de ieșire
 
 **2. Tipuri de fluxuri**
-- Fluxuri byte și character
+- Fluxuri de octeți și de caractere
 - Combinarea / învelirea fluxurilor
-- Fluxuri tamponate pentru citirea informațiilor pe bucăți
+- Fluxuri cu buffer pentru citirea informațiilor pe bucăți
 
 **3. Fișiere și căi**
 - Deschiderea și citirea fișierelor
