@@ -18,7 +18,7 @@
 - Combinarea / învelirea fluxurilor
 - Fluxuri cu buffer pentru citirea informațiilor pe bucăți
 
-**3. Fișiere și căi**
+**3. Files și Paths**
 - Deschiderea și citirea fișierelor
 - Căile directoarelor și cum să lucrați cu ele
 - Scrierea informațiilor într-un fișier
