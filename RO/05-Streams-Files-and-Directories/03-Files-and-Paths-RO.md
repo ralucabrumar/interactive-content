@@ -6,11 +6,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-28-29-Files-and-Paths-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-În Java **Path** reprezintă **o cale în sistemul de fișiere**.
+În Java, o instanță **Path** reprezintă **o cale în sistemul de fișiere**.
 
 O cale poate indica fie un **fișier**, fie un **director**.
 
-**Path** este utilizat pentru a **examina**, **localiza** și **manipula** fișiere.
+**Path** este utilizată pentru a **examina**, **localiza** și **manipula** fișiere.
 
 Un exemplu de acest tip este fișierul input.txt pe care l-am folosit pentru problemele anterioare.
 
@@ -23,7 +23,7 @@ Metoda statică `get()` primește ca argument **reprezentarea string a locației
 
 O **instanță Path** este creată prin apelarea metodei `Paths.get()`.
 
-Instanța Path ne oferă o modalitate ușoară de a crea un flux tamponat utilizând clasele **BufferedReader** și **Files**.
+Instanța Path ne oferă o modalitate ușoară de a crea un flux cu buffer utilizând clasele **BufferedReader** și **Files**.
 
 Să vedem următorul exemplu:
 
@@ -42,7 +42,7 @@ try (BufferedReader inputStream = Files.newBufferedReader(path)) {
     e.printStackTrace();
 }
 ```
-Apelarea metodei `newBufferedReader()` a clasei Files și transmiterea căii ca argument are ca rezultat crearea instanței BufferedReader (**flux tamponat**).
+Apelarea metodei `newBufferedReader()` a clasei Files și transmiterea căii ca argument are ca rezultat crearea instanței BufferedReader (**flux cu buffer**).
 
 Următorul exemplu ilustrează copierea conținutului unui fișier în alt fișier:
 
@@ -95,7 +95,7 @@ Aici sunt câteva **metode** utile furnizate de clasele **Files** și **Paths**:
 
 | **Metodă** | **Descriere** |
 | --- | --- |
-| **Files.exists()**| Testează dacă fișierul notat prin acest nume abstract al căii există. Returnează true dacă și numai dacă fișierul sau directorul notat prin acest nume abstract al căii există; altfel returnează false. |
+| **Files.exists()**| Testează dacă fișierul notat prin acest pathname abstract există. Returnează true dacă și numai dacă fișierul sau directorul notat prin acest pathname astract există; altfel returnează false. |
 | **Paths.get()** | Obține calea resursei de la un singur șir sau de la o secvență de șiruri care pot fi unite pentru a forma calea completă.|
 | **Files.readAllLines()** | Citește toate liniile dintr-un fișier. |
 | **Files.write(outputPath, content)** | Scrie conținutul într-un fișier. |
