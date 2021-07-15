@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem: Re-Volt
+# Problemă: Re-Volt
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/09-Exam-Preparation/RO/interactive-java-advanced-exam-preparation-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -17,19 +17,19 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Vi se va da un număr întreg N pentru dimensiunea unei matrice pătrate și apoi un număr întreg pentru numărul de comenzi.
+Vi se va da un număr întreg N pentru dimensiunea unei matrice pătratice și apoi un număr întreg pentru numărul de comenzi.
 
-Pe următoarele **n** linii, veți primi rândurile matricei.
+Pe următoarele **N** linii, veți primi rândurile matricei.
 
 Jucătorul începe de pe o poziție aleatorie (el este marcat cu **"f"**), iar **toate pozițiile goale** vor fi marcate cu simbolul **"+"** (plus).
 
-Scopul este de a ajunge la linia de sosire, care va fi marcat cu **"F"**.
+Scopul este de a ajunge la linia de sosire, care va fi marcată cu **"F"**.
 
 Pe teren pot exista atât bonusuri, cât și capcane.
 
 Bonusurile sunt marcate cu **"B"**, iar capcanele sunt marcate cu **"T"**.
 
-La fiecare tură vi se vor da comenzi pentru **care determină deplasarea jucătorului**.
+La fiecare tură vi se vor da comenzi **care determină deplasarea jucătorului**.
 
 Dacă jucătorul **iese** din matrice, el intră din **cealaltă parte**.
 
@@ -43,7 +43,7 @@ Când jucătorul ajunge la **punctul de sosire** sau **numărul de comenzi este 
 
 ## Intrare
 
-- Pe prima linie vi se dă numărul întreg N - dimensiunea matricei pătrate
+- Pe prima linie vi se dă numărul întreg N - dimensiunea matricei pătratice
 - Pe a doua linie vi se dă numărul de comenzi
 - Următoarele N linii dețin valorile pentru fiecare rând
 - Pe fiecare dintre următoarele linii, veți primi comenzi pentru direcțiile de deplasare
@@ -61,10 +61,10 @@ Când jucătorul ajunge la **punctul de sosire** sau **numărul de comenzi este 
 
 - Dimensiunea matricei va fi între \[2 ... 20\]
 - Jucătorii vor fi întotdeauna indicați prin litera **"f"**
-- Dacă jucătorul ajunge la linia de sosire **atunci când primește**ultima sa comandă, el **câștigă** jocul
+- Dacă jucătorul ajunge la linia de sosire **atunci când primește** ultima sa comandă, el **câștigă** jocul
 - Comenzile vor fi în formatul: **up**, **down**, **left** sau **right**
-- Nu va exista un caz în care să ocoliți linia de sosire în timp ce vă aflați pe o capcană sau un bonus
-- O capcană nu te va plasa niciodată pe un bonus sau pe o altă capcană, iar un bonus nu te va plasa niciodată pe o capcană sau alt bonus
+- Nu va exista un caz în care jucătorul va ocoli linia de sosire în timp ce se află pe o capcană sau un bonus
+- O capcană nu va plasa jucătorul niciodată pe un bonus sau pe o altă capcană, iar un bonus nu plasa jucătorul niciodată pe o capcană sau alt bonus
 
 ## Exemple
 | **Intrare** | **Ieșire** | **Comentarii** |
@@ -82,7 +82,7 @@ Când jucătorul ajunge la **punctul de sosire** sau **numărul de comenzi este 
 
 [hints]
 [hint]
-Iterați prin matrice utilizând o buclă-for.
+Iterați prin matrice utilizând o buclă for.
 [/hint] 
 [hint]
 Utilizați o instrucțiune switch-case pentru a gestiona fiecare tip de deplasare - left, right, up și down.
@@ -91,7 +91,7 @@ Utilizați o instrucțiune switch-case pentru a gestiona fiecare tip de deplasar
 Implementați o metodă care returnează dacă jucătorul se află în limitele matricei și o a doua metodă care verifică dacă acesta se află pe o capcană.
 [/hint] 
 [hint]
-Imprimați matricea utilizând două bucle-for imbricate.
+Imprimați matricea utilizând două bucle for imbricate.
 [/hint] 
 [/hints] 
 
