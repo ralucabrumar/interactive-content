@@ -863,7 +863,7 @@ catch (IOException e) {
 
 Folosind o **buclă for**, iterăm prin matricea `sourceFiles`.
 
-Scriem fiecare fișier în fluxul `zipOut` folosind un tampon `byte[]`.
+Scriem fiecare fișier în fluxul `zipOut` folosind un buffer `byte[]`.
 
 După cum vedeți mai sus, putem folosi clasa `ZipEntry`, folosită pentru a reprezenta o înregistrare a unui fișier ZIP.
 
