@@ -16,11 +16,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-_V-ați săturat să fiți singurul din echipa voastră fără echipament bun, așa că ați decis să cumpărați niște "loot boxes" pentru a avea șansa de a primi câteva obiecte interesante._
+_V-ați săturat să fiți singurul din echipa voastră fără echipament bun, așa că ați decis să cumpărați niște "loot boxes" pentru a avea șansa de a primi câteva obiecte rare._
 
 Fiecare achiziție vă oferă două "loot boxes" care sunt reprezentate ca o succesiune de numere întregi.
 
-În primul rând, vi se va oferi **o secvență de numere întregi, care reprezinta primul loot box**. Ulterior, vi se va oferi o altă **secvență de numere întregi, care reprezintă al doilea loot box**.
+Prima dată, vi se va oferi **o secvență de numere întregi, care reprezinta primul loot box**. Ulterior, vi se va oferi o altă **secvență de numere întregi, care reprezintă al doilea loot box**.
 
 Trebuie să începeți de la **primul obiect** din prima casetă și **să-l însumați** cu ultimul obiect din a doua casetă.
 
@@ -28,13 +28,13 @@ Dacă **suma** valorilor lor este **un număr par,** adăugați elementul **îns
 
 În caz contrar, scoateți ultimul element din a doua casetă și adăugați-l pe ultima poziție din prima casetă.
 
-Trebuie să **opriți** însumarea obiectelor când una dintre casete devine goală.
+Trebuie să **opriți** însumarea obiectelor când una dintre casete se golește.
 
-Dacă primul loot box devine gol, tipăriți:
+Dacă primul loot box este gol, tipăriți:
 
 `First lootbox is empty`
 
-Dacă al doilea devine gol, imprimați:
+Dacă al doilea este gol, imprimați:
 
 `Second lootbox is empty`
 
@@ -60,8 +60,8 @@ Dacă suma articolelor revendicate este egală sau mai mare decât 100, tipări�
 
 ## Constrângeri
 
-- Toate numerele date vor fi numere întregi valide în intervalul [0 ... 100]
-- Nu va exista un caz în care ambele casete devin goale în același timp
+- Toate numerele date vor fi numere întregi valide în intervalul \[0 ... 100\]
+- Nu va exista un caz în care ambele casete se golesc în același timp
 
 
 ## Exemple
@@ -70,7 +70,7 @@ Dacă suma articolelor revendicate este egală sau mai mare decât 100, tipări�
 | 10 11 8 13 5 6 | Second lootbox is empty | Mai întâi însumăm 10 și 3. Obținem 13, care nu este un număr par, așa că luăm ultimul element din a doua casetă și îl mutăm pe ultima poziție din prima casetă. Starea actuală a casetelor:  |
 | 0 4 7 3 6 23 3 | Your loot was poor... Value: 42 | 10 11 8 13 5 6 3 |
 |  |  | 0 4 7 3 6 23 |
-|  |  | Următoarea sumă este 33, deci facem același lucru din nou. La a treia iterație suma este 16, care este un număr par, așa că eliminăm ambele valori și adăugăm valoarea elementelor revendicate. Însumăm elementele până când una dintre cutii devine goală. |
+|  |  | Următoarea sumă este 33, deci facem același lucru din nou. La a treia iterație suma este 16, care este un număr par, așa că eliminăm ambele valori și le adăugăm la valoarea elementelor revendicate. Însumăm elementele până când una dintre cutii devine goală. |
 
 [hints]
 [hint]
