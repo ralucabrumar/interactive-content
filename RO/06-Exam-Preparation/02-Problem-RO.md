@@ -59,7 +59,7 @@ Fiecare linie cu date de intrare este respectă următorul format: "\{**quantity
 
 ## Exemplul 1
 
-| **Intrare* | **Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 Motes 5 stones 5 Shards | Valanyr obtained! | 
 | 6 leathers 255 fragments 7 Shards | fragments: 5 |
@@ -82,7 +82,7 @@ Citiți liniile cu date de intrare până la obținerea obiectului.
 
 ## Exemplul 2
 
-| **Intrare* | **Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 123 silver 6 shards 8 shards 5 motes | Dragonwrath obtained! | 
 | 9 fangs 75 motes 103 MOTES 8 Shards | shards: 22 |
