@@ -57,7 +57,7 @@ Fiecare linie cu date de intrare este respectă următorul format: "\{**quantity
 - Toate datele de ieșire trebuie să fie scrise cu **minuscule**, cu excepția **primei** litere a obiectului legendar
 
 
-## Exemplu 1
+## Exemplul 1
 
 | **Intrare* | **Ieșire** |
 | --- | --- |
@@ -80,7 +80,7 @@ Citiți liniile cu date de intrare până la obținerea obiectului.
 [/hint] 
 [/hints] 
 
-## Exemplu 2
+## Exemplul 2
 
 | **Intrare* | **Ieșire** |
 | --- | --- |
