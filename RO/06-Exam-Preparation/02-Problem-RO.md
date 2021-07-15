@@ -18,9 +18,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Sarcina voastră este să obțineți un obiect legendar, ceea ce necesită să colectați materialele necesare.
+Sarcina voastră este să obțineți un obiect legendar, lucru care necesită colectarea materialelor necesare.
 
-**Variantele posibile**  sunt:
+**Variantele posibile** sunt:
 
 - **Shadowmourne** - necesită 250 **Shards**
 
@@ -28,15 +28,15 @@ Sarcina voastră este să obțineți un obiect legendar, ceea ce necesită să c
 
 - **Dragonwrath** - necesită 250 **Motes**
 
-**Shards, Fragments și Motes** sunt **materiale-cheie**, orice alt material este nefolositor.
+**Shards, Fragments și Motes** sunt **materiale cheie**, iar orice alt material nu este util.
 
-Țineți socoteala materialelor-cheie - **primul** care **ajunge la 250** câștigă cursa. 
+Țineți socoteala materialelor cheie - **primul** care **ajunge la 250** câștigă cursa. 
 
-În această etapă, **imprimați** **obiectul legenedar corespunzător** obținut. 
+În această etapă, **imprimați** **obiectul legendar corespunzător** pe care l-ați obținut. 
 
-Apoi, **imprimați** celelalte materiale cheie râmase, **ordonate descrescător în funcție de cantitate**, fiecare pe o linie nouă.
+Apoi, **imprimați** celelalte materiale-cheie rămase, **ordonate descrescător în funcție de cantitate**, fiecare pe o linie nouă.
 
-La final, **imprimați** materialele nefolositoare în ordine **alfabetică**.
+La final, **imprimați** materialele care nu sunt utile, în ordine **alfabetică**.
 
 
 ## Intrare
